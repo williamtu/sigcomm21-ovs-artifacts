@@ -16,12 +16,18 @@ We provide
 
 If you're familar with Docker, use the [dataset/Dockerfile](dataset/Dockerfile) to automatically
 run OVS and load the dataset of OpenFlow rules, by doing
-```console
+```shell
   docker build dataset/ 
   docker run --privileged -it <image id> /bin/bash
-  root@<image id>:/src/ovs# cd ../; ./start-ovs-dataset.sh 
-  root@<image id>:/src# ovs-ofctl add-flows breth0 /src/ovs-ofctl-dump-flows-breth0.out 
+  root@<image id>:/src/ovs# cd ../;
+  root@<image id>:/src# ./start-ovs-dataset.sh 
+  root@<image id>:/src# ovs-ofctl dump-flows nsx-managed
 ```
+Note that Section 5.1 in the paper is a testbed with 100 hypervisors. Here we are simply
+reproducing one server and loading the configurations mentioned in Table 3.
+We can successfully load all the OpenFlow rules, but it's expected that some of the tunnel
+interfaces are down or not existed.
+
 
 ## Building Open vSwitch with AF_XDP
 All the source code used in the paper has been upstreamed to the public
@@ -31,7 +37,7 @@ OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/a
 
 If you're familar with Docker, use the [Dockerfile](Dockerfile) to automatically
 build and run OVS, by doing
-```console
+```shell
   docker build . 
   docker run --privileged -it <image id> /bin/bash
   root@<image id>:/src/ovs# /start-ovs.sh 

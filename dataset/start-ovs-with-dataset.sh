@@ -27,7 +27,7 @@ ovs-vsctl show
 #  0x104  0x84       4  tun_metadata3
 #  0x104  0x85       8  tun_metadata4
 #  0x104     0       4  tun_metadata5 
-
+sleep 1
 ovs-ofctl add-tlv-map nsx-managed "{class=0x104,type=0x80,len=4}->tun_metadata0"
 ovs-ofctl add-tlv-map nsx-managed "{class=0x104,type=0x81,len=4}->tun_metadata1"
 ovs-ofctl add-tlv-map nsx-managed "{class=0x104,type=0x82,len=8}->tun_metadata2"
