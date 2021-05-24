@@ -20,6 +20,8 @@ Open vSwitch [github repo](https://github.com/openvswitch/ovs).
 Please follow the official documentation to install
 OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/afxdp/)
 
+Or use the [Dockerfile](Dockerfile).
+
 ## Testbed Configuration
 In the paper, we use two machines connected back-to-back (see Section 5.2).
 With one Xeon E5 2620 v3 12-core 2.4GHz connected back-to-back through dual-port 25-Gbps Mellanox Connect-X 6Dx NICs. One server ran the TRex traffic generator, the other ran OVS with different datapaths and packet I/O configurations as well as a VM with 2 vCPUs and 4 GB memory. We tested three scenarios, all loopback configurations in which a server receives packets from TRex on one NIC port, forwards them internally across a scenario-specific path, and then sends them back to it on the other.
