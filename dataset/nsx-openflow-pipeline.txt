@@ -1,0 +1,650 @@
+/**********************************************************************
+ *  Copyright 2014 VMware, Inc.  All rights reserved.
+ **********************************************************************/
+
+======================================================================
+Tunnel register contents
+======================================================================
+
+Ref: http://url/UEXq3w shows the wire format in STT header.
+To match that, the host tunnel register (64 bits) contents are like this:
+
+1. Top 3 bytes (bits 63-40) - VNI.
+2. Next byte (bits 39-32) - bit 32 is MTEP, bit 33 is traceflow, rest are
+reserved.
+3. Bits 31-12 - label bits.
+   a. Bits 31-29 - label type bits (must be zero for Bumblebee - refer to
+      https://bugzilla.eng.vmware.com/show_bug.cgi?id=1439776).
+   b. Bits 28-12 - label value.
+4. Bits 11-0 - reserved.
+
+======================================================================
+
+                                                    +----------------------------------------+
+                                                    |  physical_integration_flow (table #0)  |
+                                                    +----------------------------------------+
+                                                        |               |                   |
+                            if in_port is VIF port:     |    if in_port is tunnel port:     | if in_port is patch port:
+                               RESUBMIT to vif_ingress  |       RESUBMIT to tunnel_ingress  |     RESUBMIT to vlan_ingress
+                                                        |               |                   |
+                                                        |               |                   |_______________________________________________________________________________
+                                                        |               |                                                                                                   |
+                                                        |               |                                                                                                   |
+                                                        V               V                                                                                                   V
+               +-----------------------------------------------------+    +-------------------------------------------------------------+      +-------------------------------------------------------------+
+               |                  vif_ingress (#1)                   |    |                    tunnel_ingress (#2)                      |      |                      vlan_ingress (#15)                     |
+               +-----------------------------------------------------+    +------------------------------------------------------------ +      +-------------------------------------------------------------+
+                  |                                  |                          |                                           |                                     |
+                  |                                  |                          |                                           |                                     |
+                  |                                  |                          |                                           |                                     |
+ if reg0 = traceflow context:         if VIF belongs to a VNI:            metadata <- VNI                   if tunnelReg traceflow bit is set:               metadata <- VLAN ID
+    metadata <-VNI                       metadata <- VNI                  reg0     <- ingress port#            metadata <-VNI                                metadata:32 <- 1 (VLAN flag)
+    reg0 <- ingress port#                reg0     <- ingress port#        reg4     <- DIRECTION is DOWN        reg0     <- ingress port#                     reg0     <- ingress port#
+    reg4 <- DIRECTION is UP              reg4     <- DIRECTION is UP      reg4     <- tunnelReg MTEP bit       reg4     <- DIRECTION is DOWN                 reg4     <- DIRECTION is DOWN
+    reg4 <- MTEP flag of VN              reg4     <- MTEP flag of VNI     RESUBMIT to do_learning              reg4     <- MTEP flag from tunnelReg          RESUBMIT to log_l2_fwd
+    reg4 <- Set traceflow bit            RESUBMIT to do_learning          RESUBMIT to log_l2_fwd               reg4     <- Set traceflow bit                      |
+    reg5[28:31] <- RECEIVED                                                     |                              reg5[28:31] <- RECEIVED                            |
+    reg3 <- TRACEFLOW_APP_ID                                                    |                              reg3 <- TRACEFLOW_APP_ID                           |
+    output to controller              if VIF belongs to a VLAN:                 |                              output to controller                               |
+    RESUBMIT to do_learning (Not                                                |                                                                                 |
+    sure if this is still the case)      metadata <- VLAN ID                    |                              RESUBMIT to do_learning                            |
+    RESUBMIT to ARP suppression          reg0     <- ingress port#              |                              RESUBMIT to log_l2_fwd                             |
+                 |                       reg4     <- DIRECTION is UP            |                                           |                                     |
+                 |                       RESUBMIT to do_learning                |                                           |                                     |
+                 |                                                              |                                           |                                     |
+                 |                    if VIF belongs to a VNI and               |                                           |                                     |
+                 |                        dl_src_mac in log_port_mac            |                                           |                                     |
+                 |                        RESUBMIT to arp_suppression           |                                           |                                     |
+                 |                                                              |                                           |                                     |
+                 |                                                              |                                           |                                     |
+                 |                     if VIF belongs to a VLAN and             |                                           |                                     |
+                 |                       dl_src_mac in log_port_mac             |                                           |                                     |
+                 |                           RESUBMIT to log_l2_fwd             |                                           |                                     |
+                 |                                                              |                                           |                                     |
+                 |                                   |                          |                                           |                                     |
+                 |                                   |                          |                                           |                                     |
+                 |                                   |                          |                                           |                                     |
+                 |                                   V                          V                                           |                                     |
+                 |                             +-------------------------------------+                                      |                                     |
+                  ------------------------->   |         do_learning (#12)           | <------------------------------------                                      |
+                                               +-------------------------------------+                                                                            |
+                                                              |                                                                                                   |
+                                                              |                                                                                                   |
+                                                       if DIRECTION is UP AND                                                                                     |
+                                                          reg0 is a learner VM's port number:                                                                     |
+                                                            learn: (if dst_mac = cur_src_mac AND                                                                  |
+                                                                       metadata = cur_metadata:                                                                   |
+                                                                         reg1(0:15) <- cur_reg0                                                                   |
+                                                                         reg1:31 <- unicast flag)                                                                 |
+                                                       if DIRECTION is DOWN AND                                                                                   |
+                                                          metadata is a VNI we joined:                                                                            |
+                                                            learn: (if dst_mac = cur_src_mac AND                                                                  |
+                                                                       metadata = cur_metadata:                                                                   |
+                                                                         reg1(0:16) <- tunnelReg VTEP label                                                       |
+                                                                         reg1:31 <- unicast flag                                                                  |
+                                                                         reg1:30 <- remote destination flag)                                                      |
+                                                                                                                                                                  |
+                                                       if reg0 is not a learner VM's port number AND                                                              |
+                                                          DIRECTION IS UP                                                                                         |
+                                                                             |                                                                                    |
+                                                                             |                                                                                    |
+                                                                             |                                                                                    |
+                                                                             |                                                                                    |
+                                                                             |                                                                                    |
+                                                                +-------------------------+                                                                       |
+                                                                |   check_learning (#28)  |                                                                       |
+                                                                +-------------------------+                                                                       |
+                                                                             |                                                                                    |
+                                                                             |                                                                                    |
+                                                                             |                                                                                    |
+                                                                             |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _                                                     |
+                                                                                                             |                                                    |
+                                                                                                             |                                                    |
+                                                                                                             |                                                    |
+                                                                                                             |                                                    |
+                                                                                                             V                                                    |
+                                                                                            if reg7 is 0 (learning failed) AND                                    |
+                                                                                                if vif_port has mac_learning_policy = DROP                        |
+                                                                                                    DROP packet                                                   |
+                                                                                                                                                                  |
+                                                                                            if VIF belongs to a VNI                                               |
+                                                                                                             |                                                    |
+                                                              _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|                                                    |
+                                                             |                                                                                                    |
+                                                             |                              if VIF belongs to a VLAN                                              |
+                                                             |                                               |                                                    |
+                                                             |                 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |                                                    |
+                                                             V               |                                                                                    |
+                                                +----------------------+     |                                                                                    |
+                                                | ARP suppression (#11)|     |                                                                                    |
+                                                +----------------------+     |                                                                                    |
+                                                             |               |                                                                                    |
+                    if ARP request for vif in arp_table,     |               |                                                                                    |
+                    convert into ARP reply sent from vif:    |               |                                                                                    |
+                            dst_mac <- src_mac               |               |                                                                                    |
+                            src_mac <- vif_mac               |               |                                                                                    |
+                            arp_op <- 2                      |               |                                                                                    |
+                            arp_tha/tpa <- arp_sha/spa       |               |                                                                                    |
+                            arp_sha <- vif_mac               |               |                                                                                    |
+                            arp_spa <- vif_ip                |               |                                                                                    |
+                            in_port <- 0                     |               |                                                                                    |
+                            RESUBMIT to log_l2_fwd           |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             |               |                                                                                    |
+                                                             V               V                                                                                    V
+                +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                |                                                                        log_l2_fwd (#3)                                                                        |
+                +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                 |                  |                  |                  |                          |                        |                                       |
+                 |                  |                  |                  |                          |                        |                                       |
+                 |                  |                  |                  |                          |                        |                                       |
+                 |   if metadata is a local VNI AND    |   if dst_mac is multicast:                  |       if DIRECTION is DOWN AND                           if PRIORITY is 1 (default: dst_mac is unknown):
+                 |      dst_mac is LR mac:             |         reg1 <- 1                           |          metadata is a VNI we joined AND                    RESUBMIT to consult_learning
+                 |         RESUBMIT to l3_lif_ingress  |         RESUBMIT to local_replicate         |          dst_mac is a remote VM MAC in that VNI             RESUBMIT to deliver_learned
+                 |                  |                  |                  |                          |          PRIORITY is 2:                                         |
+                 |                  |                  |                  |                          |             DROP                                                |
+                 |                  |                  |                  |                          |                        |                                        |
+                 |                  |                  |                  |                          |                        |                                 if PRIORITY is 1 (default: dst_mac is unknown) AND
+                 |                  |                  |                  |                          |                        |                                    reg4 traceflow bit is set AND
+                 |                  |                  |                  |                          |                        |                                    reg0 is OFPP_LOCAL:
+                 |                  |                  |                  |                          |                        |                                       reg5[0:15]  <- 0
+                 |                  |                  |                  |                          |                        |                                       reg5[16:27] <- 0
+                 |                  |                  |                  |                          |                        |                                       reg5[28:31] <- LS_RECEIVED
+                 |                  |                  |                  |                          |                        |                                       reg4 <- TRACEFLOW_APP_ID
+                 |                  |                  |                  |                          |                        |                                       reg6 <- VNI
+                 |                  |                  |                  |                          |                        |                                       output to controller
+                 |                  |                  |                  |                          |                        |                                       RESUBMIT to consult_learning
+                 |                  |                  |                  |                          |                        |                                       RESUBMIT to deliver_learned
+                 |                  |                  |                  |                          |                        |                                        |                  |_________
+                 |                  |                  |                  |                          |                        |                                        |                            |
+                 |                  |                  |                  |                          |      if DIRECTION is DOWN AND                                   |                            |
+                 |                  |                  |                  |                          |         metadata is a VNI we joined AND                         |                            |
+                 |                  |                  |                  |                          |         dst_mac is a remote VM MAC in that VNI AND              |                            |
+                 |                  |                  |                  |                          |         reg4 traceflow bit is set                               |                            |
+                 |                  |                  |                  |                          |         PRIORITY is 4:                                          |                            |
+                 |                  |                  |                  |                          |            reg5[0:27]  <- REMOTE_ORIGIN_DROP                    |                            |
+                 |                  |                  |                  |                          |            reg5[28:31] <- LS_DROPPED                            |                            |
+                 |                  |                  |                  |                          |            reg3 <- TRACEFLOW_APP_ID                             |                            |
+                 |                  |                  |                  |                          |            reg6 <- VNI                                          |                            |
+                 |                  |                  |                  |                          |            output to controller                                 |                            |
+                 |                  |                  |                  |                          |                        |                                        |                            |
+                 |                  |                  |                  |                          |      if DIRECTION is DOWN AND                                   |                            |
+                 |                  |                  |                  |                          |         metadata is a VNI we joined AND                         |                            |
+                 |                  |                  |                  |                          |         dst_mac is a remote VM MAC in that VNI AND              |                            |
+                 |                  |                  |                  |                          |         reg4 traceflow bit is set AND                           |                            |
+                 |                  |                  |                  |                          |         reg0 is OFPP_LOCAL AND                                  |                            |
+                 |                  |                  |                  |                          |         PRIORITY is 5:                                          |                            |
+                 |                  |                  |                  |                          |            reg5[0:15]  <- 0                                     |                            |
+                 |                  |                  |                  |                          |            reg5[16:27] <- 0                                     |                            |
+                 |                  |                  |                  |                          |            reg5[28:31] <- LS_RECEIVED                           |                            |
+                 |                  |                  |                  |                          |            reg4 <- TRACEFLOW_APP_ID                             |                            |
+                 |                  |                  |                  |                          |            reg6 <- VNI                                          |                            |
+                 |                  |                  |                  |                          |            output to controller                                 |                            |
+                 |                  |                  |                  |                          |            reg5[0:27] <- REMOTE_ORIGIN_DROP                     |                            |
+                 |                  |                  |                  |                          |            reg5[28:31] <- LS_DROPPED                            |                            |
+                 |                  |                  |                  |                          |            output to controller                                 |                            |
+                 |                  |                  |                  |                          |                     |                                           |                            |
+                 |                  |    if metadata is a local VNI AND   |                          |                     |                                           |                            |
+                 |                  |       dst_mac is LR mac AND         |                          |                     |                                           V                            V
+                 |                  |       reg4 traceflow bit is set:    |                          |                     V                        +------------------------+      +-------------------------+
+                 |                  V          reg5[0:15]  <- 0           |                          |                   _____                      | consult_learning (#13) |      |   deliver_learned (#14) |
+                 |                 (#X)        reg5[16:27] <- 0           |                          |                    ___                       +------------------------+      +-------------------------+
+                 |                             reg5[28:31] <- LS_FORWARDED|                          |                     _                                                          |        |          |
+                 |                             reg3 <- TRACEFLOW_APP_ID   |                          |                                                            ____________________|        |          |
+                 |                             reg6 <- VNI                |                          |                                                           |                _____________|          |
+                 |                             output to controller       |                          |                                                           |               |                        |
+                 |                             RESUBMIT TO l3_lif_ingress |              if DIRECTION is UP AND                                                  |               |       if reg1:31 == 1 AND
+                 |                                     |                  |                 metadata is a VNI we joined AND                             if reg1 == 0:            |          reg1:30 == 1 AND
+  if metadata is a local VNI/VLAN ID AND               |                  |                 dst_mac is a remote VM MAC in that VNI:                        RESUBMIT to           |          DIRECTION is UP:
+     dst_mac is a local VM MAC in that VNI/VLAN:       |                  |                     tunnelReg <- metadata(0:23) (VNI)                          local_replicate       |             tunnelReg <- metadata(0:23) (VNI)
+        reg1 <- VIF port #                             V                  |                     tunnelReg <- 0 (MTEP)                                            |               |             tunnelReg <- 0 (MTEP)
+        RESUBMIT to vif_egress                        (#X)                |                     tunnelReg <- local VTEP label                                    |               |             tunnelReg <- local VTEP label
+                 |                                                        |                     tunnelReg <- reg4 traceflow bit                                  V               |             tunnelReg <- reg 4 traceflow bit
+                 |                                                        |                     reg1 <- remote HV label                                         (#6)             |             reg1(30:31) <- 0
+                 |                                                        |                     RESUBMIT to remote_egress                                                        |             RESUBMIT to remote_egress
+                 |                                                        |              if DIRECTION is DOWN AND MTEP = 1 AND                                                   |        if reg1:31 == 1 AND
+  if metadata is a local VNI/VLAN ID AND                                  |                 metadata is a VNI we joined AND                                                      |           reg1:30 == 1 AND
+     dst_mac is a local VM MAC in that VNI/VLAN AND                       |                 dst_mac is a remote VM MAC in that VNI AND                                           |           (DIRECTION is DOWN && MTEP = 1) AND
+     reg0 is OFPP_LOCAL AND reg4 traceflow bit is set:                    |                 dst_mac resides in an HV in our segment:                                             |           reg1(0:19) is a VTEP label in our segment:
+        reg5[0:15]  <- 0                                  if dst_mac is multicast AND           // Leave tunnel VNI unchanged                                                    |               // Leave tunnel VNI unchanged
+        reg5[16:27] <- 0                                    reg0 is OFPP_LOCAL AND              tunnelReg <- 0 (MTEP)                                                            |               tunnelReg <- 0 (MTEP)
+        reg5[28:31] <- LS_RECEIVED                          reg4 traceflow bit is set:          // Leave tunnel VTEP label unchanged                                             |               // Leave tunnel VTEP label unchanged
+        reg3 <- TRACEFLOW_APP_ID                                reg5[0:15]  <- 0                // Leave tunnel traceflow bit unchanged                                          |               // Leave tunnel traceflow bit unchanged
+        reg6 <- VNI                                             reg5[16:27] <- 0                reg1 <- remote HV label                                                          |               reg1(30:31) <- 0
+        output to controller                                    reg5[28:31] <- LS_RECEIVED      RESUBMIT to remote_egress                                                        |               RESUBMIT to remote_egress
+        reg1 <- VIF port #                                      reg3 <- TRACEFLOW_APP_ID                   |                                                                     |                         |
+        RESUBMIT to vif_egress                                  reg6 <- VNI               if any of the 2 above conditions matches AND                                           |                         |
+                 |                                              output to controller         reg0 is OFPP_LOCAL AND reg4 traceflow bit is set:                                   |                         |
+                 |                                              reg1 <- 1                        reg5[0:15]  <- 0                                                          if reg1:31 == 1 AND             |
+                 |                                              RESUBMIT to local_replicate      reg5[16:27] <- 0                                                             reg1:30 == 0:                V
+                 |                                                        |                      reg5[28:31] <- LS_RECEIVED                                                      reg1:31 <- 0             (#5)
+                 |                                                        |                      reg3 <- TRACEFLOW_APP_ID                                                        RESUBMIT to vif_egress
+                 |                                                        |                      reg6 <- VNI                                                                      |
+                 |                                                        V                      output to controller                                                             |
+                 |                +-----------------------------------------------------------+  Actions from the corresponding rule above                                        V
+                 |                |                    local_replicate (#6)                   |            |                                                                     (#4)
+                 |                +-----------------------------------------------------------+            |
+                 |                 |                            |   |           |                          |
+                 |                 |                            |   |           |                          |
+                 |                 |                            |   |           |                          |
+                 |      if reg1 == 0 AND                        |   |  if metadata is a VNI we joined OR   |
+                 |         metadata is a local VNI/VLAN ID      |   |     metadata is a local VLAN ID:     |
+                 |         with some learner VMs:               |   |        RESUBMIT to classify_garp     |
+                 |           for all learner VMs in VNI/VLAN:   |   |           |                          |
+                 |             reg1 <- local learner VM port    |   |  if metadata is a VNI we joined AND  |
+                 |             RESUBMIT to vif_egress           |   |     reg4 traceflow bit is set:       |
+                 |                                              |   |        RESUBMIT to classify_garp     |
+                 |      if reg1 == 0 AND                        |   |           |                          |
+                 |         metadata is a local VNI with         |   |           |                          |
+                 |         some learner VMs AND                 |   |           |                          |
+                 |         reg4 traceflow bit is set:           |   |           V                          |
+                 |           for all learner VMs in VNI:        |   |          (#7)                        |
+                 |             reg1 <- local learner VM port    |   |                                      |
+                 |             RESUBMIT to vif_egress           |   |                                      |
+                 |                                              |   |                                      |
+                 |      if reg1 == 1 AND                        |   |                                      |
+                 |         metadata is a local VNI/VLAN ID:     |   |                                      |
+                 |           for all VMs in VNI/VLAN:           |   |                                      |
+                 |             RESUBMIT to vif_egress           |   |                                      |
+                 |                                              |   |                                      |
+                 |      if reg1 == 1 AND                        |   |                                      |
+                 |         metadata is a local VNI AND          |   |                                      |
+                 |         reg4 traceflow bit is set:           | if reg1 == 1 AND                         |
+                 |           for all VMs in VNI:                |    metadata is a VNI we joined AND       |
+                 |             reg1 <- local VM port            |    reg4 traceflow bit is set:            |
+                 |             RESUBMIT to vif_egress           |       reg5[0:15]  <- 0                   |
+                 |                 |                            |       reg5[16:27] <- 0                   |
+                 |                 |                            |       reg5[28:31] <- LS_FORWARDED        |
+                 |                 |                            |       reg3 <- TRACEFLOW_APP_ID           |
+                 |                 |                            |       reg6 <- VNI                        |
+                 |                 |                            |       output to controller               |
+                 |                 |                            |       RESUBMIT to l3_lif_ingress         |
+                 |                 |            if reg1 == 1 AND                 |                         |
+                 |                 |               metadata is a VNI we joined:  |                         |
+                 |                 |                 RESUBMIT to l3_lif_ingress  |                         |
+                 |                 |                            |                |                         |
+                 |                 |                            |       _________|                         |
+                 |                 |                            |      |                                   |
+                 |                 |                            |      |                                   |              ________________
+                 |                 |                            |      |                                   |             |                |
+                 V                 V                            V      V                                   V             |                V
+                +---------------------+           +---------------------+      +-------------------------------+         |   +-------------------------+
+                |    vif_egress (#4)  |           | lif_l3_ingress (#X) |      |      remote_egress (#5)       |         |   |    vlan_egress (#16)    |
+                +---------------------+           +---------------------+      +-------------------------------+         |   +-------------------------+
+                  |                |                                              |                   |                  |                |
+                  V                |                                              V                   V                  |                V
+        output to port in reg1     |                              output to tunnel port   if reg4 traceflow bit is set:  |          set VLAN ID
+                                   |                              for label at reg1          output to tunnel port       |          output to patch port
+                                   V                                                         for label at reg1           |
+                 if reg4 traceflow bit is set:                                               reg5[0:15]  <- tunnel port# |
+                    reg5[0:15]  <- reg1 (egress port)                                        reg5[28:31] <- FORWARDED    |
+                    reg5[16:27] <- 0                                                         reg3 <- TRACEFLOW_APP_ID    |
+                    reg5[28:31] <- DELIVERED                                                 output to controller        |
+                    reg3 <- TRACEFLOW_APP_ID                                                                             |
+                    reg6 <- 0                                                                                            |
+                    output to controller                                                                                 |
+                                                                                                                         |
+                                                                                                                         |
+                                                                                                                         |
+                                    +-----------------------------------------------------------------------+            |
+                                    |                           classify_garp                               |            |
+                                    +-----------------------------------------------------------------------+            |
+                                                                  |                                                      |
+                                                                  | if GARP packet, set GARP flag in reg4, and           |
+                                                                  | load vdr_id of the logical switch's routing domain   |
+                                                                  | in reg1. Resubmit to remote_replicate.               |
+                                                                  |                                                      |
+                                                                  V                                                      |
+                                    +-----------------------------------------------------------------------+     if metadata:32 = 1 (VLAN) AND
+                                    |                           remote_replicate (#7)                       |        DIRECTION is UP:
+                                    +-----------------------------------------------------------------------+          RESUBMIT to vlan_egress
+                                      |                  |                                        |      |           |
+                                      |                  |                                        |      |           |
+                                      |                  |                                        |      |           |
+                                      |                  |                                        |      |___________|
+                     _________________|                  |                                        |
+                    |                                    |                                        |
+                    |                                    |                                        |
+                    |                                    |                                        |
+   if metadata:32 = 0 (non-VLAN) AND             if metadata:32 = 0 (non-VLAN) AND          if metadata:32 = 0 (non-VLAN) AND
+      MTEP = 0 AND                                  MTEP = 1 AND                               MTEP = 1 AND
+      DIRECTION is UP:                              DIRECTION is DOWN:                         DIRECTION is UP:
+         tunnelReg <- metadata(0:23) (VNI)             // Leave tunnel VNI unchanged             tunnelReg <- metadata(0:23) (VNI)
+         tunnelReg <- 0 (MTEP)                         tunnelReg <- 0 (MTEP)                     tunnelReg <- 0 (MTEP)
+         tunnelReg <- local VTEP label                 // Leave tunnel VTEP label unchanged      tunnelReg <- local VTEP label
+         tunnelReg <- reg4 traceflow bit               // Leave tunnel traceflow bit unchanged   tunnelReg <- reg4 traceflow bit
+         RESUBMIT to source_replication                tunnelReg <- reg4 traceflow bit           RESUBMIT to intra_segment_replication
+                    |                                    |                                       tunnelReg <- 1 (MTEP)
+                    |                                    |                                       RESUBMIT to inter_segment_replication
+                    |                                    |                                        |          |
+                    |                                    |                                        |          |
+                    |                                    |                                        |          |
+                    |                                    |                ________________________|          |
+                    |                                    |               |                                   |
+                    |                                    |               |                                   |
+                    |                                    |               |                                   |
+                    V                                    V               V                                   V
+    +----------------------------+      +-------------------------------------+      +-------------------------------------+
+    |   source_replication (#8)* |      |   intra_segment_replication (#9)*   |      |    inter_segment_replication (#10)* |        * In each of the replication stages, we use the given VNI's
+    +----------------------------+      +-------------------------------------+      +-------------------------------------+          VTEP table for replication of non-GARP packets, otherwise we
+              |                                          |                                           |                   |            use the corresponding routing domain's VTEP table (DR span).
+              |                                          |                                           |                   |
+              |                                          |                                           |                   |_________________________
+              |                                          |                                           |                                             |
+              |                                          |                                           |                                             V
+   if metadata is a VNI we joined:      if metadata is a VNI we joined:                        if metadata is a VNI we joined:              if metadata is a VNI we joined AND
+      for all remote HVs joined VNI:       for all remote HVs at same segment and joined VNI:     bundle_output to HV's, one from              reg 4 traceflow bit is set:
+        reg1 <- label of HV                  reg1 <- label of HV                                  each different segment having this VNI       for each segment:
+        RESUBMIT to remote_egress            RESUBMIT to remote_egress                               |                                            reg5 <- Bundle decision port
+              |                                          |                                           |                                            output to port stored in reg5
+              |                                          |                                           |                                            reg5[28:31] <- FORWARDED
+              |                                          |                                           |                                            reg3 <- TRACEFLOW_APP_ID
+              V                                          V                                           V                                            output to controller
+             (#5)                                       (#5)                                   bundle_output
+
+
+/**********************************************************************
+ *  Copyright 2017, 2019 VMware, Inc.  All rights reserved.
+ **********************************************************************/
+
+
+
+
+                   +-------------------------------------------------------------------------------------------------+
+                   |                                    physical_integration_flow (#0)                               |
+                   +-------------------------------------------------------------------------------------------------+
+                                    |                               |                               |
+                                    |                               |                               |
+                                    |                               |                               |
+                      if in_port is VIF:                if in_port is TUNNEL:             if in_port is VLAN:
+                         RESUBMIT to vif_ingress           RESUBMIT to tunnel_ingress        RESUBMIT to vlan_ingress
+                                    |                               |                               |
+                                    |                               |                               |
+                                    |                               V                               V
+                                    |                              (#2)                           (#15)
+                                    |
+                                    |
+                                    V
+                   +-------------------------------------+                   +--------------------------------------+
+                   |           vif_ingress (#1)          |                   |            vif_egress (#4)           |
+                   +-------------------------------------+                   +--------------------------------------+
+                                    |                                                           |
+                                    |                                                           |
+                                    |                                                           |
+                   ... prev pipeline... (substages 0 to 9)                 ... prev pipeline... (substages 0 to 7)
+                   substage 10:                                            substage 8:
+                      reg2 <- reg0 (ingress VIF port context)                 reg2 <- reg1 (egress VIF port context)
+                      reg5[0] <- 0 (meaning, ingress direction)               reg5[0] <- 1 (meaning, egress direction)
+                      RESUBMIT to dfw_exclude_vifs                            RESUBMIT to dfw_exclude_vifs
+                   ... remaining pipeline...(only if DFW stages            ... remaining pipeline... (only if DFW stages
+                                      sent back to vif_ingress)                                 sent back to vif_egress)
+                                    |                                                           |
+                                    |                                                           |
+                                    |                                                           |
+                                    V                                                           V
+                   +----------------------------------------------------------------------------------------------------+
+                   |                                      dfw_exclude_vifs (#41)                                        |
+                   +----------------------------------------------------------------------------------------------------+
+                              |                                      |                                       |
+                              |                                      |                                       |
+                              |                                      |                                       |
+                  if exclude_all = true AND              if reg5[0] = 0/1 AND                       if PRIORITY = 1:
+                     reg5[0] = 0/1 AND                      reg2 is in VIF exclude list:                   RESUBMIT to dfw_l2
+                     PRIORITY = D + 1:                          reg2 <- 11/9                                 |
+                         reg2 <- 11/9 (next substage)           reg5 <- 0                                    |
+                         reg5 <- 0                              RESUBMIT to vif_ingress/egress               |
+                         RESUBMIT to vif_ingress/egress              |                                       |
+                              |                                      |                                       |
+                              |                                      |                                       |
+                              V                                      V                                       |
+                          (#1 / #4)                              (#1 / #4)                                   |
+                                                                                                             |
+                                                                                                             |
+                                                                                                             V
+                   +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+                   |                                                                 dfw-l2-impl.n (#42)                                                                       |
+                   +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+                          |                                   |                                     |                                    |                             |
+                          |                                   |                                     |                                    |                             |
+                          |                                   |                                     |                                    |                             |
+                          |                                   |                                     |                                    |                             |
+                  (dfw_l2_dispatch)                    (dfw_l2_accept_to_l3)                 (l2_accept_ingress/egress)         (dfw_l2_deny)                  (dfw_l2_reject)
+                  if reg6[0:2] = 0 AND                 if reg6[0:2] = 1 AND                  if reg6[0:2] = 1 AND               if reg6[0:2] = 2 AND           if reg6[0:2] = 3 AND
+                     reg2 is vif_port_context:            packet is IP:                         reg5[0] = 0/1 AND                  reg5[0] = 0/1:                 reg5[0] = 0/1:
+                        reg5[4:19] <- vif group id           reg4[3] <- 0 (no conn_state)       PRIORITY = 1:                         NOTE counter_type: 0/1          NOTE counter_type: 0/1
+                        reg5[20:31] <- vif clique id         reg5[3] <- 1 (need ct_lookup)         reg6 <- 0                          reg6 <- 0                       send to nsx-agent
+                        RESUBMIT to dfw_addr_group           reg6 <- 0                             reg7 <- 0                          reg7 <- 0                       reg6 <- 0
+                        reg5[1] <- 1                         reg7 <- 0                             reg2 <- 11/9 (substage number)        |                            reg7 <- 0
+                        RESUBMIT to dfw_addr_group           RESUBMIT to dfw_l3                    RESUBMIT to vif_ingress/egress        |                             |
+                        RESUBMIT to dfw_l2_rules             (L2 accept)                            |                                    |                             |
+                        reg5[1:31] <- 0                       |                                     |                                    |                             |
+                        RESUBMIT to dfw_stats                 |                                     V                                    V                             V
+                        RESUBMIT to self                      |                                 (#1 / #4)                              _____                         _____
+                          |                                   |                                                                         ___                           ___
+                          |                                   |                                                                          _                             _
+                          |                                   |
+                          |                                   |
+                          |                                   |____________________________________________________________________________________________________________________________
+                          |                                                                                                                                                                |
+                          |                                                                                                                                                                |
+                          |                                                                                                                                                                |
+                          |   get src MAC group ID                                                                                                                                         |
+                          |----------------------->  +--------------------------------------------+                                                                                        |
+                          |   get dst MAC group ID   |         dfw-addr-group-impl.n (#44)        |----------> - Populate reg6/reg7 with src/dst group ID                                  |
+                          |----------------------->  +--------------------------------------------+              by using the info at reg5[0:19].                                          |
+                          |                                                                                      (Here, group ID is an integer that represents a set of MACs)              |
+                          |                                                                                                                                                                |
+                          |   get L2 rules result    +--------------------------------------------+                                                                                        |
+                          |----------------------->  |         dfw-l2-rules-impl.n (#47)          |----------> - Populate: reg6 with L2 rules result (1=accept, 2=deny, 3=reject),         |
+                          |                          +--------------------------------------------+                        reg7 with the matching ruleID,                                  |
+                          |                                                                                                by using the info at reg2, reg6, reg7.                          |
+                          |                                                                                    - Log the outcome by sending to nsx-agent.                                  |
+                          |                                                                                                                                                                |
+                          |   send to rule stats     +--------------------------------------------+                                                                                        |
+                          |----------------------->  |          dfw-stats-impl.n (#45)            |----------> - Match reg7 to rule ID, keep packet count for the rule and                 |
+                          |                          +--------------------------------------------+              perform no actions.                                                       |
+                          |                                                |                                   - RESUBMIT to packet logging                                                |
+                          |                                                |                                                                                                               |
+                          |                                                |                                                                                                               |
+                          |                                                V                                                                                                               |
+                          |                          +--------------------------------------------+                                                                                        |
+                          |                          |           dfw-logging-impl.n (#46)         |----------> - Match reg7 to rule ID, and log packet if logging enabled.                 |
+                          |                          +--------------------------------------------+                                                                                        |
+                          |                                                                                                                                                                |
+                          |                                                                                                                                                                |
+                          |                                                                                                                                                                |
+                          V                                                                                                                                                                |
+                        (#42)                                                                                                                                                              |
+                                                                                                                                                                                           |
+                                                                                                                                                                                           |
+                                                                                                                                                                                           |
+                                                                                                                                                                                           V
+                   +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                   |                                                                                                                        dfw-l3-impl.n (#43)                                                                                                                                                                                                     |
+                   +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                          |                                |                                         |                                   |                              |                                 |                               |                               |                              |                                   |
+                          |                                |                                         |                                   |                              |                                 |                               |                               |                              |                                   |
+                          |                                |                                         |                                   |                              |                                 |                               |                               |                              |                                   |
+               (All pkts from dfw_l2)             (All pkts from ct_lookup #56)             (dfw action is accept)               (dfw action is deny)          (allow controller rej err pkts)   (allow controller rej err pkts)   (allow TCP rst in egress)    (drop rej broad/multi cast pkts)  (tcp_reset opcode to controller)  (icmp opcode to controller)
+               if reg5[3] = 1 (from dfw_l2) AND   if reg6[0:3] = 0:                         if reg6[0:2] = 1 AND                 if reg6[0:2] = 2 AND          if reg6[0:2] = 3 AND              if reg6[0:2] = 3 AND              if reg6[0:2] = 3 AND         if reg6[0:2] = 3 AND              if reg6[0:2] = 3 AND              if reg6[0:2] = 3 AND
+                  PRIORITY = D+1:                        RESUBMIT to dfw_ct_revalidate         reg5[0] = 0/1:                       reg5[0] = 0/1:                reg6[7] = 1 AND                   reg6[7] = 1 AND                   reg5[0] = 1 (egress)         dst = (broadcast OR               reg5[0] = 0/1 AND                 reg5[0] = 0/1 AND
+                     reg5[3] <- 0                        RESUBMIT to self                         reg6 <- 0                            NOTE counter_type: 0/1     reg5[0] = 0:                      reg5[0] = 1:                      dl_type = ETHER_IP AND              multicast) AND             dl_type = (ETHER_IP OR            PRIORITY = D - 4:
+                     RESUBMIT to dfw_ct_lookup             |                                      reg7 <- 0                            reg6 <- 0                     reg0 <- 0                        reg0 <- 0                       nw_type = TCP AND            dl_type = ETHER_IP AND                       ETHER_IPv6) AND           reg6[7] <- 1
+                          |                                |                                      reg2 <- 11/9 (substage number)       reg7 <- 0                     reg5 <- 0                        reg5 <- 0                       tcp_flag has RST AND         PRIORITY = D - 2:                 nw_type = TCP AND                    NOTE icmp_note: UNRACHABLE_HOST
+                          |                                |                                      RESUBMIT to vif_ingress/egress         |                           reg1 <- reg2                     DIRECTION <- UP                 PRIORITY = D - 1:               reg6 <- 0                      PRIORITY = D - 3:                    Send to Controller
+                          |                                |                                         |                                   |                           reg6 <- 0                        reg6 <- 0                          perform accept_actions       reg7 <- 0                         reg6[7] <- 1                      NOTE counter_type: 0/1
+                          |                                |                                         |                                   |                           reg7 <- 0                        reg7 <- 0                                                       NOTE counter_type: 0/1            NOTE tcp_reset: 0                 reg6 <- 0
+                          |                                |                                         |                                   |                           reg2 <- vif_egress next stage    reg2 <- 0                                                           |                             Send to Controller                reg7 <- 0
+                          |                                |                                         V                                   V                           RESUBMIT to vif_egress           RESUBMIT to log_l2_fwd                                              |                             NOTE counter_type: 0/1               |
+                          |                                |                                      (#1/#4)                              _____                            |                                 |                                                               V                             reg6 <- 0                            |
+                          |                                |                                                                            ___                             V                                 V                                                             _____                           reg7 <- 0                            V
+                          |                                |---> (#43)                                                                   _                             (#4)                              (#3)                                                            ___                             |                                 _____
+                          |                                |                                                                                                                                                                                                              _                              |                                  ___
+                          |                                |                                                                                                                                                                                                                                             V                                   _
+                          |                                |                                                                                                                                                                                                                                           _____
+                          |                                |                                                                                                                                                                                                                                            ___
+                          |                                |                                                                                                                                                                                                                                             _
+                          |                                |
+                          |                                |
+                          |                                |__________________________________________________________________________________________________________________________
+                          |                                                                                                                                                           |
+                          |                                                                                                                                                           |
+                          V                                                                                                                                                           |
+                   +----------------------------------------------------------------------------------------------------------------------------------------------+                   |
+                   |                                                                    dfw_ct_lookup (#56)                                                       |                   |
+                   +----------------------------------------------------------------------------------------------------------------------------------------------+                   |
+                        |                                                             |                                    |                                |                         |
+                        |                                                             |                                    |                                |                         |
+                        |                                                             |                                    |                                |                         |
+                        |----- if reg5[0] = 1 (egress) AND               if reg5[0] = 0 (ingress) AND        if reg5[0] = 1 (egress) AND         if reg4[3] = 1 AND                   |
+                        |         reg4[3] = 0 (ct not populated) AND        reg4[3] = 1 (ct populated) AND      reg4[3] = 1 (ct populated) AND      PRIORITY = D - 1:                 |
+                        |         reg0 = reg2:                              conn_state_dir = RESP AND           conn_state_dir = RESP AND              RESUBMIT to dfw_l3             |
+                        |            RESUBMIT to dfw_l3 (#43)               conn_label_dir = ingress:           conn_label_dir = egress:                    |                         |
+                        |                                                       DROP                                DROP                                    |                         |
+                        |                                                             |                                    |                                |                         |
+                        |----- if reg4[3] = 0 AND                                     |                                    |                                V                         |
+                        |         packet is Ipv6 discovery AND                        |                                    |                              (#43)                       |
+                        |         PRIORITY = D - 1:                                 _____                                _____                                                        |
+                        |            RESUBMIT to dfw_l3 (#43)                        ___                                  ___                                                         |
+                        |                                                             _                                    _                                                          |
+                        |                                                                                                                                                             |
+                        |----- if reg4[3] = 0 AND                                                                                                                                     |
+                        |         packet is IP AND                                                                                                                                    |
+                        |         PRIORITY = D - 2:                                                                                                                                   |
+                        |            reg4[3] <- 1 (conn_state is populated)                                                                                                           |
+                        |            ct_lookup(zone = reg2, recirc = dfw_ct_lookup)                                                                                                   |
+                        |                                                                                                                                                             |
+                        |                                                                                                                                                             |
+                        |----- if reg4[3] = 0 AND                                                                                                                                     |
+                                  PRIORITY = D - 3:                                                                                                                                   |
+                                     RESUBMIT to dfw_l3 (#43)                                                                                                                         |
+                                                                                                                                                                                      |
+                                                                                                                                                                                      |
+                                                                                                                                                                                      |
+                                                                                                                                                                                      V
+                   +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                   |                                                                                                                                                      dfw_ct_revalidate (#51)                                                                                                                                                                                                                                                                                                                                                                                                       |
+                   +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                        |                                    |                                    |                                  |                                  |                                       |                             |                                        |                                  |                                       |                                    |                                      |                                 |                                  |                                     |                                |
+                        |                                    |                                    |                                  |                                  |                                       |                             |                                        |                                  |                                       |                                    |                                      |                                 |                                  |                                     |                                |
+                        |                                    |                                    |                                  |                                  |                                       |                             |                                        |                                  |                                       |                                    |                                      |                                 |                                  |                                     |                                |
+              if reg4[13:14] = 0 (substage) AND     if reg4[13:14] = 0 AND              if reg4[13:14] = 0 AND              if reg4[13:14] = 0 AND             if reg4[13:14] = 0 AND                 if reg4[13:14] = 1 AND         if reg4[13:14] = 1 AND                   if reg4[13:14] = 1 AND            if reg4[13:14] = 1 AND                   if reg4[13:14] = 1 AND               if reg4[13:14] = 1 AND              if reg4[13:14] = 1 AND               if reg4[13:14] = 1 AND             if reg4[13:14] = 2 AND                 if reg4[13:14] = 2 AND            if PRIORITY = 1:
+                 conn_state = INVALID or               conn_lbl[4] = 0 (stateless) AND     conn_state = NOT_RELATED AND        conn_state = EST AND               conn_state = RELATED AND               conn_state = RELATED AND       packet is IP AND                         packet is IP AND                  packet is IP AND                         conn_state = NOT_RELATED AND         packet is IP AND                    conn_state = RELATED AND             packet is IP AND                   packet is IP AND                       packet is IP AND                  RESUBMIT to dfw_stats
+                        reg4[3] = 0 (no ct) AND        conn_state = NOT_NEW AND            conn_state_dir = INIT:              conn_state_dir = RESP:             reg5[0] = ingress/egress AND           conn_state_dir = RESP AND      conn_lbl[4] = 0 (stateless) AND          conn_lbl[4] = 0 AND               conn_state = NOT_RELATED AND             conn_state_dir = RESP AND            conn_state = NOT_RELATED AND        reg6[5:8] = No-ALG:                  conn_state = RELATED AND           reg6[3] = 0 (stateless):               reg6[3] = 1 (stateful) AND        reg4[13:16] <- 0
+                 PRIORITY = D + 2:                     PRIORITY = D + 1:                      substage <- 1                       substage <- 1                   conn_lbl[2] = ingress/egress:          packet is IP AND               reg6[3] = 0 (stateless) AND              reg6[3] = 1 (stateful) AND        conn_state_dir = INIT AND                reg6[3] = 0 (stateless):             reg6[3] = 1 AND                         substage <- 2                    conn_lbl[3] = 1 AND                    reg3[0], reg3[2] <- reg5[0] xor    reg6[5:8] = ALG / No-ALG:
+                    reg4[15] <- 0 (not orig packet)       substage <- 1                       reg4[15] <- 0 (not orig packet)     reg4[15] <- 1 (orig packet)        substage <- 1                       protocol is ICMP AND           conn_state = NOT_NEW AND                 conn_state = NOT_NEW AND          reg6[3] = 0 (stateless):                     substage <- 2                    reg6[5:8] = ALG / No-ALG:               reg4[15] <- 0 (not orig packet)  reg6[5:8] = ALG AND                                     conn_state_dir        reg3[0], reg3[2] <- reg5[0]
+                    reg4[16] <- 0 (not flip stages)       reg4[15] <- 0 (not orig packet)     reg4[16] <- 0 (not flip stages)     reg4[16] <- 1 (flip stages)        reg4[15] <- 1 (orig packet)         PRIORITY = D + 2:              PRIORITY = D + 1:                        reg6[5:8] = ALG / No-ALG AND          reg3[0], reg3[2] <- reg5[0] (direction)  reg4[15] <- 0 (not orig packet)      reg3[0], reg3[2] <- reg5[0] xor     reg4[16] <- 0 (not flip stages)  PRIORITY = D - 1:                      reg3[1] <- 0 (not logging)             reg3[1] <- reg6[4] (logging)
+                    RESUBMIT to dfw_l3_policy_check       reg4[16] <- 0 (not flip stages)     RESUBMIT to dfw_l3_policy_check     RESUBMIT to dfw_l3_policy_check    reg4[16] <- conn_lbl[2] xor reg5[0]    RESUBMIT to dfw_stats          ct_commit(zone = reg2, unforce,       PRIORITY = D + 1:                     reg3[1] <- 0 (not logging)               reg4[16] <- 0 (not flip stages)                       conn_state_dir     RESUBMIT to dfw_l3_policy_check      reg3[0] <- reg5[0] xor             reg3[3] <- 0 (stateless)               reg3[3] <- 1 (stateful)
+                    reg4[13:16] <- 0                      RESUBMIT to dfw_l3_policy_check     RESUBMIT to self                    RESUBMIT to self                   RESUBMIT to dfw_l3_policy_check        reg4[13:16] <- 0                   recir = dfw_stats,                   reg3[0], reg3[2] <- reg5[0]        reg3[3] <- 0 (stateless)                 RESUBMIT to dfw_l3_policy_check      reg3[1] <- reg6[4] (logging)        RESUBMIT to self                             conn_state_dir             ct_commit(zone = reg2, unforce,        reg3[4:6] <- reg6[0:2]
+                        |                                 RESUBMIT to self                        |                                  |                               RESUBMIT to self                                                          conn_lbl[4:6]/[7:9] = reg6[0:2],     reg3[1] <- reg6[4] (logging)       ct_commit(zone = reg2, unforce,          RESUBMIT to self                     reg3[3] <- 1 (stateful)                  |                               ct_commit(zone = reg2, unforce,        recir = dfw_stats,                 reg3[10:11] <- reg9[0:1]
+                        |                                    |                                    |                                  |                                  |                                                                      conn_lbl[32:63]/[64:95] = reg7)      reg3[3] <- 1 (stateful)                recir = dfw_stats,                     |                                  reg3[4:6] <- reg6[0:2]                   |                                   recir = dfw_stats, ALG,            conn_lbl[4:6]/[7:9] = reg6[0:2],   ct_commit(zone = reg2, force,
+                        |                                    |                                    |                                  |                                  |                                                                  reg4[13:16] <- 0                         reg3[4:6] <- reg6[0:2]                 conn_lbl[0:3] = reg3[0:3],             |                                  reg3[10:11] <- reg9[0:1]                 |                                   conn_lbl[0] = reg3[0])             conn_lbl[32:63]/[64:95] = reg7)        recir = dfw_stats, ALG,
+                        |                                    |                                    |                                  |                                  |                                                                                                           reg3[10:11] <- reg9[0:1]               conn_lbl[4:6]/[7:9] = reg6[0:2],       |                                  ct_commit(zone = reg2, unforce,          |                               reg4[13:16] <- 0                   reg4[13:16] <- 0                           conn_mark = reg7,
+                        |                                    |                                    |                                  |                                  |                                                                                                           ct_commit(zone = reg2, force,          conn_lbl[32:63]/[64:95] = reg7)        |                                      recir = dfw_stats, ALG,              |                                                                                                             conn_lbl[0:11] = reg3[0:11],
+                        |                                    |                                    |                                  |                                  |                                                                                                              recir = dfw_stats, ALG,         reg4[13:16] <- 0                           |                                      conn_mark = reg7,                    |                                                                                                             conn_lbl[96:127] = reg10)
+                        |                                    |---> (#51)                          |---> (#51)                        |---> (#51)                        |---> (#51)                                                                                                    conn_mark = reg7,                                                          |                                      conn_lbl[0:11] = reg3[0:11],         |                                                                                                         reg4[13:16] <- 0
+                        |                                    |                                    |                                  |                                  |                                                                                                              conn_lbl[0:11] = reg3[0:11],                                               |---> (#51)                            conn_lbl[96:127] = reg10)            |---> (#51)
+                        |                                    |                                    |                                  |                                  |                                                                                                              conn_lbl[96:127] = reg10)                                                  |                                  reg4[13:16] <- 0                         |
+                        |                                    |                                    |                                  |                                  |                                                                                                           reg4[13:16] <- 0                                                              |                                                                           |
+                        |                                    |                                    |                                  |                                  |                                                                                                                                                                                         |                                                                           |
+                        V                                    V                                    V                                  V                                  V                                                                                                                                                                                         |                                                                           |
+                   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+                                                                                                                                                                             V                                                                           |
+                   |                                                                   dfw_l3_policy_check (#52)                                                                    | <--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                                      |
+                                      |
+                                      |
+                      if reg4[15] = 0/1 (not orig/orig) AND
+                         reg4[16] = 0/1 (not flip/flip) AND
+                         reg2 is vif_port_context:
+                            reg5[0] <- ~reg5[0] if flip = 1
+                            reg5[4:19] <- vif group id
+                            reg5[20:31] <- vif clique id
+                            reg6 <- 0
+                            reg7 <- 0
+                            reg9 <- 0
+                            reg10 <- 0
+                            reg5[2] <- 1                                    get src IP group ID
+                            RESUBMIT (ct=True if orig) to dfw_addr_group  ----------------------->  +---------------------------------------------+
+                            reg5[1] <- 1                                    get dst IP group ID     |            dfw_addr_group (#44)             |---------> - Populate reg6/reg7 with src/dst group ID, by using the info at reg5[0:19].
+                            RESUBMIT (ct=True if orig) to dfw_addr_group  ----------------------->  +---------------------------------------------+             (Here, group ID is an integer that represents a set of IPs)
+                            RESUBMIT (ct=True if orig) to dfw_l3_rules  ------\
+                            reg5[1:31] <- 0                                   |
+                            reg5[0] <- ~reg5[0] if flip = 1 (restore)         |
+                                                                              |  get L3 rules result:
+                                                                              |     populate reg6[0:2] with ingress L3 rules result (1=accept, 2=deny, 3=reject)
+                                                                              |     reg6[3] with the statefulness bit of the matching rule, reg7 with matching rule ID,
+                                                                              |     by using the info at reg2, reg5, reg6, reg7.
+                                                                              |
+                                                                              |
+                                                                              V
+                   +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                   |                                                                                                                          dfw-l3-rules-impl.n (#49)                                                                                                                                                                                                                                                                                                                 |
+                   +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                            |                       |                                      |                                               |                                 |                                         |                                         |                             |                             |                             |                             |                             |                       |                            |
+                            |                       |                                      |                                               |                                 |                                         |                                         |                             |                             |                             |                             |                             |                       |                            |
+                            |                       |                                      |                                               |                                 |                                         |                                         |                             |                             |                             |                             |                             |                       |                            |
+                    if L3 policy AND        if L7 policy AND                      if L7 policy AND                                 if L3 policy AND                  if L7 policy AND                          if L7 policy AND                          if conj_mode AND              if conj_mode AND              if conj_mode AND              if conj_mode AND              if conj_mode AND              if conj_mode AND        if prio = 1 AND                if prio = 1 AND
+                       xproduct_mode AND       xproduct_mode AND                     xproduct_mode AND                                xproduct_mode AND                 xproduct_mode AND                         xproduct_mode AND                         reg5 = vif_group AND          match src IP AND              match dst IP AND              match src PORT AND            match dst PORT AND            conj_id = rid AND       non-max table:                 max table:
+                       reg9[2] = 0 AND         reg9[2] = 0 AND                       reg9[2] = 0 AND                                  reg9[2] = 1 AND                   reg9[2] = 1 AND                           reg9[2] = 1 AND                           match extra field AND         match vifclique AND           match vifclique AND           match proto spec AND          match proto spec AND          match proto prio:          resubmit to table_num + 1      default_action
+                       reg5 = vif_group AND    CT state NOT new AND                  (CT new OR                                       reg5 = vif_group AND              (reg9[0:1] = NAVL_STATE_CLASSIFIED OR     (reg9[0:1] = NAVL_STATE_INSPECTING OR     match proto prio:             match proto prio:             match proto prio:             match proto prio:             match proto prio:                l3_policy_action
+                       match src/dst IP AND    (CT NAVL_STATE_CLASSIFIED OR           CT NOT new AND CT NAVL_STATE_INSPECTING OR      match src/dst IP AND               reg9[0:1] = NAVL_STATE_TERMINATED) AND    reg9[0:1] = NAVL_STATE_MONITORING) AND      conj_action(id=rid, 1/n)      conj_action(id=rid, 2/n)      conj_action(id=rid, 3/n)      conj_action(id=rid, 4/n)      conj_action(id=rid, 5/n)        |
+                       match src/dst PORT AND   CT NAVL_STATE_TERMINATED) AND         CT NOT new AND CT NAVL_STATE_MONITORING) AND    match src/dst PORT AND            reg10 = appid AND                         reg5 = vif_group AND                                                                                                                                                                                 |
+                       match extra field AND   match CT appid AND                    reg5 = vif_group AND                             match extra field AND             reg5 = vif_group AND                      match src/dst IP AND                                                                                                                                                                                 |
+                       match proto prio:       reg5 = vif_group AND                  match src/dst IP AND                             match proto prio:                 match src/dst IP AND                      match src/dst PORT AND                                                                                                                                                                               |
+                          l3_policy_action     match src/dst IP AND                  match src/dst PORT AND                              reg9[3] <- 1 (rule transit)    match src/dst PORT AND                    match extra field AND                                                                                                                                                                                |
+                            |                  match src/dst PORT AND                match extra field AND                               l3_policy_action               match extra field AND                     match proto prio:                                                                                                                                                                                    |
+                            |                  match extra field AND                 match proto prio:                                     |                            match proto prio:                            pending_allow_action                                                                                                                                                                              |
+                            |                  match proto prio:                        dpi_controller_action(pause, userdata)             |                               reg9[3] <- 1 (rule transit)                 |                                                                                                                                                                                               |
+                            |                     reg9[0:1] <- classification state     (DPI engine will set reg9/reg10)                   |                               l7_policy_action                            |                                                                                                                                                                                               |
+                            |                     reg10 <- appid                        reg9[2] <- 1 (next stage)                          |                                 |                                         |                                                                                                                                                                                               |
+                            |                     l7_policy_action                      resubmit to self w/ proper 5-tuple                 |                                 |                                         |                                                                                                                                                                                               |
+                            |                       |                                      |                                               |                                 |                                         |                                                                                                                                                                                               |
+                            |                       |                                      |                                               |                                 |                                         |                                                                                                                                                                                               |
+                            |                       |                                      V                                               |                                 |                                         |                                                                                                                                                                                               |
+                            |                       |                                    (#49)                                             |                                 |                                         |                                                                                                                                                                                               |
+                            |                       |                                                                                      |                                 |                                         |                                                                                                                                                                                               |
+                            V                       V                                                                                      V                                 V                                         V                                                                                                                                                                                               |
+                   +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+                                                                                                                                                                             |
+                   |                                                                                             dfw-impl.n                                                                                                              | <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                   +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                            |                            |                                           |                                          |                                          |
+                            |                            |                                           |                                          |                                          |
+                            |                            |                                           |                                          |                                          |
+                      if L2 action:               if L3 action:                              if L7 action:                             if pending action:                         if default action:
+                            reg6[0:2] <- action         reg6[0:2] <- action                        reg6[0:2] <- action                       reg6[0:2] <- accept                        reg6[0:2] <- accept
+                            reg7 <- rule id             reg7 <- rule id                            reg7 <- rule id                           reg7 <- rule id
+                                                        reg6[3] <- 0/1 (statefulness)              reg6[3] <- 0/1 (statefulness)             reg6[3] <- 0/1 (statefulness)
+                                                        reg6[4] <- 0/1 (term logging)              reg6[4] <- 0/1 (term logging)             reg6[9:10] <- 2 (rule type: pending)
+                                                        reg6[5:8] <- ALG bits                      reg6[5:8] <- ALG bits
+                                                        reg6[9:10] <- 0 (rule type: L3)            reg6[9:10] <- 1 (rule type: L7)
+                                                        reg6[11] <- 0/1 (FQDN invalid/valid)       reg6[11] <- 0/1 (FQDN invalid/valid)
+
+
+
+
+
+                                   (dfw_ct_revalidate #51)
+                                              |
+                                              |
+                                              |
+                    +-----------------------------------------------------+           resubmit          +---------------------------------------------------+
+                    |                   dfw_stats (#45)                   |---------------------------->|                 dfw_logging (#46)                 |
+                    +-----------------------------------------------------+                             +---------------------------------------------------+
+                                              |                                                                                  |
+                                              |                                                                                  |
+                                              V                                                                                  V
+                         Match reg7 to rule ID, keep packet count for                                           Match reg7 to rule ID, and log packet if
+                            - l2                                                                                   - logging enabled stateless rule OR
+                            - stateless l3                                                                         - logging enabled stateful rule NOT-accept OR
+                            - stateful l3 w/ conn_state = NEW                                                      - logging enabled stateful rule accept w/ conn_state = NEW
+                            - stateful l3 w/ conn_state = NOT NEW                                                  - logging enabled stateful rule accept w/ conn_state = NOT NEW w/ reg9[3] = 1 (rule transit)
+

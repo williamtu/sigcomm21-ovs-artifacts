@@ -1,0 +1,1332 @@
+Mon Nov  4 18:59:35 UTC 2019
+ovs-ofctl dump-ports breth0 
+OFPST_PORT reply (xid=0x2): 5 ports
+  port  4: rx pkts=30104, bytes=7342424, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=348373584, bytes=21181898312, drop=1424, errs=0, coll=0
+  port LOCAL: rx pkts=167506426, bytes=8016658545, drop=7, errs=0, frame=0, over=0, crc=0
+           tx pkts=1581795, bytes=1430820469, drop=0, errs=0, coll=0
+  port  1: rx pkts=224701812, bytes=24447728055, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=1599782, bytes=1432459362, drop=0, errs=0, coll=0
+  port  2: rx pkts=37929, bytes=8102058, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=348376398, bytes=21182119872, drop=1440, errs=0, coll=0
+  port  3: rx pkts=32124, bytes=8002289, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=348375723, bytes=21182102803, drop=1408, errs=0, coll=0
+
+ovs-ofctl dump-ports nsx-managed 
+OFPST_PORT reply (xid=0x2): 320 ports
+  port 494: rx pkts=31382816, bytes=2071265856, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687835, bytes=111396918, drop=?, errs=?, coll=?
+  port 10: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=8, bytes=648, drop=0, errs=0, coll=0
+  port  8: rx pkts=21023, bytes=1426355, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=15851, bytes=1448710, drop=0, errs=0, coll=0
+  port 37: rx pkts=25069839, bytes=1654608938, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1692016, bytes=112056400, drop=?, errs=?, coll=?
+  port 507: rx pkts=23847533, bytes=1573937154, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687808, bytes=111395328, drop=?, errs=?, coll=?
+  port 251: rx pkts=30472878, bytes=2011209434, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695267, bytes=112272006, drop=?, errs=?, coll=?
+  port 136: rx pkts=28607863, bytes=1888118440, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1656162, bytes=109494932, drop=?, errs=?, coll=?
+  port 398: rx pkts=26696074, bytes=1761940884, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687933, bytes=111403482, drop=?, errs=?, coll=?
+  port 168: rx pkts=28732488, bytes=1896344028, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1631871, bytes=107888554, drop=?, errs=?, coll=?
+  port 380: rx pkts=31449774, bytes=2075684898, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687771, bytes=111392886, drop=?, errs=?, coll=?
+  port 478: rx pkts=34644028, bytes=2286505699, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688082, bytes=111416755, drop=?, errs=?, coll=?
+  port 358: rx pkts=24495073, bytes=1616674134, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695297, bytes=112273986, drop=?, errs=?, coll=?
+  port 13: rx pkts=31251, bytes=2188554, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=25580, bytes=2092999, drop=0, errs=0, coll=0
+  port 449: rx pkts=30070330, bytes=1984641756, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691286, bytes=111817172, drop=?, errs=?, coll=?
+  port 224: rx pkts=36005524, bytes=2376364142, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691506, bytes=111832292, drop=?, errs=?, coll=?
+  port 98: rx pkts=52379785, bytes=3457065008, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1678253, bytes=111334358, drop=?, errs=?, coll=?
+  port 399: rx pkts=31072404, bytes=2050778310, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691555, bytes=111834926, drop=?, errs=?, coll=?
+  port 187: rx pkts=26187008, bytes=1728342336, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1694977, bytes=112253126, drop=?, errs=?, coll=?
+  port 210: rx pkts=27957058, bytes=1845165378, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691508, bytes=111831824, drop=?, errs=?, coll=?
+  port 158: rx pkts=24886557, bytes=1642512558, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1634143, bytes=107853438, drop=?, errs=?, coll=?
+  port 469: rx pkts=28407198, bytes=1874877634, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688326, bytes=111432086, drop=?, errs=?, coll=?
+  port 498: rx pkts=28514852, bytes=1881980214, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687922, bytes=111402852, drop=?, errs=?, coll=?
+  port 499: rx pkts=30720240, bytes=2027535810, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688233, bytes=111423378, drop=?, errs=?, coll=?
+  port 353: rx pkts=32196877, bytes=2124993650, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691511, bytes=111831814, drop=?, errs=?, coll=?
+  port 505: rx pkts=28948227, bytes=1910582920, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691671, bytes=111842646, drop=?, errs=?, coll=?
+  port 107: rx pkts=33049545, bytes=2181269376, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691696, bytes=111844024, drop=?, errs=?, coll=?
+  port 323: rx pkts=27337325, bytes=1804263000, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687961, bytes=111405426, drop=?, errs=?, coll=?
+  port 475: rx pkts=30919379, bytes=2040670673, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688449, bytes=111443816, drop=?, errs=?, coll=?
+  port 473: rx pkts=33636034, bytes=2219965830, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688032, bytes=111411867, drop=?, errs=?, coll=?
+  port 174: rx pkts=3332983, bytes=219976758, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=546366, bytes=36060156, drop=?, errs=?, coll=?
+  port 110: rx pkts=30299128, bytes=1999741878, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691633, bytes=111839866, drop=?, errs=?, coll=?
+  port 225: rx pkts=32813185, bytes=2165669454, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687843, bytes=111397638, drop=?, errs=?, coll=?
+  port 90: rx pkts=30548075, bytes=2016172892, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1674082, bytes=110679628, drop=?, errs=?, coll=?
+  port 55: rx pkts=31908796, bytes=2105979798, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685785, bytes=111643750, drop=?, errs=?, coll=?
+  port 259: rx pkts=31764681, bytes=2097046562, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699159, bytes=112722266, drop=?, errs=?, coll=?
+  port 330: rx pkts=30361352, bytes=2003848806, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699123, bytes=112719058, drop=?, errs=?, coll=?
+  port 500: rx pkts=29057572, bytes=1917799728, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687840, bytes=111397440, drop=?, errs=?, coll=?
+  port 119: rx pkts=24249643, bytes=1600476426, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688032, bytes=111410112, drop=?, errs=?, coll=?
+  port 19: rx pkts=15864, bytes=1068905, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=16149, bytes=1437827, drop=0, errs=0, coll=0
+  port 118: rx pkts=31315566, bytes=2066826972, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1662851, bytes=109936822, drop=?, errs=?, coll=?
+  port 302: rx pkts=27114159, bytes=1789533912, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688053, bytes=111411498, drop=?, errs=?, coll=?
+  port 58: rx pkts=27960512, bytes=1845389841, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687869, bytes=111400186, drop=?, errs=?, coll=?
+  port 254: rx pkts=27227922, bytes=1797042114, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698985, bytes=112711406, drop=?, errs=?, coll=?
+  port 35: rx pkts=28140746, bytes=1857289050, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688296, bytes=111618324, drop=?, errs=?, coll=?
+  port 488: rx pkts=27025682, bytes=1783694610, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688044, bytes=111411984, drop=?, errs=?, coll=?
+  port 97: rx pkts=35762370, bytes=2360316396, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691808, bytes=111850584, drop=?, errs=?, coll=?
+  port 423: rx pkts=31774782, bytes=2097135264, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691563, bytes=111835662, drop=?, errs=?, coll=?
+  port 325: rx pkts=27599285, bytes=1821552486, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688167, bytes=111419022, drop=?, errs=?, coll=?
+  port 156: rx pkts=30569955, bytes=2017805582, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1639483, bytes=108391778, drop=?, errs=?, coll=?
+  port 121: rx pkts=22768183, bytes=1502699796, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691420, bytes=111826016, drop=?, errs=?, coll=?
+  port 99: rx pkts=32921770, bytes=2173216160, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1670724, bytes=110647332, drop=?, errs=?, coll=?
+  port  9: rx pkts=26584, bytes=1818990, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19857, bytes=1709373, drop=0, errs=0, coll=0
+  port 76: rx pkts=29070509, bytes=1918653126, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1679488, bytes=111227056, drop=?, errs=?, coll=?
+  port 82: rx pkts=31469724, bytes=2077001604, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1675067, bytes=110745418, drop=?, errs=?, coll=?
+  port 171: rx pkts=5526096, bytes=364722036, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=701658, bytes=46309428, drop=?, errs=?, coll=?
+  port 61: rx pkts=37131645, bytes=2450688006, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1681773, bytes=111188326, drop=?, errs=?, coll=?
+  port  6: rx pkts=25237, bytes=1736340, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=20207, bytes=1741650, drop=0, errs=0, coll=0
+  port 152: rx pkts=31943111, bytes=2108244810, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1647649, bytes=108932346, drop=?, errs=?, coll=?
+  port 372: rx pkts=29426014, bytes=1942501048, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695283, bytes=112272022, drop=?, errs=?, coll=?
+  port 162: rx pkts=23862856, bytes=1574948118, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636297, bytes=108181138, drop=?, errs=?, coll=?
+  port 93: rx pkts=32654269, bytes=2155181742, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687870, bytes=111399420, drop=?, errs=?, coll=?
+  port 439: rx pkts=27698128, bytes=1828076412, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691611, bytes=111838622, drop=?, errs=?, coll=?
+  port 248: rx pkts=39381133, bytes=2599154316, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687963, bytes=111405558, drop=?, errs=?, coll=?
+  port LOCAL: rx pkts=490848864, bytes=32396025024, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+  port 141: rx pkts=24898879, bytes=1643325720, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648985, bytes=108833010, drop=?, errs=?, coll=?
+  port 81: rx pkts=26885212, bytes=1774423224, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698922, bytes=112706052, drop=?, errs=?, coll=?
+  port 482: rx pkts=33141696, bytes=2187351936, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687808, bytes=111395184, drop=?, errs=?, coll=?
+  port 92: rx pkts=36489731, bytes=2408322120, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691503, bytes=111831494, drop=?, errs=?, coll=?
+  port 492: rx pkts=32596409, bytes=2151362994, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687897, bytes=111401058, drop=?, errs=?, coll=?
+  port 30: rx pkts=32436099, bytes=2141167282, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695265, bytes=112272706, drop=?, errs=?, coll=?
+  port 142: rx pkts=26423951, bytes=1743980050, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659570, bytes=110096496, drop=?, errs=?, coll=?
+  port 17: rx pkts=25456, bytes=1750636, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=24839, bytes=1984747, drop=0, errs=0, coll=0
+  port 31: rx pkts=30442293, bytes=2009191338, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687800, bytes=111394800, drop=?, errs=?, coll=?
+  port 38: rx pkts=30957019, bytes=2043162864, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1684617, bytes=111184722, drop=?, errs=?, coll=?
+  port 11: rx pkts=24806, bytes=1737131, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=22959, bytes=1874103, drop=0, errs=0, coll=0
+  port 176: rx pkts=4940486, bytes=326071992, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=544762, bytes=36077220, drop=?, errs=?, coll=?
+  port 510: rx pkts=24412935, bytes=1611253410, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691649, bytes=111841130, drop=?, errs=?, coll=?
+  port 123: rx pkts=30647189, bytes=2022713970, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691756, bytes=111847984, drop=?, errs=?, coll=?
+  port 105: rx pkts=34546560, bytes=2280072534, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687942, bytes=111405160, drop=?, errs=?, coll=?
+  port 71: rx pkts=33457043, bytes=2208164544, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685014, bytes=111592864, drop=?, errs=?, coll=?
+  port  4: rx pkts=30290, bytes=2100488, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=25905, bytes=2128619, drop=0, errs=0, coll=0
+  port 258: rx pkts=32983825, bytes=2176932420, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691590, bytes=111837860, drop=?, errs=?, coll=?
+  port 170: rx pkts=6114953, bytes=403586594, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=703282, bytes=46496640, drop=?, errs=?, coll=?
+  port 150: rx pkts=27794511, bytes=1834437438, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648063, bytes=108959618, drop=?, errs=?, coll=?
+  port 60: rx pkts=28884437, bytes=1906372374, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685490, bytes=111624644, drop=?, errs=?, coll=?
+  port 127: rx pkts=27717847, bytes=1829377200, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691655, bytes=111841526, drop=?, errs=?, coll=?
+  port 448: rx pkts=32039664, bytes=2115003768, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695203, bytes=112268042, drop=?, errs=?, coll=?
+  port 466: rx pkts=28572604, bytes=1886178536, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695286, bytes=112273260, drop=?, errs=?, coll=?
+  port 139: rx pkts=30496833, bytes=2012790528, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659066, bytes=109874316, drop=?, errs=?, coll=?
+  port 143: rx pkts=29086773, bytes=1919726622, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1652547, bytes=109255614, drop=?, errs=?, coll=?
+  port 50: rx pkts=31298744, bytes=2065717008, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1680822, bytes=110934252, drop=?, errs=?, coll=?
+  port 506: rx pkts=28728034, bytes=1896050100, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695089, bytes=112260726, drop=?, errs=?, coll=?
+  port 324: rx pkts=27595478, bytes=1821301548, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687830, bytes=111396636, drop=?, errs=?, coll=?
+  port 288: rx pkts=29210546, bytes=1927895214, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699078, bytes=112716452, drop=?, errs=?, coll=?
+  port 465: rx pkts=31030068, bytes=2048368664, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695200, bytes=112268052, drop=?, errs=?, coll=?
+  port 476: rx pkts=28309587, bytes=1868432742, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687914, bytes=111402156, drop=?, errs=?, coll=?
+  port 94: rx pkts=33971046, bytes=2242088616, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1668476, bytes=110119416, drop=?, errs=?, coll=?
+  port 509: rx pkts=32391517, bytes=2137839822, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687925, bytes=111403050, drop=?, errs=?, coll=?
+  port 91: rx pkts=49806253, bytes=3287212352, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1672189, bytes=110554534, drop=?, errs=?, coll=?
+  port 268: rx pkts=56472340, bytes=3727173900, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691557, bytes=111835058, drop=?, errs=?, coll=?
+  port 335: rx pkts=26069482, bytes=1720585692, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687894, bytes=111401004, drop=?, errs=?, coll=?
+  port 26: rx pkts=17909, bytes=1232116, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=16876, bytes=1492184, drop=0, errs=0, coll=0
+  port 410: rx pkts=31656439, bytes=2089324884, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691650, bytes=111841196, drop=?, errs=?, coll=?
+  port 396: rx pkts=30798767, bytes=2032718280, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695363, bytes=112278342, drop=?, errs=?, coll=?
+  port 163: rx pkts=27406716, bytes=1808842884, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636118, bytes=108169896, drop=?, errs=?, coll=?
+  port 51: rx pkts=23095299, bytes=1524289362, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1680740, bytes=110928840, drop=?, errs=?, coll=?
+  port 377: rx pkts=31341687, bytes=2068551150, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695626, bytes=112296168, drop=?, errs=?, coll=?
+  port 256: rx pkts=31926900, bytes=2107175358, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698924, bytes=112706288, drop=?, errs=?, coll=?
+  port 459: rx pkts=30649658, bytes=2022877448, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695368, bytes=112278932, drop=?, errs=?, coll=?
+  port 495: rx pkts=33279235, bytes=2196429510, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687740, bytes=111390648, drop=?, errs=?, coll=?
+  port 62: rx pkts=27503359, bytes=1815221382, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1677983, bytes=110746878, drop=?, errs=?, coll=?
+  port 211: rx pkts=28700175, bytes=1894210836, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687866, bytes=111399156, drop=?, errs=?, coll=?
+  port 388: rx pkts=34151742, bytes=2254014504, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695258, bytes=112271880, drop=?, errs=?, coll=?
+  port 246: rx pkts=31411930, bytes=2073187284, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688142, bytes=111417372, drop=?, errs=?, coll=?
+  port 311: rx pkts=28071789, bytes=1852737498, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691688, bytes=111843496, drop=?, errs=?, coll=?
+  port 485: rx pkts=25964548, bytes=1713659516, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688058, bytes=111412976, drop=?, errs=?, coll=?
+  port 441: rx pkts=34166153, bytes=2254966002, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699141, bytes=112720350, drop=?, errs=?, coll=?
+  port 411: rx pkts=25260904, bytes=1667219640, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695140, bytes=112263624, drop=?, errs=?, coll=?
+  port 42: rx pkts=27765180, bytes=1832501406, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1692572, bytes=112284664, drop=?, errs=?, coll=?
+  port 397: rx pkts=31014889, bytes=2046982326, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687675, bytes=111386550, drop=?, errs=?, coll=?
+  port 468: rx pkts=30540939, bytes=2015701538, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691518, bytes=111832276, drop=?, errs=?, coll=?
+  port 73: rx pkts=29919868, bytes=1974711186, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1677320, bytes=110703120, drop=?, errs=?, coll=?
+  port 231: rx pkts=31545363, bytes=2081993628, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691665, bytes=111842446, drop=?, errs=?, coll=?
+  port 484: rx pkts=48042513, bytes=3170805433, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688044, bytes=111412009, drop=?, errs=?, coll=?
+  port 285: rx pkts=34839403, bytes=2299400574, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687928, bytes=111403248, drop=?, errs=?, coll=?
+  port 18: rx pkts=30329, bytes=2071409, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=25073, bytes=2057433, drop=0, errs=0, coll=0
+  port 487: rx pkts=30787842, bytes=2031997572, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687713, bytes=111388674, drop=?, errs=?, coll=?
+  port 355: rx pkts=27100313, bytes=1788620144, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699004, bytes=112710944, drop=?, errs=?, coll=?
+  port 444: rx pkts=27032183, bytes=1784123900, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691568, bytes=111835576, drop=?, errs=?, coll=?
+  port 489: rx pkts=28280182, bytes=1866492012, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687764, bytes=111392232, drop=?, errs=?, coll=?
+  port 480: rx pkts=35619458, bytes=2350884401, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688033, bytes=111415111, drop=?, errs=?, coll=?
+  port 346: rx pkts=35554268, bytes=2346775444, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691356, bytes=111820752, drop=?, errs=?, coll=?
+  port 291: rx pkts=29944387, bytes=1976329224, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687897, bytes=111401202, drop=?, errs=?, coll=?
+  port 479: rx pkts=32282511, bytes=2130645726, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687935, bytes=111403494, drop=?, errs=?, coll=?
+  port 21: rx pkts=25365, bytes=1720559, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=18699, bytes=1636237, drop=0, errs=0, coll=0
+  port 68: rx pkts=32410126, bytes=2139067860, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699094, bytes=112716468, drop=?, errs=?, coll=?
+  port 414: rx pkts=30824953, bytes=2034831005, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695352, bytes=112277859, drop=?, errs=?, coll=?
+  port 341: rx pkts=32252436, bytes=2128660776, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687722, bytes=111389412, drop=?, errs=?, coll=?
+  port 443: rx pkts=29978884, bytes=1978797912, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691494, bytes=111830900, drop=?, errs=?, coll=?
+  port 329: rx pkts=33979655, bytes=2242656300, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695362, bytes=112278536, drop=?, errs=?, coll=?
+  port 56: rx pkts=27446543, bytes=1811471562, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1678437, bytes=110776842, drop=?, errs=?, coll=?
+  port 43: rx pkts=26266262, bytes=1733573088, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1681327, bytes=110967582, drop=?, errs=?, coll=?
+  port 49: rx pkts=31110162, bytes=2053270102, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687927, bytes=111404204, drop=?, errs=?, coll=?
+  port 159: rx pkts=31274597, bytes=2064123024, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1640596, bytes=108651552, drop=?, errs=?, coll=?
+  port 53: rx pkts=21095582, bytes=1392308142, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1686063, bytes=111662826, drop=?, errs=?, coll=?
+  port 430: rx pkts=26819580, bytes=1770092256, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687617, bytes=111382722, drop=?, errs=?, coll=?
+  port 41: rx pkts=30083961, bytes=1985734658, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691525, bytes=111832738, drop=?, errs=?, coll=?
+  port 103: rx pkts=32666890, bytes=2156014524, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691737, bytes=111846938, drop=?, errs=?, coll=?
+  port 318: rx pkts=35144982, bytes=2319568812, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687700, bytes=111388200, drop=?, errs=?, coll=?
+  port 378: rx pkts=31823411, bytes=2100342170, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688083, bytes=111414437, drop=?, errs=?, coll=?
+  port 486: rx pkts=32904194, bytes=2171677632, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688034, bytes=111411493, drop=?, errs=?, coll=?
+  port 85: rx pkts=33313002, bytes=2198657556, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691612, bytes=111838480, drop=?, errs=?, coll=?
+  port 322: rx pkts=30329412, bytes=2001740634, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687764, bytes=111392424, drop=?, errs=?, coll=?
+  port 464: rx pkts=25906597, bytes=1710029466, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691637, bytes=111840338, drop=?, errs=?, coll=?
+  port 461: rx pkts=29129854, bytes=1922762712, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691536, bytes=111833672, drop=?, errs=?, coll=?
+  port 404: rx pkts=28679360, bytes=1892837760, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687788, bytes=111394008, drop=?, errs=?, coll=?
+  port 106: rx pkts=31200418, bytes=2059227318, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663900, bytes=110006472, drop=?, errs=?, coll=?
+  port  1: rx pkts=8, bytes=648, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=8, bytes=648, drop=0, errs=0, coll=0
+  port 471: rx pkts=36073266, bytes=2380835426, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687977, bytes=111407723, drop=?, errs=?, coll=?
+  port 153: rx pkts=28010919, bytes=1848720264, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1647524, bytes=108923472, drop=?, errs=?, coll=?
+  port  3: rx pkts=24592, bytes=1704330, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=21030, bytes=1787352, drop=0, errs=0, coll=0
+  port 101: rx pkts=30266354, bytes=1997579082, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660078, bytes=109565148, drop=?, errs=?, coll=?
+  port 114: rx pkts=32386976, bytes=2137540052, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1662884, bytes=109939000, drop=?, errs=?, coll=?
+  port 117: rx pkts=30751565, bytes=2029603266, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691567, bytes=111835510, drop=?, errs=?, coll=?
+  port 169: rx pkts=23289317, bytes=1537094646, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1628296, bytes=107467536, drop=?, errs=?, coll=?
+  port 145: rx pkts=26869519, bytes=1773388068, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1651964, bytes=109217136, drop=?, errs=?, coll=?
+  port 27: rx pkts=21277, bytes=1458713, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=20510, bytes=1757666, drop=0, errs=0, coll=0
+  port 172: rx pkts=4714975, bytes=311188078, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=702136, bytes=46421316, drop=?, errs=?, coll=?
+  port 47: rx pkts=36332471, bytes=2398135850, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691523, bytes=111833438, drop=?, errs=?, coll=?
+  port 470: rx pkts=33792995, bytes=2230319983, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688032, bytes=111411253, drop=?, errs=?, coll=?
+  port 407: rx pkts=26972551, bytes=1780188318, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695435, bytes=112283354, drop=?, errs=?, coll=?
+  port 263: rx pkts=33178617, bytes=2190560350, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1702534, bytes=113135804, drop=?, errs=?, coll=?
+  port 66: rx pkts=29996978, bytes=1979799986, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685187, bytes=111604178, drop=?, errs=?, coll=?
+  port 384: rx pkts=28993787, bytes=1913589276, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691740, bytes=111847136, drop=?, errs=?, coll=?
+  port 332: rx pkts=33864898, bytes=2235083046, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691581, bytes=111835602, drop=?, errs=?, coll=?
+  port 167: rx pkts=18961104, bytes=1251432196, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1635621, bytes=108321734, drop=?, errs=?, coll=?
+  port 418: rx pkts=34016661, bytes=2245099778, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688093, bytes=111416146, drop=?, errs=?, coll=?
+  port 164: rx pkts=29010027, bytes=1914661044, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1630407, bytes=107606862, drop=?, errs=?, coll=?
+  port 128: rx pkts=36084834, bytes=2381598900, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699131, bytes=112718494, drop=?, errs=?, coll=?
+  port 221: rx pkts=27602910, bytes=1821984616, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691388, bytes=111823696, drop=?, errs=?, coll=?
+  port 343: rx pkts=31774617, bytes=2097318242, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691625, bytes=111839546, drop=?, errs=?, coll=?
+  port 241: rx pkts=27100737, bytes=1788648136, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691647, bytes=111840998, drop=?, errs=?, coll=?
+  port 287: rx pkts=31685685, bytes=2091254628, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688068, bytes=111412488, drop=?, errs=?, coll=?
+  port 290: rx pkts=24875696, bytes=1641795714, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691593, bytes=111837226, drop=?, errs=?, coll=?
+  port 149: rx pkts=30146980, bytes=1989700128, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1647949, bytes=108951574, drop=?, errs=?, coll=?
+  port 14: rx pkts=17307, bytes=1194858, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19248, bytes=1629646, drop=0, errs=0, coll=0
+  port 420: rx pkts=28740156, bytes=1896849936, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688062, bytes=111412092, drop=?, errs=?, coll=?
+  port 28: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=8, bytes=648, drop=0, errs=0, coll=0
+  port 57: rx pkts=37498685, bytes=2474912646, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1681954, bytes=111199804, drop=?, errs=?, coll=?
+  port 16: rx pkts=21602, bytes=1464960, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=18943, bytes=1639961, drop=0, errs=0, coll=0
+  port 22: rx pkts=22690, bytes=1582366, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19557, bytes=1688987, drop=0, errs=0, coll=0
+  port 383: rx pkts=26663836, bytes=1760005056, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691583, bytes=111836774, drop=?, errs=?, coll=?
+  port 504: rx pkts=31867546, bytes=2103258012, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687742, bytes=111390972, drop=?, errs=?, coll=?
+  port 437: rx pkts=32223312, bytes=2126738568, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687954, bytes=111404964, drop=?, errs=?, coll=?
+  port 88: rx pkts=32729329, bytes=2160135540, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1671007, bytes=110286462, drop=?, errs=?, coll=?
+  port 15: rx pkts=23051, bytes=1570363, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=23016, bytes=1882236, drop=0, errs=0, coll=0
+  port 425: rx pkts=27074410, bytes=1786910838, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687835, bytes=111397110, drop=?, errs=?, coll=?
+  port 493: rx pkts=32616342, bytes=2152678572, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687751, bytes=111391182, drop=?, errs=?, coll=?
+  port 391: rx pkts=33187618, bytes=2190382524, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691757, bytes=111848258, drop=?, errs=?, coll=?
+  port 310: rx pkts=27103163, bytes=1789001966, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691563, bytes=111835454, drop=?, errs=?, coll=?
+  port 376: rx pkts=32737621, bytes=2160682536, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691523, bytes=111831774, drop=?, errs=?, coll=?
+  port 381: rx pkts=30471433, bytes=2011114530, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688108, bytes=111415128, drop=?, errs=?, coll=?
+  port 347: rx pkts=29081141, bytes=1919355306, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687808, bytes=111395160, drop=?, errs=?, coll=?
+  port 490: rx pkts=34688536, bytes=2289442100, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688099, bytes=111416035, drop=?, errs=?, coll=?
+  port 87: rx pkts=27923978, bytes=1842982112, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699002, bytes=112711436, drop=?, errs=?, coll=?
+  port 481: rx pkts=30803060, bytes=2033001960, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687880, bytes=111399936, drop=?, errs=?, coll=?
+  port 440: rx pkts=27823838, bytes=1836372750, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691656, bytes=111841384, drop=?, errs=?, coll=?
+  port 373: rx pkts=30936867, bytes=2041832874, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691613, bytes=111838546, drop=?, errs=?, coll=?
+  port 151: rx pkts=27895870, bytes=1841126862, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648206, bytes=108969160, drop=?, errs=?, coll=?
+  port  5: rx pkts=21060, bytes=1452451, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19760, bytes=1683724, drop=0, errs=0, coll=0
+  port 65: rx pkts=32922000, bytes=2172851454, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687964, bytes=111405624, drop=?, errs=?, coll=?
+  port 402: rx pkts=29952549, bytes=1976867892, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687930, bytes=111403380, drop=?, errs=?, coll=?
+  port 477: rx pkts=28579251, bytes=1886230566, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687928, bytes=111403008, drop=?, errs=?, coll=?
+  port 320: rx pkts=32611842, bytes=2152381482, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691555, bytes=111835550, drop=?, errs=?, coll=?
+  port 64: rx pkts=28852252, bytes=1904248062, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687816, bytes=111395856, drop=?, errs=?, coll=?
+  port 392: rx pkts=28192743, bytes=1860720810, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691558, bytes=111835384, drop=?, errs=?, coll=?
+  port 360: rx pkts=35614786, bytes=2350768631, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691595, bytes=111837533, drop=?, errs=?, coll=?
+  port 74: rx pkts=33380571, bytes=2203117674, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691677, bytes=111843602, drop=?, errs=?, coll=?
+  port 48: rx pkts=32633108, bytes=2153785128, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687915, bytes=111402174, drop=?, errs=?, coll=?
+  port 511: rx pkts=28771328, bytes=1898907438, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691781, bytes=111850102, drop=?, errs=?, coll=?
+  port 100: rx pkts=29048873, bytes=1917225240, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1664226, bytes=110028040, drop=?, errs=?, coll=?
+  port 249: rx pkts=31200479, bytes=2059230876, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691654, bytes=111841460, drop=?, errs=?, coll=?
+  port 113: rx pkts=33181525, bytes=2189980410, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691728, bytes=111846136, drop=?, errs=?, coll=?
+  port 131: rx pkts=34546830, bytes=2280090414, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659919, bytes=109742998, drop=?, errs=?, coll=?
+  port 457: rx pkts=28610071, bytes=1888264572, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687948, bytes=111404568, drop=?, errs=?, coll=?
+  port 129: rx pkts=26252164, bytes=1732641960, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691582, bytes=111836708, drop=?, errs=?, coll=?
+  port 54: rx pkts=30136525, bytes=1988978841, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688168, bytes=111422488, drop=?, errs=?, coll=?
+  port 497: rx pkts=26381575, bytes=1741183920, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695493, bytes=112287962, drop=?, errs=?, coll=?
+  port 32: rx pkts=30891482, bytes=2039031044, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691477, bytes=111830350, drop=?, errs=?, coll=?
+  port 366: rx pkts=32237761, bytes=2128075234, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695471, bytes=112286874, drop=?, errs=?, coll=?
+  port 472: rx pkts=30410049, bytes=2007062793, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688041, bytes=111412864, drop=?, errs=?, coll=?
+  port 157: rx pkts=25270718, bytes=1667867196, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1637875, bytes=108285754, drop=?, errs=?, coll=?
+  port 138: rx pkts=23302905, bytes=1537991364, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1658955, bytes=109867042, drop=?, errs=?, coll=?
+  port 333: rx pkts=29717048, bytes=1961324616, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691656, bytes=111841852, drop=?, errs=?, coll=?
+  port 434: rx pkts=31417079, bytes=2073527166, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691552, bytes=111834520, drop=?, errs=?, coll=?
+  port 44: rx pkts=29479530, bytes=1945842420, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691396, bytes=111824432, drop=?, errs=?, coll=?
+  port 491: rx pkts=28323684, bytes=1869363072, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687849, bytes=111399236, drop=?, errs=?, coll=?
+  port 279: rx pkts=35259539, bytes=2327129214, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687853, bytes=111398298, drop=?, errs=?, coll=?
+  port 273: rx pkts=29554621, bytes=1950604440, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691431, bytes=111827366, drop=?, errs=?, coll=?
+  port 327: rx pkts=30261842, bytes=1997474468, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691672, bytes=111842648, drop=?, errs=?, coll=?
+  port 212: rx pkts=35022022, bytes=2311452936, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691759, bytes=111848390, drop=?, errs=?, coll=?
+  port 173: rx pkts=3797021, bytes=250668438, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=570658, bytes=37729000, drop=?, errs=?, coll=?
+  port 413: rx pkts=29660994, bytes=1957625592, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691488, bytes=111830296, drop=?, errs=?, coll=?
+  port 147: rx pkts=30500783, bytes=2013051216, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648372, bytes=108979544, drop=?, errs=?, coll=?
+  port 427: rx pkts=36836513, bytes=2431403506, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691708, bytes=111844816, drop=?, errs=?, coll=?
+  port 369: rx pkts=34100284, bytes=2250618162, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691553, bytes=111834794, drop=?, errs=?, coll=?
+  port 25: rx pkts=17902, bytes=1209949, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17058, bytes=1523825, drop=0, errs=0, coll=0
+  port 23: rx pkts=26328, bytes=1799840, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=20203, bytes=1725142, drop=0, errs=0, coll=0
+  port 46: rx pkts=31916923, bytes=2106900418, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695168, bytes=112266304, drop=?, errs=?, coll=?
+  port 270: rx pkts=28300652, bytes=1867842702, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687811, bytes=111395526, drop=?, errs=?, coll=?
+  port 426: rx pkts=28944641, bytes=1910345444, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695294, bytes=112273788, drop=?, errs=?, coll=?
+  port 503: rx pkts=27694847, bytes=1827859830, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691315, bytes=111819086, drop=?, errs=?, coll=?
+  port 116: rx pkts=31490043, bytes=2078342802, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691532, bytes=111833200, drop=?, errs=?, coll=?
+  port 319: rx pkts=36295245, bytes=2395679194, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691384, bytes=111823432, drop=?, errs=?, coll=?
+  port 375: rx pkts=27394263, bytes=1808212978, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691541, bytes=111834002, drop=?, errs=?, coll=?
+  port 382: rx pkts=28516051, bytes=1882058814, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695339, bytes=112276966, drop=?, errs=?, coll=?
+  port 483: rx pkts=31495547, bytes=2078705160, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687910, bytes=111403878, drop=?, errs=?, coll=?
+  port 69: rx pkts=26871555, bytes=1773522078, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691580, bytes=111836576, drop=?, errs=?, coll=?
+  port 12: rx pkts=17618, bytes=1201916, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17389, bytes=1553221, drop=0, errs=0, coll=0
+  port 361: rx pkts=32309813, bytes=2132447316, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687975, bytes=111406350, drop=?, errs=?, coll=?
+  port 412: rx pkts=28548494, bytes=1884200566, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688066, bytes=111413302, drop=?, errs=?, coll=?
+  port 34: rx pkts=28269159, bytes=1865764206, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688789, bytes=111651642, drop=?, errs=?, coll=?
+  port 446: rx pkts=32348492, bytes=2135385896, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695380, bytes=112281440, drop=?, errs=?, coll=?
+  port 175: rx pkts=3703194, bytes=244410564, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=542725, bytes=35819850, drop=?, errs=?, coll=?
+  port  2: rx pkts=21269, bytes=1447308, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17115, bytes=1526566, drop=0, errs=0, coll=0
+  port 29: rx pkts=32215329, bytes=2126791150, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699033, bytes=112712858, drop=?, errs=?, coll=?
+  port 265: rx pkts=30514736, bytes=2013972240, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687794, bytes=111394404, drop=?, errs=?, coll=?
+  port 104: rx pkts=28112595, bytes=1855431030, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663713, bytes=109994390, drop=?, errs=?, coll=?
+  port 137: rx pkts=25631021, bytes=1691647020, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659725, bytes=109918642, drop=?, errs=?, coll=?
+  port 126: rx pkts=28339367, bytes=1870397688, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663918, bytes=110196420, drop=?, errs=?, coll=?
+  port 321: rx pkts=27523979, bytes=1816582614, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687911, bytes=111402126, drop=?, errs=?, coll=?
+  port 442: rx pkts=27951825, bytes=1844820432, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691641, bytes=111840862, drop=?, errs=?, coll=?
+  port 52: rx pkts=33446697, bytes=2207481858, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=2480126, bytes=163879572, drop=?, errs=?, coll=?
+  port 122: rx pkts=27980235, bytes=1846694484, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698893, bytes=112701798, drop=?, errs=?, coll=?
+  port 238: rx pkts=29459783, bytes=1944345654, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687910, bytes=111402060, drop=?, errs=?, coll=?
+  port 315: rx pkts=28953007, bytes=1910898462, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687787, bytes=111393942, drop=?, errs=?, coll=?
+  port 293: rx pkts=31889968, bytes=2104737330, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698853, bytes=112700198, drop=?, errs=?, coll=?
+  port 154: rx pkts=28242634, bytes=1864013844, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636309, bytes=107996394, drop=?, errs=?, coll=?
+  port 451: rx pkts=31332998, bytes=2068557148, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698897, bytes=112704142, drop=?, errs=?, coll=?
+  port 415: rx pkts=30128410, bytes=1988668136, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691574, bytes=111835972, drop=?, errs=?, coll=?
+  port 455: rx pkts=26214254, bytes=1730140740, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695130, bytes=112263224, drop=?, errs=?, coll=?
+  port 135: rx pkts=28868930, bytes=1905348996, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659997, bytes=109935970, drop=?, errs=?, coll=?
+  port 306: rx pkts=31564477, bytes=2083254936, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695089, bytes=112260258, drop=?, errs=?, coll=?
+  port 340: rx pkts=33166562, bytes=2188992738, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691579, bytes=111835470, drop=?, errs=?, coll=?
+  port 146: rx pkts=23951950, bytes=1580828174, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1653010, bytes=109473528, drop=?, errs=?, coll=?
+  port 140: rx pkts=26401338, bytes=1742488104, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1658358, bytes=109829668, drop=?, errs=?, coll=?
+  port 502: rx pkts=31513716, bytes=2079905244, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687684, bytes=111387144, drop=?, errs=?, coll=?
+  port 226: rx pkts=37553150, bytes=2478507900, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687972, bytes=111406152, drop=?, errs=?, coll=?
+  port 144: rx pkts=34521302, bytes=2278405560, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1652243, bytes=109234926, drop=?, errs=?, coll=?
+  port 456: rx pkts=29251164, bytes=1930576314, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691470, bytes=111829108, drop=?, errs=?, coll=?
+  port 24: rx pkts=19921, bytes=1349605, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17231, bytes=1537374, drop=0, errs=0, coll=0
+  port 63: rx pkts=24988091, bytes=1649213922, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695275, bytes=112272534, drop=?, errs=?, coll=?
+  port 512: rx pkts=30289159, bytes=1999084422, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687756, bytes=111391896, drop=?, errs=?, coll=?
+  port 72: rx pkts=29781538, bytes=1965580722, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687922, bytes=111402852, drop=?, errs=?, coll=?
+  port 458: rx pkts=38220378, bytes=2522929436, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695453, bytes=112284750, drop=?, errs=?, coll=?
+  port 339: rx pkts=30708623, bytes=2026769118, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687995, bytes=111407670, drop=?, errs=?, coll=?
+  port 39: rx pkts=27782314, bytes=1833632172, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1689612, bytes=111898360, drop=?, errs=?, coll=?
+  port 134: rx pkts=28200136, bytes=1861208682, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1662865, bytes=110126298, drop=?, errs=?, coll=?
+  port 447: rx pkts=38045823, bytes=2511023766, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691682, bytes=111843308, drop=?, errs=?, coll=?
+  port 166: rx pkts=31432407, bytes=2074538396, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1632844, bytes=107952876, drop=?, errs=?, coll=?
+  port 165: rx pkts=28480395, bytes=1879705826, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1633927, bytes=108025186, drop=?, errs=?, coll=?
+  port 130: rx pkts=31213996, bytes=2060123358, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660183, bytes=109760786, drop=?, errs=?, coll=?
+  port 496: rx pkts=33400728, bytes=2204448030, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687923, bytes=111402918, drop=?, errs=?, coll=?
+  port 463: rx pkts=30145895, bytes=1989820742, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691532, bytes=111833200, drop=?, errs=?, coll=?
+  port 125: rx pkts=32614512, bytes=2152557234, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660681, bytes=109793342, drop=?, errs=?, coll=?
+  port 112: rx pkts=47091384, bytes=3108031170, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659255, bytes=109510830, drop=?, errs=?, coll=?
+  port 356: rx pkts=31242546, bytes=2062007592, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691453, bytes=111827518, drop=?, errs=?, coll=?
+  port 160: rx pkts=29518879, bytes=1948245540, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636800, bytes=108215116, drop=?, errs=?, coll=?
+  port 132: rx pkts=24868534, bytes=1641322682, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660004, bytes=109749492, drop=?, errs=?, coll=?
+  port 79: rx pkts=31464784, bytes=2076675630, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691538, bytes=111832972, drop=?, errs=?, coll=?
+  port 326: rx pkts=34322976, bytes=2265508400, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691530, bytes=111833276, drop=?, errs=?, coll=?
+  port 501: rx pkts=29435801, bytes=1942762806, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699048, bytes=112714108, drop=?, errs=?, coll=?
+  port 108: rx pkts=28708624, bytes=1894768998, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663098, bytes=109953748, drop=?, errs=?, coll=?
+  port 84: rx pkts=30754522, bytes=2029797954, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1671268, bytes=110303688, drop=?, errs=?, coll=?
+  port 474: rx pkts=32619389, bytes=2152879674, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687846, bytes=111397596, drop=?, errs=?, coll=?
+  port 450: rx pkts=29400650, bytes=1940442900, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687663, bytes=111385518, drop=?, errs=?, coll=?
+  port 20: rx pkts=24376, bytes=1683716, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=21893, bytes=1851594, drop=0, errs=0, coll=0
+  port 155: rx pkts=31126241, bytes=2054331906, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636203, bytes=107989398, drop=?, errs=?, coll=?
+  port  7: rx pkts=24858, bytes=1698041, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=24478, bytes=2023747, drop=0, errs=0, coll=0
+  port 453: rx pkts=32201286, bytes=2125279807, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688104, bytes=111417923, drop=?, errs=?, coll=?
+
+ovs-ofctl dump-ports nsx-switch.0 
+OFPST_PORT reply (xid=0x2): 3 ports
+  port  1: rx pkts=70588826095, bytes=7977074378147, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=1022445620, bytes=117853237999, drop=0, errs=0, coll=0
+  port LOCAL: rx pkts=0, bytes=0, drop=11387092716, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+  port  2: rx pkts=7511753612, bytes=403972271846, drop=202, errs=0, frame=0, over=0, crc=0
+           tx pkts=1022453087, bytes=117853335205, drop=0, errs=0, coll=0
+
+Mon Nov  4 18:59:56 UTC 2019
+ovs-ofctl dump-ports breth0 
+OFPST_PORT reply (xid=0x2): 5 ports
+  port  4: rx pkts=30104, bytes=7342424, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=348375914, bytes=21182040381, drop=1424, errs=0, coll=0
+  port LOCAL: rx pkts=167508808, bytes=8016773388, drop=7, errs=0, frame=0, over=0, crc=0
+           tx pkts=1581835, bytes=1430836811, drop=0, errs=0, coll=0
+  port  1: rx pkts=224704683, bytes=24447990919, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=1599822, bytes=1432475704, drop=0, errs=0, coll=0
+  port  2: rx pkts=37929, bytes=8102058, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=348378728, bytes=21182261941, drop=1440, errs=0, coll=0
+  port  3: rx pkts=32124, bytes=8002289, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=348378053, bytes=21182244872, drop=1408, errs=0, coll=0
+
+ovs-ofctl dump-ports nsx-managed 
+OFPST_PORT reply (xid=0x2): 320 ports
+  port 494: rx pkts=31382840, bytes=2071267440, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687859, bytes=111398502, drop=?, errs=?, coll=?
+  port 10: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=8, bytes=648, drop=0, errs=0, coll=0
+  port  8: rx pkts=21023, bytes=1426355, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=15851, bytes=1448710, drop=0, errs=0, coll=0
+  port 37: rx pkts=25069861, bytes=1654610390, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1692040, bytes=112057984, drop=?, errs=?, coll=?
+  port 507: rx pkts=23847556, bytes=1573938672, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687832, bytes=111396912, drop=?, errs=?, coll=?
+  port 251: rx pkts=30472900, bytes=2011210886, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695292, bytes=112273656, drop=?, errs=?, coll=?
+  port 136: rx pkts=28607886, bytes=1888119958, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1656186, bytes=109496516, drop=?, errs=?, coll=?
+  port 398: rx pkts=26696097, bytes=1761942402, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687956, bytes=111405000, drop=?, errs=?, coll=?
+  port 168: rx pkts=28732511, bytes=1896345546, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1631895, bytes=107890138, drop=?, errs=?, coll=?
+  port 380: rx pkts=31449796, bytes=2075686350, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687795, bytes=111394470, drop=?, errs=?, coll=?
+  port 478: rx pkts=34644051, bytes=2286507217, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688106, bytes=111418339, drop=?, errs=?, coll=?
+  port 358: rx pkts=24495095, bytes=1616675586, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695321, bytes=112275570, drop=?, errs=?, coll=?
+  port 13: rx pkts=31251, bytes=2188554, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=25580, bytes=2092999, drop=0, errs=0, coll=0
+  port 449: rx pkts=30070352, bytes=1984643208, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691310, bytes=111818756, drop=?, errs=?, coll=?
+  port 224: rx pkts=36005547, bytes=2376365660, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691530, bytes=111833876, drop=?, errs=?, coll=?
+  port 98: rx pkts=52379807, bytes=3457066460, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1678277, bytes=111335942, drop=?, errs=?, coll=?
+  port 399: rx pkts=31072427, bytes=2050779828, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691579, bytes=111836510, drop=?, errs=?, coll=?
+  port 187: rx pkts=26187031, bytes=1728343854, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695000, bytes=112254644, drop=?, errs=?, coll=?
+  port 210: rx pkts=27957079, bytes=1845166764, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691532, bytes=111833408, drop=?, errs=?, coll=?
+  port 158: rx pkts=24886579, bytes=1642514010, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1634166, bytes=107854956, drop=?, errs=?, coll=?
+  port 469: rx pkts=28407222, bytes=1874879218, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688350, bytes=111433670, drop=?, errs=?, coll=?
+  port 498: rx pkts=28514874, bytes=1881981666, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687946, bytes=111404436, drop=?, errs=?, coll=?
+  port 499: rx pkts=30720262, bytes=2027537262, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688257, bytes=111424962, drop=?, errs=?, coll=?
+  port 353: rx pkts=32196899, bytes=2124995102, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691535, bytes=111833398, drop=?, errs=?, coll=?
+  port 505: rx pkts=28948249, bytes=1910584372, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691695, bytes=111844230, drop=?, errs=?, coll=?
+  port 107: rx pkts=33049568, bytes=2181270894, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691720, bytes=111845608, drop=?, errs=?, coll=?
+  port 323: rx pkts=27337348, bytes=1804264518, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687986, bytes=111407076, drop=?, errs=?, coll=?
+  port 475: rx pkts=30919402, bytes=2040672191, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688472, bytes=111445334, drop=?, errs=?, coll=?
+  port 473: rx pkts=33636057, bytes=2219967348, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688055, bytes=111413385, drop=?, errs=?, coll=?
+  port 174: rx pkts=3333005, bytes=219978210, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=546390, bytes=36061740, drop=?, errs=?, coll=?
+  port 110: rx pkts=30299151, bytes=1999743396, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691658, bytes=111841516, drop=?, errs=?, coll=?
+  port 225: rx pkts=32813207, bytes=2165670906, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687867, bytes=111399222, drop=?, errs=?, coll=?
+  port 90: rx pkts=30548096, bytes=2016174278, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1674105, bytes=110681146, drop=?, errs=?, coll=?
+  port 55: rx pkts=31908819, bytes=2105981316, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685809, bytes=111645334, drop=?, errs=?, coll=?
+  port 259: rx pkts=31764705, bytes=2097048146, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699183, bytes=112723850, drop=?, errs=?, coll=?
+  port 330: rx pkts=30361374, bytes=2003850258, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699147, bytes=112720642, drop=?, errs=?, coll=?
+  port 500: rx pkts=29057595, bytes=1917801246, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687863, bytes=111398958, drop=?, errs=?, coll=?
+  port 119: rx pkts=24249666, bytes=1600477944, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688056, bytes=111411696, drop=?, errs=?, coll=?
+  port 19: rx pkts=15864, bytes=1068905, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=16149, bytes=1437827, drop=0, errs=0, coll=0
+  port 118: rx pkts=31315588, bytes=2066828424, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1662875, bytes=109938406, drop=?, errs=?, coll=?
+  port 302: rx pkts=27114181, bytes=1789535364, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688078, bytes=111413148, drop=?, errs=?, coll=?
+  port 58: rx pkts=27960535, bytes=1845391359, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687893, bytes=111401770, drop=?, errs=?, coll=?
+  port 254: rx pkts=27227945, bytes=1797043632, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699008, bytes=112712924, drop=?, errs=?, coll=?
+  port 35: rx pkts=28140768, bytes=1857290502, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688320, bytes=111619908, drop=?, errs=?, coll=?
+  port 488: rx pkts=27025706, bytes=1783696194, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688067, bytes=111413502, drop=?, errs=?, coll=?
+  port 97: rx pkts=35762393, bytes=2360317914, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691831, bytes=111852102, drop=?, errs=?, coll=?
+  port 423: rx pkts=31774804, bytes=2097136716, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691588, bytes=111837312, drop=?, errs=?, coll=?
+  port 325: rx pkts=27599308, bytes=1821554004, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688191, bytes=111420606, drop=?, errs=?, coll=?
+  port 156: rx pkts=30569979, bytes=2017807166, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1639508, bytes=108393428, drop=?, errs=?, coll=?
+  port 121: rx pkts=22768205, bytes=1502701248, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691444, bytes=111827600, drop=?, errs=?, coll=?
+  port 99: rx pkts=32921794, bytes=2173217744, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1670748, bytes=110648916, drop=?, errs=?, coll=?
+  port  9: rx pkts=26584, bytes=1818990, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19857, bytes=1709373, drop=0, errs=0, coll=0
+  port 76: rx pkts=29070531, bytes=1918654578, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1679512, bytes=111228640, drop=?, errs=?, coll=?
+  port 82: rx pkts=31469746, bytes=2077003056, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1675091, bytes=110747002, drop=?, errs=?, coll=?
+  port 171: rx pkts=5526118, bytes=364723488, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=701682, bytes=46311012, drop=?, errs=?, coll=?
+  port 61: rx pkts=37131667, bytes=2450689458, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1681796, bytes=111189844, drop=?, errs=?, coll=?
+  port  6: rx pkts=25237, bytes=1736340, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=20207, bytes=1741650, drop=0, errs=0, coll=0
+  port 152: rx pkts=31943134, bytes=2108246328, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1647672, bytes=108933864, drop=?, errs=?, coll=?
+  port 372: rx pkts=29426039, bytes=1942502750, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695308, bytes=112273672, drop=?, errs=?, coll=?
+  port 162: rx pkts=23862879, bytes=1574949636, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636320, bytes=108182656, drop=?, errs=?, coll=?
+  port 93: rx pkts=32654291, bytes=2155183194, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687894, bytes=111401004, drop=?, errs=?, coll=?
+  port 439: rx pkts=27698150, bytes=1828077864, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691635, bytes=111840206, drop=?, errs=?, coll=?
+  port 248: rx pkts=39381154, bytes=2599155702, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687987, bytes=111407142, drop=?, errs=?, coll=?
+  port LOCAL: rx pkts=490855807, bytes=32396483262, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+  port 141: rx pkts=24898902, bytes=1643327238, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1649009, bytes=108834594, drop=?, errs=?, coll=?
+  port 81: rx pkts=26885234, bytes=1774424676, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698945, bytes=112707570, drop=?, errs=?, coll=?
+  port 482: rx pkts=33141719, bytes=2187353454, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687832, bytes=111396768, drop=?, errs=?, coll=?
+  port 92: rx pkts=36489754, bytes=2408323638, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691527, bytes=111833078, drop=?, errs=?, coll=?
+  port 492: rx pkts=32596433, bytes=2151364578, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687921, bytes=111402642, drop=?, errs=?, coll=?
+  port 30: rx pkts=32436122, bytes=2141168800, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695289, bytes=112274290, drop=?, errs=?, coll=?
+  port 142: rx pkts=26423973, bytes=1743981502, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659595, bytes=110098198, drop=?, errs=?, coll=?
+  port 17: rx pkts=25456, bytes=1750636, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=24839, bytes=1984747, drop=0, errs=0, coll=0
+  port 31: rx pkts=30442317, bytes=2009192922, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687824, bytes=111396384, drop=?, errs=?, coll=?
+  port 38: rx pkts=30957041, bytes=2043164316, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1684640, bytes=111186240, drop=?, errs=?, coll=?
+  port 11: rx pkts=24806, bytes=1737131, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=22959, bytes=1874103, drop=0, errs=0, coll=0
+  port 176: rx pkts=4940508, bytes=326073444, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=544786, bytes=36078804, drop=?, errs=?, coll=?
+  port 510: rx pkts=24412958, bytes=1611254928, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691672, bytes=111842648, drop=?, errs=?, coll=?
+  port 123: rx pkts=30647211, bytes=2022715422, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691780, bytes=111849568, drop=?, errs=?, coll=?
+  port 105: rx pkts=34546582, bytes=2280073986, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687966, bytes=111406744, drop=?, errs=?, coll=?
+  port 71: rx pkts=33457066, bytes=2208166062, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685037, bytes=111594382, drop=?, errs=?, coll=?
+  port  4: rx pkts=30290, bytes=2100488, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=25905, bytes=2128619, drop=0, errs=0, coll=0
+  port 258: rx pkts=32983848, bytes=2176933938, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691614, bytes=111839444, drop=?, errs=?, coll=?
+  port 170: rx pkts=6114975, bytes=403588046, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=703306, bytes=46498224, drop=?, errs=?, coll=?
+  port 150: rx pkts=27794532, bytes=1834438824, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648088, bytes=108961268, drop=?, errs=?, coll=?
+  port 60: rx pkts=28884460, bytes=1906373892, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685514, bytes=111626228, drop=?, errs=?, coll=?
+  port 127: rx pkts=27717870, bytes=1829378718, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691680, bytes=111843176, drop=?, errs=?, coll=?
+  port 448: rx pkts=32039688, bytes=2115005352, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695227, bytes=112269626, drop=?, errs=?, coll=?
+  port 466: rx pkts=28572627, bytes=1886180054, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695310, bytes=112274844, drop=?, errs=?, coll=?
+  port 139: rx pkts=30496855, bytes=2012791980, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659090, bytes=109875900, drop=?, errs=?, coll=?
+  port 143: rx pkts=29086794, bytes=1919728008, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1652572, bytes=109257264, drop=?, errs=?, coll=?
+  port 50: rx pkts=31298766, bytes=2065718460, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1680846, bytes=110935836, drop=?, errs=?, coll=?
+  port 506: rx pkts=28728056, bytes=1896051552, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695113, bytes=112262310, drop=?, errs=?, coll=?
+  port 324: rx pkts=27595501, bytes=1821303066, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687854, bytes=111398220, drop=?, errs=?, coll=?
+  port 288: rx pkts=29210568, bytes=1927896666, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699102, bytes=112718036, drop=?, errs=?, coll=?
+  port 465: rx pkts=31030091, bytes=2048370182, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695224, bytes=112269636, drop=?, errs=?, coll=?
+  port 476: rx pkts=28309612, bytes=1868434392, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687938, bytes=111403740, drop=?, errs=?, coll=?
+  port 94: rx pkts=33971068, bytes=2242090068, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1668500, bytes=110121000, drop=?, errs=?, coll=?
+  port 509: rx pkts=32391539, bytes=2137841274, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687949, bytes=111404634, drop=?, errs=?, coll=?
+  port 91: rx pkts=49806275, bytes=3287213804, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1672214, bytes=110556184, drop=?, errs=?, coll=?
+  port 268: rx pkts=56472362, bytes=3727175352, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691581, bytes=111836642, drop=?, errs=?, coll=?
+  port 335: rx pkts=26069505, bytes=1720587210, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687917, bytes=111402522, drop=?, errs=?, coll=?
+  port 26: rx pkts=17909, bytes=1232116, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=16876, bytes=1492184, drop=0, errs=0, coll=0
+  port 410: rx pkts=31656462, bytes=2089326402, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691673, bytes=111842714, drop=?, errs=?, coll=?
+  port 396: rx pkts=30798790, bytes=2032719798, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695387, bytes=112279926, drop=?, errs=?, coll=?
+  port 163: rx pkts=27406738, bytes=1808844336, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636143, bytes=108171546, drop=?, errs=?, coll=?
+  port 51: rx pkts=23095321, bytes=1524290814, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1680763, bytes=110930358, drop=?, errs=?, coll=?
+  port 377: rx pkts=31341710, bytes=2068552668, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695650, bytes=112297752, drop=?, errs=?, coll=?
+  port 256: rx pkts=31926923, bytes=2107176876, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698948, bytes=112707872, drop=?, errs=?, coll=?
+  port 459: rx pkts=30649681, bytes=2022878966, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695392, bytes=112280516, drop=?, errs=?, coll=?
+  port 495: rx pkts=33279258, bytes=2196431028, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687764, bytes=111392232, drop=?, errs=?, coll=?
+  port 62: rx pkts=27503382, bytes=1815222900, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1678007, bytes=110748462, drop=?, errs=?, coll=?
+  port 211: rx pkts=28700198, bytes=1894212354, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687890, bytes=111400740, drop=?, errs=?, coll=?
+  port 388: rx pkts=34151763, bytes=2254015890, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695281, bytes=112273398, drop=?, errs=?, coll=?
+  port 246: rx pkts=31411953, bytes=2073188802, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688166, bytes=111418956, drop=?, errs=?, coll=?
+  port 311: rx pkts=28071811, bytes=1852738950, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691712, bytes=111845080, drop=?, errs=?, coll=?
+  port 485: rx pkts=25964571, bytes=1713661034, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688081, bytes=111414494, drop=?, errs=?, coll=?
+  port 441: rx pkts=34166175, bytes=2254967454, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699166, bytes=112722000, drop=?, errs=?, coll=?
+  port 411: rx pkts=25260925, bytes=1667221026, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695164, bytes=112265208, drop=?, errs=?, coll=?
+  port 42: rx pkts=27765202, bytes=1832502858, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1692595, bytes=112286182, drop=?, errs=?, coll=?
+  port 397: rx pkts=31014910, bytes=2046983712, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687699, bytes=111388134, drop=?, errs=?, coll=?
+  port 468: rx pkts=30540961, bytes=2015702990, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691541, bytes=111833794, drop=?, errs=?, coll=?
+  port 73: rx pkts=29919890, bytes=1974712638, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1677344, bytes=110704704, drop=?, errs=?, coll=?
+  port 231: rx pkts=31545385, bytes=2081995080, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691688, bytes=111843964, drop=?, errs=?, coll=?
+  port 484: rx pkts=48042536, bytes=3170806951, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688068, bytes=111413593, drop=?, errs=?, coll=?
+  port 285: rx pkts=34839427, bytes=2299402158, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687952, bytes=111404832, drop=?, errs=?, coll=?
+  port 18: rx pkts=30329, bytes=2071409, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=25073, bytes=2057433, drop=0, errs=0, coll=0
+  port 487: rx pkts=30787865, bytes=2031999090, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687736, bytes=111390192, drop=?, errs=?, coll=?
+  port 355: rx pkts=27100336, bytes=1788621662, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699028, bytes=112712528, drop=?, errs=?, coll=?
+  port 444: rx pkts=27032206, bytes=1784125418, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691592, bytes=111837160, drop=?, errs=?, coll=?
+  port 489: rx pkts=28280206, bytes=1866493596, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687788, bytes=111393816, drop=?, errs=?, coll=?
+  port 480: rx pkts=35619481, bytes=2350885919, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688057, bytes=111416695, drop=?, errs=?, coll=?
+  port 346: rx pkts=35554292, bytes=2346777028, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691380, bytes=111822336, drop=?, errs=?, coll=?
+  port 291: rx pkts=29944410, bytes=1976330742, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687921, bytes=111402786, drop=?, errs=?, coll=?
+  port 479: rx pkts=32282535, bytes=2130647310, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687958, bytes=111405012, drop=?, errs=?, coll=?
+  port 21: rx pkts=25365, bytes=1720559, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=18699, bytes=1636237, drop=0, errs=0, coll=0
+  port 68: rx pkts=32410148, bytes=2139069312, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699117, bytes=112717986, drop=?, errs=?, coll=?
+  port 414: rx pkts=30824976, bytes=2034832523, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695376, bytes=112279443, drop=?, errs=?, coll=?
+  port 341: rx pkts=32252459, bytes=2128662294, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687746, bytes=111390996, drop=?, errs=?, coll=?
+  port 443: rx pkts=29978908, bytes=1978799496, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691518, bytes=111832484, drop=?, errs=?, coll=?
+  port 329: rx pkts=33979677, bytes=2242657752, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695386, bytes=112280120, drop=?, errs=?, coll=?
+  port 56: rx pkts=27446566, bytes=1811473080, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1678461, bytes=110778426, drop=?, errs=?, coll=?
+  port 43: rx pkts=26266284, bytes=1733574540, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1681350, bytes=110969100, drop=?, errs=?, coll=?
+  port 49: rx pkts=31110185, bytes=2053271620, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687951, bytes=111405788, drop=?, errs=?, coll=?
+  port 159: rx pkts=31274619, bytes=2064124476, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1640620, bytes=108653136, drop=?, errs=?, coll=?
+  port 53: rx pkts=21095605, bytes=1392309660, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1686086, bytes=111664344, drop=?, errs=?, coll=?
+  port 430: rx pkts=26819601, bytes=1770093642, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687642, bytes=111384372, drop=?, errs=?, coll=?
+  port 41: rx pkts=30083985, bytes=1985736242, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691550, bytes=111834388, drop=?, errs=?, coll=?
+  port 103: rx pkts=32666912, bytes=2156015976, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691761, bytes=111848522, drop=?, errs=?, coll=?
+  port 318: rx pkts=35145005, bytes=2319570330, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687724, bytes=111389784, drop=?, errs=?, coll=?
+  port 378: rx pkts=31823434, bytes=2100343688, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688107, bytes=111416021, drop=?, errs=?, coll=?
+  port 486: rx pkts=32904217, bytes=2171679150, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688057, bytes=111413011, drop=?, errs=?, coll=?
+  port 85: rx pkts=33313025, bytes=2198659074, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691634, bytes=111839932, drop=?, errs=?, coll=?
+  port 322: rx pkts=30329434, bytes=2001742086, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687788, bytes=111394008, drop=?, errs=?, coll=?
+  port 464: rx pkts=25906620, bytes=1710030984, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691661, bytes=111841922, drop=?, errs=?, coll=?
+  port 461: rx pkts=29129877, bytes=1922764230, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691561, bytes=111835322, drop=?, errs=?, coll=?
+  port 404: rx pkts=28679383, bytes=1892839278, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687812, bytes=111395592, drop=?, errs=?, coll=?
+  port 106: rx pkts=31200440, bytes=2059228770, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663923, bytes=110007990, drop=?, errs=?, coll=?
+  port  1: rx pkts=8, bytes=648, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=8, bytes=648, drop=0, errs=0, coll=0
+  port 471: rx pkts=36073289, bytes=2380836944, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688001, bytes=111409307, drop=?, errs=?, coll=?
+  port 153: rx pkts=28010941, bytes=1848721716, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1647547, bytes=108924990, drop=?, errs=?, coll=?
+  port  3: rx pkts=24592, bytes=1704330, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=21030, bytes=1787352, drop=0, errs=0, coll=0
+  port 101: rx pkts=30266376, bytes=1997580534, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660102, bytes=109566732, drop=?, errs=?, coll=?
+  port 114: rx pkts=32386998, bytes=2137541504, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1662908, bytes=109940584, drop=?, errs=?, coll=?
+  port 117: rx pkts=30751587, bytes=2029604718, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691591, bytes=111837094, drop=?, errs=?, coll=?
+  port 169: rx pkts=23289339, bytes=1537096098, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1628320, bytes=107469120, drop=?, errs=?, coll=?
+  port 145: rx pkts=26869541, bytes=1773389520, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1651988, bytes=109218720, drop=?, errs=?, coll=?
+  port 27: rx pkts=21277, bytes=1458713, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=20510, bytes=1757666, drop=0, errs=0, coll=0
+  port 172: rx pkts=4714997, bytes=311189530, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=702159, bytes=46422834, drop=?, errs=?, coll=?
+  port 47: rx pkts=36332494, bytes=2398137368, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691547, bytes=111835022, drop=?, errs=?, coll=?
+  port 470: rx pkts=33793019, bytes=2230321567, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688057, bytes=111412903, drop=?, errs=?, coll=?
+  port 407: rx pkts=26972573, bytes=1780189770, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695460, bytes=112285004, drop=?, errs=?, coll=?
+  port 263: rx pkts=33178640, bytes=2190561868, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1702557, bytes=113137322, drop=?, errs=?, coll=?
+  port 66: rx pkts=29997001, bytes=1979801504, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1685211, bytes=111605762, drop=?, errs=?, coll=?
+  port 384: rx pkts=28993809, bytes=1913590728, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691763, bytes=111848654, drop=?, errs=?, coll=?
+  port 332: rx pkts=33864921, bytes=2235084564, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691605, bytes=111837186, drop=?, errs=?, coll=?
+  port 167: rx pkts=18961126, bytes=1251433648, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1635645, bytes=108323318, drop=?, errs=?, coll=?
+  port 418: rx pkts=34016686, bytes=2245101428, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688118, bytes=111417796, drop=?, errs=?, coll=?
+  port 164: rx pkts=29010049, bytes=1914662496, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1630430, bytes=107608380, drop=?, errs=?, coll=?
+  port 128: rx pkts=36084857, bytes=2381600418, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699155, bytes=112720078, drop=?, errs=?, coll=?
+  port 221: rx pkts=27602933, bytes=1821986134, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691412, bytes=111825280, drop=?, errs=?, coll=?
+  port 343: rx pkts=31774641, bytes=2097319826, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691649, bytes=111841130, drop=?, errs=?, coll=?
+  port 241: rx pkts=27100760, bytes=1788649654, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691671, bytes=111842582, drop=?, errs=?, coll=?
+  port 287: rx pkts=31685708, bytes=2091256146, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688091, bytes=111414006, drop=?, errs=?, coll=?
+  port 290: rx pkts=24875719, bytes=1641797232, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691617, bytes=111838810, drop=?, errs=?, coll=?
+  port 149: rx pkts=30147002, bytes=1989701580, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1647973, bytes=108953158, drop=?, errs=?, coll=?
+  port 14: rx pkts=17307, bytes=1194858, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19248, bytes=1629646, drop=0, errs=0, coll=0
+  port 420: rx pkts=28740178, bytes=1896851388, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688086, bytes=111413676, drop=?, errs=?, coll=?
+  port 28: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=8, bytes=648, drop=0, errs=0, coll=0
+  port 57: rx pkts=37498707, bytes=2474914098, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1681978, bytes=111201388, drop=?, errs=?, coll=?
+  port 16: rx pkts=21602, bytes=1464960, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=18943, bytes=1639961, drop=0, errs=0, coll=0
+  port 22: rx pkts=22690, bytes=1582366, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19557, bytes=1688987, drop=0, errs=0, coll=0
+  port 383: rx pkts=26663859, bytes=1760006574, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691607, bytes=111838358, drop=?, errs=?, coll=?
+  port 504: rx pkts=31867569, bytes=2103259530, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687765, bytes=111392490, drop=?, errs=?, coll=?
+  port 437: rx pkts=32223334, bytes=2126740020, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687979, bytes=111406614, drop=?, errs=?, coll=?
+  port 88: rx pkts=32729352, bytes=2160137058, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1671031, bytes=110288046, drop=?, errs=?, coll=?
+  port 15: rx pkts=23051, bytes=1570363, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=23016, bytes=1882236, drop=0, errs=0, coll=0
+  port 425: rx pkts=27074432, bytes=1786912290, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687859, bytes=111398694, drop=?, errs=?, coll=?
+  port 493: rx pkts=32616365, bytes=2152680090, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687775, bytes=111392766, drop=?, errs=?, coll=?
+  port 391: rx pkts=33187641, bytes=2190384042, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691781, bytes=111849842, drop=?, errs=?, coll=?
+  port 310: rx pkts=27103186, bytes=1789003484, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691587, bytes=111837038, drop=?, errs=?, coll=?
+  port 376: rx pkts=32737644, bytes=2160684054, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691546, bytes=111833292, drop=?, errs=?, coll=?
+  port 381: rx pkts=30471455, bytes=2011115982, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688131, bytes=111416646, drop=?, errs=?, coll=?
+  port 347: rx pkts=29081165, bytes=1919356890, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687832, bytes=111396744, drop=?, errs=?, coll=?
+  port 490: rx pkts=34688560, bytes=2289443684, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688122, bytes=111417553, drop=?, errs=?, coll=?
+  port 87: rx pkts=27924001, bytes=1842983630, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699026, bytes=112713020, drop=?, errs=?, coll=?
+  port 481: rx pkts=30803084, bytes=2033003544, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687905, bytes=111401586, drop=?, errs=?, coll=?
+  port 440: rx pkts=27823861, bytes=1836374268, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691679, bytes=111842902, drop=?, errs=?, coll=?
+  port 373: rx pkts=30936890, bytes=2041834392, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691637, bytes=111840130, drop=?, errs=?, coll=?
+  port 151: rx pkts=27895893, bytes=1841128380, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648230, bytes=108970744, drop=?, errs=?, coll=?
+  port  5: rx pkts=21060, bytes=1452451, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=19760, bytes=1683724, drop=0, errs=0, coll=0
+  port 65: rx pkts=32922022, bytes=2172852906, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687987, bytes=111407142, drop=?, errs=?, coll=?
+  port 402: rx pkts=29952571, bytes=1976869344, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687954, bytes=111404964, drop=?, errs=?, coll=?
+  port 477: rx pkts=28579274, bytes=1886232084, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687951, bytes=111404526, drop=?, errs=?, coll=?
+  port 320: rx pkts=32611864, bytes=2152382934, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691578, bytes=111837068, drop=?, errs=?, coll=?
+  port 64: rx pkts=28852274, bytes=1904249514, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687840, bytes=111397440, drop=?, errs=?, coll=?
+  port 392: rx pkts=28192765, bytes=1860722262, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691582, bytes=111836968, drop=?, errs=?, coll=?
+  port 360: rx pkts=35614809, bytes=2350770149, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691619, bytes=111839117, drop=?, errs=?, coll=?
+  port 74: rx pkts=33380594, bytes=2203119192, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691702, bytes=111845252, drop=?, errs=?, coll=?
+  port 48: rx pkts=32633132, bytes=2153786712, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687940, bytes=111403824, drop=?, errs=?, coll=?
+  port 511: rx pkts=28771351, bytes=1898908956, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691805, bytes=111851686, drop=?, errs=?, coll=?
+  port 100: rx pkts=29048895, bytes=1917226692, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1664250, bytes=110029624, drop=?, errs=?, coll=?
+  port 249: rx pkts=31200501, bytes=2059232328, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691678, bytes=111843044, drop=?, errs=?, coll=?
+  port 113: rx pkts=33181548, bytes=2189981928, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691753, bytes=111847786, drop=?, errs=?, coll=?
+  port 131: rx pkts=34546853, bytes=2280091932, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659944, bytes=109744648, drop=?, errs=?, coll=?
+  port 457: rx pkts=28610093, bytes=1888266024, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687971, bytes=111406086, drop=?, errs=?, coll=?
+  port 129: rx pkts=26252186, bytes=1732643412, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691605, bytes=111838226, drop=?, errs=?, coll=?
+  port 54: rx pkts=30136548, bytes=1988980359, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688192, bytes=111424072, drop=?, errs=?, coll=?
+  port 497: rx pkts=26381597, bytes=1741185372, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695516, bytes=112289480, drop=?, errs=?, coll=?
+  port 32: rx pkts=30891506, bytes=2039032628, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691501, bytes=111831934, drop=?, errs=?, coll=?
+  port 366: rx pkts=32237784, bytes=2128076752, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695495, bytes=112288458, drop=?, errs=?, coll=?
+  port 472: rx pkts=30410072, bytes=2007064311, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688065, bytes=111414448, drop=?, errs=?, coll=?
+  port 157: rx pkts=25270741, bytes=1667868714, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1637898, bytes=108287272, drop=?, errs=?, coll=?
+  port 138: rx pkts=23302928, bytes=1537992882, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1658979, bytes=109868626, drop=?, errs=?, coll=?
+  port 333: rx pkts=29717070, bytes=1961326068, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691679, bytes=111843370, drop=?, errs=?, coll=?
+  port 434: rx pkts=31417102, bytes=2073528684, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691576, bytes=111836104, drop=?, errs=?, coll=?
+  port 44: rx pkts=29479554, bytes=1945844004, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691420, bytes=111826016, drop=?, errs=?, coll=?
+  port 491: rx pkts=28323708, bytes=1869364656, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687874, bytes=111400886, drop=?, errs=?, coll=?
+  port 279: rx pkts=35259562, bytes=2327130732, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687877, bytes=111399882, drop=?, errs=?, coll=?
+  port 273: rx pkts=29554643, bytes=1950605892, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691455, bytes=111828950, drop=?, errs=?, coll=?
+  port 327: rx pkts=30261866, bytes=1997476052, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691696, bytes=111844232, drop=?, errs=?, coll=?
+  port 212: rx pkts=35022045, bytes=2311454454, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691784, bytes=111850040, drop=?, errs=?, coll=?
+  port 173: rx pkts=3797044, bytes=250669956, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=570681, bytes=37730518, drop=?, errs=?, coll=?
+  port 413: rx pkts=29661017, bytes=1957627110, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691511, bytes=111831814, drop=?, errs=?, coll=?
+  port 147: rx pkts=30500805, bytes=2013052668, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1648395, bytes=108981062, drop=?, errs=?, coll=?
+  port 427: rx pkts=36836536, bytes=2431405024, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691732, bytes=111846400, drop=?, errs=?, coll=?
+  port 369: rx pkts=34100307, bytes=2250619680, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691577, bytes=111836378, drop=?, errs=?, coll=?
+  port 25: rx pkts=17902, bytes=1209949, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17058, bytes=1523825, drop=0, errs=0, coll=0
+  port 23: rx pkts=26328, bytes=1799840, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=20203, bytes=1725142, drop=0, errs=0, coll=0
+  port 46: rx pkts=31916948, bytes=2106902120, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695192, bytes=112267888, drop=?, errs=?, coll=?
+  port 270: rx pkts=28300674, bytes=1867844154, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687836, bytes=111397176, drop=?, errs=?, coll=?
+  port 426: rx pkts=28944663, bytes=1910346896, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695318, bytes=112275372, drop=?, errs=?, coll=?
+  port 503: rx pkts=27694870, bytes=1827861348, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691339, bytes=111820670, drop=?, errs=?, coll=?
+  port 116: rx pkts=31490066, bytes=2078344320, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691555, bytes=111834718, drop=?, errs=?, coll=?
+  port 319: rx pkts=36295269, bytes=2395680778, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691408, bytes=111825016, drop=?, errs=?, coll=?
+  port 375: rx pkts=27394286, bytes=1808214496, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691565, bytes=111835586, drop=?, errs=?, coll=?
+  port 382: rx pkts=28516073, bytes=1882060266, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695364, bytes=112278616, drop=?, errs=?, coll=?
+  port 483: rx pkts=31495572, bytes=2078706810, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687934, bytes=111405462, drop=?, errs=?, coll=?
+  port 69: rx pkts=26871577, bytes=1773523530, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691604, bytes=111838160, drop=?, errs=?, coll=?
+  port 12: rx pkts=17618, bytes=1201916, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17389, bytes=1553221, drop=0, errs=0, coll=0
+  port 361: rx pkts=32309836, bytes=2132448834, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687999, bytes=111407934, drop=?, errs=?, coll=?
+  port 412: rx pkts=28548518, bytes=1884202150, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688089, bytes=111414820, drop=?, errs=?, coll=?
+  port 34: rx pkts=28269181, bytes=1865765658, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688813, bytes=111653226, drop=?, errs=?, coll=?
+  port 446: rx pkts=32348515, bytes=2135387414, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695405, bytes=112283090, drop=?, errs=?, coll=?
+  port 175: rx pkts=3703216, bytes=244412016, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=542749, bytes=35821434, drop=?, errs=?, coll=?
+  port  2: rx pkts=21269, bytes=1447308, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17115, bytes=1526566, drop=0, errs=0, coll=0
+  port 29: rx pkts=32215352, bytes=2126792668, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699057, bytes=112714442, drop=?, errs=?, coll=?
+  port 265: rx pkts=30514758, bytes=2013973692, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687818, bytes=111395988, drop=?, errs=?, coll=?
+  port 104: rx pkts=28112618, bytes=1855432548, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663736, bytes=109995908, drop=?, errs=?, coll=?
+  port 137: rx pkts=25631043, bytes=1691648472, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659749, bytes=109920226, drop=?, errs=?, coll=?
+  port 126: rx pkts=28339389, bytes=1870399140, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663941, bytes=110197938, drop=?, errs=?, coll=?
+  port 321: rx pkts=27524002, bytes=1816584132, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687936, bytes=111403776, drop=?, errs=?, coll=?
+  port 442: rx pkts=27951847, bytes=1844821884, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691664, bytes=111842380, drop=?, errs=?, coll=?
+  port 52: rx pkts=33446719, bytes=2207483310, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=2480150, bytes=163881156, drop=?, errs=?, coll=?
+  port 122: rx pkts=27980257, bytes=1846695936, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698916, bytes=112703316, drop=?, errs=?, coll=?
+  port 238: rx pkts=29459806, bytes=1944347172, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687934, bytes=111403644, drop=?, errs=?, coll=?
+  port 315: rx pkts=28953031, bytes=1910900046, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687810, bytes=111395460, drop=?, errs=?, coll=?
+  port 293: rx pkts=31889990, bytes=2104738782, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698876, bytes=112701716, drop=?, errs=?, coll=?
+  port 154: rx pkts=28242657, bytes=1864015362, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636333, bytes=107997978, drop=?, errs=?, coll=?
+  port 451: rx pkts=31333021, bytes=2068558666, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1698920, bytes=112705660, drop=?, errs=?, coll=?
+  port 415: rx pkts=30128433, bytes=1988669654, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691598, bytes=111837556, drop=?, errs=?, coll=?
+  port 455: rx pkts=26214277, bytes=1730142258, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695154, bytes=112264808, drop=?, errs=?, coll=?
+  port 135: rx pkts=28868953, bytes=1905350514, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660020, bytes=109937488, drop=?, errs=?, coll=?
+  port 306: rx pkts=31564500, bytes=2083256454, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695113, bytes=112261842, drop=?, errs=?, coll=?
+  port 340: rx pkts=33166585, bytes=2188994256, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691603, bytes=111837054, drop=?, errs=?, coll=?
+  port 146: rx pkts=23951973, bytes=1580829692, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1653034, bytes=109475112, drop=?, errs=?, coll=?
+  port 140: rx pkts=26401360, bytes=1742489556, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1658381, bytes=109831186, drop=?, errs=?, coll=?
+  port 502: rx pkts=31513739, bytes=2079906762, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687707, bytes=111388662, drop=?, errs=?, coll=?
+  port 226: rx pkts=37553175, bytes=2478509550, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687996, bytes=111407736, drop=?, errs=?, coll=?
+  port 144: rx pkts=34521324, bytes=2278407012, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1652268, bytes=109236576, drop=?, errs=?, coll=?
+  port 456: rx pkts=29251186, bytes=1930577766, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691494, bytes=111830692, drop=?, errs=?, coll=?
+  port 24: rx pkts=19921, bytes=1349605, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=17231, bytes=1537374, drop=0, errs=0, coll=0
+  port 63: rx pkts=24988113, bytes=1649215374, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695300, bytes=112274184, drop=?, errs=?, coll=?
+  port 512: rx pkts=30289181, bytes=1999085874, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687780, bytes=111393480, drop=?, errs=?, coll=?
+  port 72: rx pkts=29781560, bytes=1965582174, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687945, bytes=111404370, drop=?, errs=?, coll=?
+  port 458: rx pkts=38220401, bytes=2522930954, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1695478, bytes=112286400, drop=?, errs=?, coll=?
+  port 339: rx pkts=30708647, bytes=2026770702, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688019, bytes=111409254, drop=?, errs=?, coll=?
+  port 39: rx pkts=27782337, bytes=1833633690, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1689636, bytes=111899944, drop=?, errs=?, coll=?
+  port 134: rx pkts=28200158, bytes=1861210134, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1662889, bytes=110127882, drop=?, errs=?, coll=?
+  port 447: rx pkts=38045846, bytes=2511025284, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691706, bytes=111844892, drop=?, errs=?, coll=?
+  port 166: rx pkts=31432430, bytes=2074539914, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1632867, bytes=107954394, drop=?, errs=?, coll=?
+  port 165: rx pkts=28480417, bytes=1879707278, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1633950, bytes=108026704, drop=?, errs=?, coll=?
+  port 130: rx pkts=31214019, bytes=2060124876, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660206, bytes=109762304, drop=?, errs=?, coll=?
+  port 496: rx pkts=33400752, bytes=2204449614, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687947, bytes=111404502, drop=?, errs=?, coll=?
+  port 463: rx pkts=30145919, bytes=1989822326, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691556, bytes=111834784, drop=?, errs=?, coll=?
+  port 125: rx pkts=32614534, bytes=2152558686, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660704, bytes=109794860, drop=?, errs=?, coll=?
+  port 112: rx pkts=47091407, bytes=3108032688, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1659278, bytes=109512348, drop=?, errs=?, coll=?
+  port 356: rx pkts=31242568, bytes=2062009044, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691476, bytes=111829036, drop=?, errs=?, coll=?
+  port 160: rx pkts=29518902, bytes=1948247058, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636825, bytes=108216766, drop=?, errs=?, coll=?
+  port 132: rx pkts=24868556, bytes=1641324134, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1660027, bytes=109751010, drop=?, errs=?, coll=?
+  port 79: rx pkts=31464806, bytes=2076677082, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691562, bytes=111834556, drop=?, errs=?, coll=?
+  port 326: rx pkts=34323000, bytes=2265509984, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1691554, bytes=111834860, drop=?, errs=?, coll=?
+  port 501: rx pkts=29435824, bytes=1942764324, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1699072, bytes=112715692, drop=?, errs=?, coll=?
+  port 108: rx pkts=28708647, bytes=1894770516, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1663122, bytes=109955332, drop=?, errs=?, coll=?
+  port 84: rx pkts=30754544, bytes=2029799406, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1671292, bytes=110305272, drop=?, errs=?, coll=?
+  port 474: rx pkts=32619412, bytes=2152881192, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687870, bytes=111399180, drop=?, errs=?, coll=?
+  port 450: rx pkts=29400673, bytes=1940444418, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1687688, bytes=111387168, drop=?, errs=?, coll=?
+  port 20: rx pkts=24376, bytes=1683716, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=21894, bytes=1851712, drop=0, errs=0, coll=0
+  port 155: rx pkts=31126264, bytes=2054333424, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1636227, bytes=107990982, drop=?, errs=?, coll=?
+  port  7: rx pkts=24858, bytes=1698041, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=24478, bytes=2023747, drop=0, errs=0, coll=0
+  port 453: rx pkts=32201309, bytes=2125281325, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=1688127, bytes=111419441, drop=?, errs=?, coll=?
+
+ovs-ofctl dump-ports nsx-switch.0 
+OFPST_PORT reply (xid=0x2): 3 ports
+  port  1: rx pkts=70589305045, bytes=7977129637914, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=1022452664, bytes=117854047837, drop=0, errs=0, coll=0
+  port LOCAL: rx pkts=0, bytes=0, drop=11387162187, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+  port  2: rx pkts=7511803715, bytes=403975090962, drop=202, errs=0, frame=0, over=0, crc=0
+           tx pkts=1022460131, bytes=117854145043, drop=0, errs=0, coll=0
+

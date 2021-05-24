@@ -1,0 +1,1370 @@
+ovs-ofctl show breth0 
+OFPT_FEATURES_REPLY (xid=0x2): dpid:0000005056a074c6
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
+actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
+ 1(eth0): addr:00:50:56:a0:74:c6
+     config:     0
+     state:      0
+     current:    10GB-FD COPPER
+     advertised: COPPER
+     supported:  1GB-FD 10GB-FD COPPER
+     speed: 10000 Mbps now, 10000 Mbps max
+ 2(vnet0): addr:fe:54:00:24:3d:06
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 3(vnet10): addr:fe:54:00:00:44:aa
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 4(vnet20): addr:fe:54:00:31:5a:25
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ LOCAL(breth0): addr:00:50:56:a0:74:c6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (xid=0x4): frags=normal miss_send_len=0
+
+ovs-ofctl show nsx-managed 
+OFPT_FEATURES_REPLY (xid=0x2): dpid:00005a262cc52c4e
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
+actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
+ 1(hyperbus): addr:de:2c:64:5d:c7:ee
+     config:     0
+     state:      0
+     current:    10GB-FD COPPER
+     speed: 10000 Mbps now, 0 Mbps max
+ 2(vnet1): addr:fe:54:00:a7:e5:d6
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 3(vnet2): addr:fe:54:00:a6:ee:0e
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 4(vnet3): addr:fe:54:00:bc:03:eb
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 5(vnet4): addr:fe:54:00:09:e3:3e
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 6(vnet5): addr:fe:54:00:91:d2:5a
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 7(vnet6): addr:fe:54:00:99:7f:0d
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 8(vnet7): addr:fe:54:00:0c:ae:04
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 9(vnet8): addr:fe:54:00:f5:bd:ae
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 10(vnet9): addr:fe:54:00:de:04:e8
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 11(vnet11): addr:fe:54:00:93:9a:d5
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 12(vnet12): addr:fe:54:00:cb:b8:f9
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 13(vnet13): addr:fe:54:00:6c:a6:08
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 14(vnet14): addr:fe:54:00:ae:0d:ad
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 15(vnet15): addr:fe:54:00:95:fa:5d
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 16(vnet16): addr:fe:54:00:ad:b0:66
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 17(vnet17): addr:fe:54:00:84:5c:2e
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 18(vnet18): addr:fe:54:00:b4:62:e1
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 19(vnet19): addr:fe:54:00:1d:26:0a
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 20(vnet21): addr:fe:54:00:51:c2:83
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 21(vnet22): addr:fe:54:00:04:f3:7c
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 22(vnet23): addr:fe:54:00:2a:1b:fd
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 23(vnet24): addr:fe:54:00:31:d6:b1
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 24(vnet25): addr:fe:54:00:23:41:90
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 25(vnet26): addr:fe:54:00:10:22:07
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 26(vnet27): addr:fe:54:00:52:4a:11
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 27(vnet28): addr:fe:54:00:05:2c:e0
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 28(vnet29): addr:fe:54:00:2e:9b:28
+     config:     0
+     state:      0
+     current:    10MB-FD COPPER
+     speed: 10 Mbps now, 0 Mbps max
+ 29(geneve109117737): addr:2a:b8:ad:a6:3e:ef
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 30(geneve109117738): addr:fe:79:0a:e4:c5:40
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 31(geneve109117737): addr:06:5c:a0:c1:f7:fb
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 32(geneve109117739): addr:92:03:0a:e8:0d:82
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 34(geneve109117732): addr:da:bd:bd:05:d8:1f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 35(geneve109117730): addr:9e:83:e9:12:d0:68
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 37(geneve109117729): addr:12:9f:a7:5c:d3:fe
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 38(geneve109117721): addr:32:ee:a8:b3:84:f9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 39(geneve109117724): addr:1a:4e:38:50:26:5e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 41(geneve109117739): addr:da:50:96:f3:de:cf
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 42(geneve109117722): addr:2a:fa:f5:71:32:73
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 43(geneve109117730): addr:c2:48:df:72:20:c1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 44(geneve109117736): addr:fa:f9:54:d9:0e:e3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 46(geneve109117737): addr:1a:9d:3e:c4:75:2c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 47(geneve109117735): addr:12:1b:c5:2c:e1:84
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 48(geneve109117906): addr:4e:c5:3a:83:46:58
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 49(geneve109117911): addr:b6:1a:03:f2:ff:b1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 50(geneve109117716): addr:de:a2:be:a4:6e:4f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 51(geneve109117733): addr:06:18:0c:3a:e3:74
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 52(geneve109117700): addr:f2:b0:97:95:b4:a7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 53(geneve109117715): addr:22:29:7a:8e:2d:9d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 54(geneve109117907): addr:42:50:4d:7e:22:76
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 55(geneve109117726): addr:66:be:66:4e:91:24
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 56(geneve109117727): addr:5e:ac:f9:49:87:1e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 57(geneve109117733): addr:0e:41:ff:7f:e0:b6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 58(geneve109117915): addr:aa:41:34:5d:6a:0e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 60(geneve109117729): addr:4a:22:6c:a8:79:df
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 61(geneve109117714): addr:a2:36:e3:af:5b:15
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 62(geneve109117732): addr:a2:2f:62:87:e8:f3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 63(geneve109117727): addr:f2:5b:d0:6c:a4:0c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 64(geneve109117732): addr:3a:cc:49:2f:dc:4c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 65(geneve109117726): addr:8e:47:36:f4:4d:a4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 66(geneve109117719): addr:3a:c1:f7:9d:92:c9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 68(geneve109117729): addr:26:c8:de:9a:8a:30
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 69(geneve109117718): addr:46:a7:5f:68:9c:2a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 71(geneve109117734): addr:76:e6:43:7b:91:b3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 72(geneve109117721): addr:62:08:cb:68:a1:dc
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 73(geneve109117722): addr:72:ba:c5:93:95:ae
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 74(geneve109117723): addr:3a:34:33:ac:41:1d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 76(geneve109117722): addr:ee:e8:73:59:bb:21
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 79(geneve109117734): addr:26:5f:c6:30:15:f4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 81(geneve109117731): addr:e6:92:45:16:e8:5d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 82(geneve109117730): addr:e6:11:5f:08:16:1e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 84(geneve109117714): addr:72:ed:18:f6:ea:ad
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 85(geneve109117724): addr:76:de:cc:33:b6:24
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 87(geneve109117730): addr:2a:76:63:85:f8:1c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 88(geneve109117719): addr:46:cc:d6:59:2a:a1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 90(geneve109117728): addr:ea:55:c3:9c:37:f4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 91(geneve109117720): addr:26:7f:f0:61:cf:ed
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 92(geneve109117730): addr:4a:99:f0:51:e6:fc
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 93(geneve109117726): addr:62:bc:fa:62:d8:1d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 94(geneve109117728): addr:f2:c1:91:6f:c7:ae
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 97(geneve109117730): addr:1a:be:2f:1e:4d:f7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 98(geneve109117715): addr:46:c5:f4:d7:e8:7f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 99(geneve109117737): addr:fa:39:f4:3a:de:e4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 100(geneve109117716): addr:b2:44:f1:e2:a1:51
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 101(geneve109117725): addr:92:c6:1e:09:97:40
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 103(geneve109117714): addr:52:7f:2f:9e:d3:91
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 104(geneve109117726): addr:66:7f:9e:78:7d:3f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 105(geneve109117731): addr:2e:ac:91:d1:a4:da
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 106(geneve109117720): addr:f2:e2:84:59:bd:83
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 107(geneve109117714): addr:b2:6d:72:36:33:7a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 108(geneve109117732): addr:3e:1b:f6:0a:74:01
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 110(geneve109117725): addr:ea:c5:d6:86:5c:91
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 112(geneve109117717): addr:f2:39:50:d0:86:3a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 113(geneve109117721): addr:f6:65:d3:5b:40:76
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 114(geneve109117728): addr:be:d5:32:d8:5d:eb
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 116(geneve109117721): addr:16:e1:83:e2:a7:86
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 117(geneve109117720): addr:1a:3b:5e:98:67:a4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 118(geneve109117721): addr:6e:c4:81:35:aa:1f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 119(geneve109117715): addr:3a:9f:01:ff:2b:d0
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 121(geneve109117718): addr:d2:b0:d1:07:b4:8e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 122(geneve109117716): addr:9e:f9:eb:a8:13:3c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 123(geneve109117729): addr:3e:11:bb:3d:b2:60
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 125(geneve109117733): addr:72:43:0a:8f:c0:78
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 126(geneve109117726): addr:da:15:d4:12:2e:c0
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 127(geneve109117714): addr:4e:9f:96:bb:13:45
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 128(geneve109117725): addr:d6:a1:11:ee:c0:f4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 129(geneve109117721): addr:26:ad:20:c7:a6:c8
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 130(geneve109117728): addr:d6:68:ca:e3:3c:48
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 131(geneve109117718): addr:06:57:54:a6:bf:ca
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 132(geneve109117724): addr:66:21:9d:8e:bc:33
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 134(geneve109117717): addr:92:66:cd:16:7f:48
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 135(geneve109117733): addr:02:95:ee:01:66:48
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 136(geneve109117719): addr:a2:4c:98:cb:24:d9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 137(geneve109117720): addr:e6:5d:d5:a5:92:c0
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 138(geneve109117722): addr:9a:4f:6b:06:f5:52
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 139(geneve109117726): addr:42:e0:f1:1d:5f:87
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 140(geneve109117732): addr:0e:4b:99:db:70:fc
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 141(geneve109117723): addr:aa:91:b9:c5:cd:c7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 142(geneve109117718): addr:6a:e2:5c:42:03:41
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 143(geneve109117724): addr:6e:d2:d1:f2:43:d2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 144(geneve109117729): addr:0a:3f:4e:0a:1e:42
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 145(geneve109117722): addr:ee:79:d3:a8:5a:f9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 146(geneve109117730): addr:ca:7f:c5:20:b7:12
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 147(geneve109117727): addr:46:c6:c2:48:02:e6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 149(geneve109117723): addr:0a:47:7a:0e:e5:ec
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 150(geneve109117718): addr:62:70:b0:af:3c:77
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 151(geneve109117722): addr:92:80:3a:4b:e7:4d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 152(geneve109117727): addr:4a:78:8e:ee:ca:59
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 153(geneve109117725): addr:f6:f8:ee:47:2d:85
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 154(geneve109117735): addr:ba:79:ab:22:b6:b1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 155(geneve109117739): addr:ee:b3:1a:2a:5c:d6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 156(geneve109117739): addr:0a:2c:e9:5e:1d:06
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 157(geneve109117727): addr:9a:74:4f:11:b6:65
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 158(geneve109117721): addr:c6:83:ea:07:ef:69
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 159(geneve109117723): addr:96:ca:9b:cf:b2:6f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 160(geneve109117731): addr:4e:58:a4:1c:b9:80
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 162(geneve109117728): addr:6a:4a:a9:4f:7b:7a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 163(geneve109117730): addr:6a:13:1d:70:12:70
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 164(geneve109117732): addr:6e:01:53:a4:12:a9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 165(geneve109117717): addr:e6:1c:25:50:38:42
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 166(geneve109117718): addr:d6:7e:3f:9e:85:62
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 167(geneve109117724): addr:46:46:84:5d:e0:70
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 168(geneve109117729): addr:9e:fb:10:50:cf:99
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 169(geneve109117731): addr:5e:4b:1e:26:07:00
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 170(geneve109117721): addr:82:76:0d:a0:4d:2c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 171(geneve109117716): addr:22:a9:c3:25:33:ab
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 172(geneve109117715): addr:f6:ae:fc:57:64:93
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 173(geneve109117737): addr:26:3e:22:54:75:0d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 174(geneve109117719): addr:6a:29:80:fb:df:b1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 175(geneve109117720): addr:fe:85:a3:a5:32:81
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 176(geneve109117724): addr:82:d9:68:83:4f:40
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 187(geneve109117733): addr:6a:87:b1:39:65:9b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 210(geneve109117719): addr:b6:46:90:c1:94:80
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 211(geneve109117722): addr:ba:2f:c6:1a:43:24
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 212(geneve109117731): addr:72:4f:24:64:56:6b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 221(geneve109117739): addr:a2:9d:b2:fb:81:bd
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 224(geneve109117718): addr:c6:3a:e0:ff:da:55
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 225(geneve109117717): addr:fe:9a:21:a8:23:bf
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 226(geneve109117736): addr:62:e1:d4:11:7f:34
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 231(geneve109117734): addr:ae:b3:b2:0f:8e:d6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 238(geneve109117731): addr:52:ac:26:d3:c6:4f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 241(geneve109117723): addr:d2:ab:0f:65:8b:be
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 246(geneve109117723): addr:02:c8:17:fd:6b:8b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 248(geneve109117715): addr:ee:11:65:9e:82:37
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 249(geneve109117725): addr:d6:7d:ca:a0:cd:e7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 251(geneve109117717): addr:aa:c4:b1:aa:fa:3a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 254(geneve109117733): addr:3a:1c:19:6a:55:66
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 256(geneve109117727): addr:02:5d:f2:54:a8:27
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 258(geneve109117717): addr:9e:6b:32:3e:bc:95
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 259(geneve109117735): addr:2a:89:07:6c:db:70
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 263(geneve109117738): addr:8e:9e:41:b0:c4:b7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 265(geneve109117731): addr:6a:7c:cf:76:8a:49
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 268(geneve109117720): addr:8a:51:a1:d9:61:00
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 270(geneve109117733): addr:7e:6b:ea:de:1d:95
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 273(geneve109117716): addr:1e:54:38:1d:c0:07
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 279(geneve109117728): addr:5e:7d:e3:3d:3a:1b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 285(geneve109117739): addr:9a:72:eb:42:06:bc
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 287(geneve109117715): addr:d6:ed:43:ed:a8:90
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 288(geneve109117719): addr:7e:03:45:52:0b:f7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 290(geneve109117727): addr:fa:13:89:63:42:73
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 291(geneve109117725): addr:ca:e4:cd:39:22:6a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 293(geneve109117733): addr:ea:a0:dc:f4:88:81
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 302(geneve109117715): addr:56:ff:da:a3:cc:28
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 306(geneve109117724): addr:d2:95:a6:8d:9e:f1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 310(geneve109117738): addr:ea:3c:5d:96:6b:c5
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 311(geneve109117720): addr:6a:93:73:2c:e4:50
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 315(geneve109117736): addr:86:5f:18:94:70:9e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 318(geneve109117737): addr:fe:b5:b2:a1:1b:a1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 319(geneve109117739): addr:4a:97:2d:0d:a8:9d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 320(geneve109117728): addr:1e:ea:be:22:c1:c9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 321(geneve109117737): addr:32:8e:04:da:92:b1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 322(geneve109117732): addr:6a:1d:6b:04:88:9f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 323(geneve109117719): addr:92:2a:08:e2:9d:7e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 324(geneve109117910): addr:8a:af:90:fe:38:9d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 325(geneve109117734): addr:ea:b2:af:de:f3:34
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 326(geneve109117736): addr:02:3c:fe:06:3c:ab
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 327(geneve109117738): addr:2e:2f:b2:12:46:34
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 329(geneve109117719): addr:b2:29:70:bd:f3:c7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 330(geneve109117728): addr:86:a7:6b:57:2b:bf
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 332(geneve109117734): addr:ca:9b:5c:b7:bb:92
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 333(geneve109117730): addr:32:5f:76:18:9b:89
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 335(geneve109117732): addr:9a:d4:68:6b:a6:00
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 339(geneve109117735): addr:42:18:11:e4:4c:02
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 340(geneve109117734): addr:d2:95:71:3b:f6:d7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 341(geneve109117917): addr:c6:fc:2a:00:9c:10
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 343(geneve109117738): addr:72:f8:24:a8:07:df
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 346(geneve109117736): addr:82:78:c4:8d:8b:64
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 347(geneve109117905): addr:c2:99:ad:49:a9:15
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 353(geneve109117717): addr:e6:e2:43:70:c9:b9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 355(geneve109117718): addr:4e:c5:cc:f1:7c:0e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 356(geneve109117729): addr:a6:6f:12:ee:f5:34
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 358(geneve109117722): addr:2a:07:7d:4f:45:4c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 360(geneve109117737): addr:42:57:b6:67:2e:1c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 361(geneve109117728): addr:56:d4:28:2e:84:ae
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 366(geneve109117739): addr:0e:ac:ae:83:5a:c4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 369(geneve109117734): addr:8a:5f:8c:24:95:6e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 372(geneve109117738): addr:6e:87:13:c4:52:df
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 373(geneve109117726): addr:6e:22:0c:f5:0e:83
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 375(geneve109117736): addr:1a:30:38:f9:67:ff
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 376(geneve109117725): addr:22:a9:92:d4:d9:96
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 377(geneve109117720): addr:ee:9f:e7:90:60:c2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 378(geneve109117917): addr:1a:4f:89:5f:ee:91
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 380(geneve109117715): addr:d6:10:86:ee:fb:75
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 381(geneve109117719): addr:92:21:69:97:9d:7f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 382(geneve109117716): addr:f2:8c:9f:47:93:49
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 383(geneve109117738): addr:0a:d8:a6:56:9a:65
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 384(geneve109117717): addr:6a:b2:a4:77:5e:d1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 388(geneve109117726): addr:0e:8f:4e:94:d8:f6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 391(geneve109117717): addr:d6:99:31:72:71:13
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 392(geneve109117723): addr:86:89:2e:8d:eb:d6
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 396(geneve109117714): addr:96:90:55:ba:57:82
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 397(geneve109117729): addr:ae:7b:ee:b0:60:68
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 398(geneve109117913): addr:fe:d8:fb:c0:ad:c4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 399(geneve109117724): addr:46:d7:13:db:99:f0
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 402(geneve109117723): addr:82:39:04:12:39:70
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 404(geneve109117738): addr:46:f7:89:83:55:37
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 407(geneve109117732): addr:7a:90:11:0c:d5:21
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 410(geneve109117715): addr:56:31:05:72:40:d3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 411(geneve109117716): addr:22:c5:1b:b6:dd:ad
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 412(geneve109117905): addr:5e:7a:a0:ba:ea:d5
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 413(geneve109117718): addr:32:de:d9:d5:9d:ce
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 414(geneve109117739): addr:66:be:5b:98:0d:3c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 415(geneve109117736): addr:a6:e0:f6:15:b7:ce
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 418(geneve109117914): addr:0e:d0:73:04:d7:c9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 420(geneve109117722): addr:82:99:23:60:29:91
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 423(geneve109117716): addr:42:f4:03:b6:c6:f0
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 425(geneve109117723): addr:82:16:07:c1:0b:ea
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 426(geneve109117727): addr:36:79:5b:58:88:f3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 427(geneve109117738): addr:da:5f:2a:ac:30:aa
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 430(geneve109117720): addr:b6:ac:be:ce:20:05
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 434(geneve109117725): addr:62:7a:26:58:16:6b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 437(geneve109117715): addr:7a:d3:80:a6:ad:6c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 439(geneve109117717): addr:1e:3e:2d:19:68:ac
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 440(geneve109117714): addr:42:00:60:d2:d5:67
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 441(geneve109117718): addr:a2:49:81:c8:78:56
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 442(geneve109117721): addr:0e:3a:45:6c:6f:0e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 443(geneve109117738): addr:4e:e8:1e:1f:86:01
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 444(geneve109117723): addr:ea:cb:37:be:cc:c1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 446(geneve109117736): addr:7e:1e:e6:f8:e8:fe
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 447(geneve109117726): addr:82:55:c9:f8:5f:cb
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 448(geneve109117735): addr:aa:1c:d4:94:6b:96
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 449(geneve109117719): addr:82:9b:df:d2:b7:e1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 450(geneve109117905): addr:16:a0:da:8a:59:80
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 451(geneve109117735): addr:32:5b:ee:96:17:ab
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 453(geneve109117909): addr:6e:23:c5:50:38:fe
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 455(geneve109117727): addr:aa:ab:2b:cd:04:67
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 456(geneve109117731): addr:4e:68:52:86:a2:51
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 457(geneve109117734): addr:9e:f2:b4:6d:8f:66
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 458(geneve109117736): addr:22:62:39:d2:ff:9e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 459(geneve109117733): addr:8e:fc:90:c5:4e:60
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 461(geneve109117737): addr:fe:ef:4f:6f:24:f2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 463(geneve109117735): addr:d6:9e:ce:61:3f:9c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 464(geneve109117736): addr:36:6b:cf:08:c1:85
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 465(geneve109117735): addr:3a:7f:f0:57:11:75
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 466(geneve109117737): addr:7e:e9:81:ba:89:3f
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 468(geneve109117725): addr:0e:58:91:6d:a7:f3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 469(geneve109117908): addr:7a:3e:cd:9e:d9:7d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 470(geneve109117907): addr:9a:d9:b7:3c:1a:f1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 471(geneve109117903): addr:36:df:fe:13:38:5c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 472(geneve109117908): addr:62:0a:18:18:ab:ff
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 473(geneve109117903): addr:6a:38:6a:5b:58:9d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 474(geneve109117914): addr:f6:fc:cd:db:3f:d5
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 475(geneve109117913): addr:96:a5:0e:cc:8a:10
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 476(geneve109117902): addr:1e:52:fc:58:40:b3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 477(geneve109117915): addr:ca:20:29:c5:50:5a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 478(geneve109117904): addr:d2:a2:83:7c:1d:51
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 479(geneve109117915): addr:86:82:b8:80:93:74
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 480(geneve109117915): addr:ce:b4:74:f5:7a:a2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 481(geneve109117904): addr:92:31:60:b7:38:6e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 482(geneve109117902): addr:6a:37:ee:18:68:75
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 483(geneve109117912): addr:4e:f9:63:e3:0b:9a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 484(geneve109117903): addr:6e:ed:46:d9:18:ac
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 485(geneve109117906): addr:ba:ea:30:c8:6b:81
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 486(geneve109117911): addr:2a:ad:b8:94:47:79
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 487(geneve109117902): addr:02:b8:d4:e1:2a:ee
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 488(geneve109117906): addr:a6:dd:13:60:b6:7e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 489(geneve109117908): addr:f2:87:d0:65:87:11
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 490(geneve109117910): addr:4a:3e:33:d3:b4:c2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 491(geneve109117913): addr:7a:00:2a:02:2a:0c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 492(geneve109117905): addr:c6:e7:7f:1d:a5:b7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 493(geneve109117904): addr:92:7f:9c:c9:24:a8
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 494(geneve109117914): addr:72:dd:d3:65:ed:fb
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 495(geneve109117912): addr:36:2e:0b:19:33:ba
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 496(geneve109117716): addr:ee:f0:2f:86:36:b2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 497(geneve109117724): addr:12:c6:e3:06:00:d9
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 498(geneve109117731): addr:6a:4e:0c:18:a9:f7
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 499(geneve109117729): addr:8a:97:4c:1f:f5:9b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 500(geneve109117720): addr:76:5b:59:62:2e:22
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 501(geneve109117724): addr:ea:af:d0:1c:fc:84
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 502(geneve109117721): addr:0a:43:12:4c:11:67
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 503(geneve109117722): addr:de:0a:18:70:fc:dd
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 504(geneve109117732): addr:ba:94:20:15:60:1b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 505(geneve109117729): addr:d6:33:d1:f8:e3:0c
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 506(geneve109117731): addr:e2:2a:b2:7c:d6:d4
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 507(geneve109117728): addr:be:e9:9f:22:2a:8b
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 509(geneve109117727): addr:ba:cc:f8:e0:ef:b1
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 510(geneve109117716): addr:42:9e:4c:07:42:54
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 511(geneve109117726): addr:62:22:bc:fb:fb:ce
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 512(geneve109117725): addr:52:e0:ea:9c:20:84
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(nsx-managed): addr:5a:26:2c:c5:2c:4e
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (xid=0x4): frags=normal miss_send_len=0
+
+ovs-ofctl show nsx-switch.0 
+OFPT_FEATURES_REPLY (xid=0x2): dpid:0000005056a0121d
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
+actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
+ 1(eth1): addr:00:50:56:a0:12:1d
+     config:     0
+     state:      0
+     current:    10GB-FD COPPER
+     advertised: COPPER
+     supported:  1GB-FD 10GB-FD COPPER
+     speed: 10000 Mbps now, 10000 Mbps max
+ 2(nsx-vtep0.0): addr:82:23:19:a0:38:a2
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(nsx-switch.0): addr:00:50:56:a0:12:1d
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (xid=0x4): frags=normal miss_send_len=0
+

@@ -1,13 +1,24 @@
 # Revisiting the Open vSwitch Dataplane Ten Years Later
 
+This is the artifacts page for the SIGCOMM2021 paper, Revisiting the Open vSwitch Dataplane Ten Years Later.
+We provide
+* VMware NSX OpenFlow and OVSDB dataset (Section 5.1 and Table 3).
+* Instructions for building OVS with AF_XDP and DPDK, and how to reproduce the performance
+  number (Section 5.2 and Figure 8).
+
+## OpenFlow dataset
+* [dataset/ovs-ofctl-dump-flows.out.decoded](dataset/ovs-ofctl-dump-flows.out.decoded):
+  OpenFlow tables and rules installed at Linux host.
+* [dataset/ovs-vsctl-show.out](dataset/ovs-vsctl-show.out):
+  Configurations of OVS bridges, tunnels, and interfaces.
+* [dataset/nsx-openflow-pipeline.txt](dataset/nsx-openflow-pipeline.txt):
+  The text explanation of the OpenFlow pipeline.
+
 ## Introduction
 AF_XDP, Address Family of the eXpress Data Path, is a new Linux socket type
 built upon the eBPF and XDP technology.  It aims to have comparable
 performance to DPDK but cooperate better with existing kernel's networking
-stack.  An AF_XDP socket receives and sends packets from an eBPF/XDP program
-attached to the netdev, by-passing a couple of Linux kernel's subsystems.
-As a result, AF_XDP socket shows much better performance than AF_PACKET.
-For more details about AF_XDP, please see linux kernel's
+stack. For more details about AF_XDP, please see linux kernel's
 [AF_XDP documentation](https://www.kernel.org/doc/html/latest/networking/af_xdp.html)
 
 ## Building Open vSwitch with AF_XDP
@@ -22,7 +33,7 @@ With one Xeon E5 2620 v3 12-core 2.4GHz connected back-to-back through dual-port
 We measured OVS performance with the in-kernel datapath, with AF_XDP, and with DPDK.
 ![](testbed.png)
 
-## Measuring Performance with AF_XDP (Section 5.2, Figure 8 in the paper)
+## Measuring Performance with AF_XDP
 Once OVS with AF_XDP is successfully built, we provide several scripts to
 reproduce the results in the paper. Specifically, for
 * Linux kernel datapath
@@ -47,4 +58,3 @@ reproduce the results in the paper. Specifically, for
 
 See section 5.2 and Figure 8 in the paper for details.
 
-## OpenFlow dataset

@@ -1,0 +1,256 @@
+#!/usr/bin/env python
+# Copyright (C) 2012-2013 Nicira, Inc. All Rights Reserved.
+#
+# This software is provided only under the terms and conditions of a written
+# license agreement with Nicira. If no such agreement applies to you, you are
+# not authorized to use this software. Contact Nicira to obtain an appropriate
+# license: www.nicira.com.
+
+import string
+import struct
+import sys
+import binascii
+
+# l3d notes
+GENERATE_ARP_REPLY_NOTE = 0x0000
+UPDATE_ARP_CACHE_NOTE   = 0x0001
+RESOLVE_ARP_NOTE        = 0x0002
+ZERO_TTL_NOTE           = 0x0003
+PROCESS_NVP_ARP_REQUEST_NOTE  = 0x0004
+LOCAL_DELIVERY_NOTE = 0x0005
+GRATUITOUS_ARP_NOTE = 0x0006
+GENERATE_ICMP_NOTE  = 0x0007
+SNOOP_ARP_NOTE  = 0x0008
+SNOOP_DHCP_NOTE = 0x0009
+TCP_REJECT_NOTE = 0x000a
+FW_LOG_NOTE     = 0x000b
+
+# NVP notes
+NPT_ANNOTATION     = 0x8000
+NPT_LPORT_RELATION = 0x8001
+NPT_LPORT_PATCH_ATTACHMENT_RELATION = 0x8002
+NPT_AGGREGATED_ENTITY_RELATION = 0x8003
+
+
+def ethaddr_to_string(a):
+    return ("%.2x:%.2x:%.2x:%.2x:%.2x:%.2x" %
+            (ord(a[0]), ord(a[1]), ord(a[2]),
+            ord(a[3]), ord(a[4]), ord(a[5])))
+
+def ipaddr_to_string(a):
+    # xxx Find a cleaner way to do this
+    octet = ''
+    for exp in [3,2,1,0]:
+            octet = octet + str(a / ( 256 ** exp )) + "."
+            a = a % ( 256 ** exp )
+    return octet.rstrip('.')
+
+def hex_string_to_uuid(s):
+    uuid_format = "%s-%s-%s-%s-%s"
+    return uuid_format % (s[0:8], s[8:12], s[12:16], s[16:20], s[20:])
+
+def decode_l3d(np_type, data):
+    if np_type == GENERATE_ARP_REPLY_NOTE:
+        # np_mac
+        r_mac = struct.unpack('>6s', data[:6])[0]
+        sys.stdout.write("gen_arp_reply(router_mac=%s)" %
+                ethaddr_to_string(r_mac))
+
+    elif np_type == UPDATE_ARP_CACHE_NOTE:
+        timeout, cache = struct.unpack('>H16s', data[:18])
+        cache = hex_string_to_uuid(binascii.hexlify(cache))
+        sys.stdout.write('update_arp_cache(timeout=%d, cache=%s' %
+                (timeout, cache))
+
+        flags = struct.unpack('B', data[18])[0]
+        if (flags & 0x1):
+            sys.stdout.write("local)")
+        else:
+            sys.stdout.write('egress)')
+
+    elif np_type == RESOLVE_ARP_NOTE:
+        good_action_len, good_timeout, bad_timeout, cache = \
+                struct.unpack('>HHH16s', data[:22])
+        cache = hex_string_to_uuid(binascii.hexlify(cache))
+        sys.stdout.write("resolve_arp(success_action_len=%d, "
+                         "success_timeout=%d, failure_timeout=%d, cache=%s, " %
+                         (good_action_len, good_timeout, bad_timeout, cache))
+
+        r_mac, reg_idx, flags, r_ip, next_hop_ip = struct.unpack('>6sBBLL', data[22:38])
+        sys.stdout.write("route_mac=%s, reg_idx=%d, " %
+                (ethaddr_to_string(r_mac), reg_idx))
+
+        if (flags & 0x1):
+            sys.stdout.write("local, ")
+        else:
+            sys.stdout.write('egress, ')
+
+        sys.stdout.write("router_ip=%s, next_hop=%s)" %
+            (ipaddr_to_string(r_ip), ipaddr_to_string(next_hop_ip)))
+
+    elif np_type == ZERO_TTL_NOTE:
+        r_ip = struct.unpack('>L', data[2:6])[0]
+        sys.stdout.write("zero_ttl(router_ip=%s)" % (ipaddr_to_string(r_ip)))
+
+    elif np_type == PROCESS_NVP_ARP_REQUEST_NOTE:
+        flags = struct.unpack('B', data[5])[0]
+        sys.stdout.write("process_nvp_arp_req(")
+        if (flags & 0x1):
+            sys.stdout.write("local)")
+        else:
+            sys.stdout.write('egress)')
+
+    elif np_type == GRATUITOUS_ARP_NOTE:
+        sys.stdout.write('gratuitous_arp')
+
+    elif np_type == LOCAL_DELIVERY_NOTE:
+        (router_port_id, ) = struct.unpack('>16s', data[6:22])
+        router_port_id = hex_string_to_uuid(binascii.hexlify(router_port_id))
+        sys.stdout.write("local_delivery(router_port_id=%s)" %
+                         (router_port_id))
+
+    elif np_type == GENERATE_ICMP_NOTE:
+        icmp_code, r_ip = struct.unpack('>B1xL', data[:6])
+        sys.stdout.write("dst_unreachable(icmp_code=%d, router_ip=%s)"
+                         % (icmp_code, ipaddr_to_string(r_ip)))
+
+    elif np_type == SNOOP_ARP_NOTE:
+        arp_timeout, vif_port_id, lport_id = struct.unpack('>H16s16s',
+                                                           data[:34])
+        vif_port_id = hex_string_to_uuid(binascii.hexlify(vif_port_id))
+        lport_id = hex_string_to_uuid(binascii.hexlify(lport_id))
+        sys.stdout.write("snoop_arp(vif_port_id=%s, lport_id=%s, "
+                         "arp_timeout=%d)"
+                         % (vif_port_id, lport_id, arp_timeout))
+
+    elif np_type == SNOOP_DHCP_NOTE:
+        dhcp_timeout, vif_port_id, lport_id = struct.unpack('>H16s16s',
+                                                            data[:34])
+        vif_port_id = hex_string_to_uuid(binascii.hexlify(vif_port_id))
+        lport_id = hex_string_to_uuid(binascii.hexlify(lport_id))
+        sys.stdout.write("snoop_dhcp(vif_port_id=%s, lport_id=%s, "
+                         "dhcp_timeout=%d)"
+                         % (vif_port_id, lport_id, dhcp_timeout))
+
+    elif np_type == TCP_REJECT_NOTE:
+        sys.stdout.write("tcp_reject")
+
+    elif np_type == FW_LOG_NOTE:
+        packet_types = {0: "LOG_L2_PACKET", 1: "LOG_L3_PACKET"}
+        directions = {0: "IN", 1: "OUT"};
+        reasons = {0: "match"};
+        actions =   {0: "DROP", 1: "PASS", 2: "REJECT"};
+
+        pkt_type, dir, reason, action, rule_id, port_reg, = \
+                                      struct.unpack('>BBLLLB', data[:15])
+
+        pkt_type = packet_types.get(pkt_type, pkt_type)
+        dir = directions.get(dir, dir)
+        reason = reasons.get(reason, reason)
+        action = actions.get(action, action)
+        sys.stdout.write("fw_log(packet_type=%s, dir=%s, reason=%s, "
+                         "action=%s, rule_id=%s, port_reg=reg%d)"
+                         % (pkt_type, dir, reason, action, rule_id, port_reg))
+
+
+def decode_annotation(np_type, data):
+    sys.stdout.write('annotation(%s)' % data.decode('utf-8').rstrip('\0'))
+
+def decode_lport_relation(np_type, data):
+    garbage = len(data) - (16 + 16 + 1 + 7 + 8)
+    lport_uuid, lport_parent_uuid, direction, lport_no = (
+        struct.unpack('>16s16sB7xQ%dx' % garbage, data))
+    lport_uuid = hex_string_to_uuid(binascii.hexlify(lport_uuid))
+    lport_parent_uuid = hex_string_to_uuid(binascii.hexlify(lport_parent_uuid))
+    if direction == 0:
+        direction = "ingress"
+    else:
+        direction = "egress"
+    sys.stdout.write(
+        "lport_relation(type=%s, "
+        "lport_uuid=%s, "
+        "lport_parent_uuid=%s, "
+        "direction=%s, "
+        "lport_no=%s)" % (
+            np_type, lport_uuid, lport_parent_uuid,
+            direction, lport_no))
+
+def decode_aggregated_entity_relation(data):
+    garbage = len(data) - (16 + 1)
+    aggregated_entity_uuid, counter_type = (
+        struct.unpack('>16sB%dx' % garbage, data))
+    aggregated_entity_uuid = (
+        hex_string_to_uuid(binascii.hexlify(aggregated_entity_uuid)))
+    counter_type = int(counter_type)
+    sys.stdout.write(
+        "aggregated_entity_relation("
+        "entity_uuid=%s, "
+        "counter_type=%d)" % (
+            aggregated_entity_uuid,
+            counter_type))
+
+def decode_note(note):
+    orig_note = note
+
+    # Depending on the form, the bytes may be separated by dots, so
+    # clean it up.
+    if (note.find(".") != -1):
+        try:
+            note = note.translate(string.maketrans('', ''), '.')
+        except:
+            note = note.translate(str.maketrans('', '', '.'))
+
+    try:
+        note = note.strip().decode('hex_codec')
+    except:
+        import codecs
+        note = codecs.decode(note.strip(), 'hex_codec')
+
+    np_len = struct.unpack('>H', note[:2])[0]
+    np_type = struct.unpack('>H', note[6:8])[0]
+    data = note[8:]
+
+    if (np_type <= FW_LOG_NOTE):
+        decode_l3d(np_type, data)
+    elif np_type == NPT_ANNOTATION:
+        decode_annotation(np_type, data)
+    elif np_type == NPT_LPORT_RELATION:
+        decode_lport_relation("port_relation", data)
+    elif np_type == NPT_LPORT_PATCH_ATTACHMENT_RELATION:
+        decode_lport_relation("port_patch_relation", data)
+    elif np_type == NPT_AGGREGATED_ENTITY_RELATION:
+        decode_aggregated_entity_relation(data)
+    else:
+        # We don't understand this type, so just return the
+        # original data.
+        sys.stdout.write(orig_note)
+
+
+def process_stdin():
+    for line in sys.stdin.readlines():
+        if line.find("note:") == -1:
+            sys.stdout.write(line)
+            continue
+
+        splits = line.rstrip('\n').split(',')
+        first = True
+        for s in splits:
+            if not first:
+                sys.stdout.write(',')
+            else:
+                first = False
+
+            if s.find('note:') != -1:
+                index = s.find('note:') + 5
+                sys.stdout.write(s[:index])
+                decode_note(s[index:])
+            else:
+                sys.stdout.write(s)
+        sys.stdout.write('\n')
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        process_stdin()
+    else:
+        decode_note(sys.argv[1])
+        sys.stdout.write('\n')

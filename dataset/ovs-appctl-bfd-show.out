@@ -1,0 +1,6984 @@
+---- geneve1091177319 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2857ms
+  Next TX Time: now +400ms
+  Last TX Time: now -430ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xf499c800
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x70e9b55
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177390 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2650ms
+  Next TX Time: now +365ms
+  Last TX Time: now -575ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x3fa9f000
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xe5ca24de
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177317 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2054ms
+  Next TX Time: now +37ms
+  Last TX Time: now -793ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x72beb401
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3a879ca0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177302 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2757ms
+  Next TX Time: now +827ms
+  Last TX Time: now -83ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe850901
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3479b50b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179174 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2744ms
+  Next TX Time: now +537ms
+  Last TX Time: now -443ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xee2e8d01
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x58c21011
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177368 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2224ms
+  Next TX Time: now +207ms
+  Last TX Time: now -633ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x92e8a802
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Control Detection Time Expired
+  Remote Discriminator: 0x31c8c677
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177233 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2120ms
+  Next TX Time: now +5ms
+  Last TX Time: now -775ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xafc33803
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1bdc599b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177343 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2276ms
+  Next TX Time: now +642ms
+  Last TX Time: now -108ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x22887f03
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x50c7b974
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177262 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2948ms
+  Next TX Time: now +550ms
+  Last TX Time: now -400ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd2e50c04
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xab4bb6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177180 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2811ms
+  Next TX Time: now +71ms
+  Last TX Time: now -869ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x63a97c05
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x49041a5d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177169 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2830ms
+  Next TX Time: now +376ms
+  Last TX Time: now -394ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x1e66a405
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7e603913
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177156 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2923ms
+  Next TX Time: now +520ms
+  Last TX Time: now -460ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xd7e14506
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4d7c41eb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177366 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2744ms
+  Next TX Time: now +589ms
+  Last TX Time: now -411ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x45e6be06
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xe0391798
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177154 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2322ms
+  Next TX Time: now +416ms
+  Last TX Time: now -394ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xce58ea06
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x48efca30
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177313 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2978ms
+  Next TX Time: now +187ms
+  Last TX Time: now -623ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xeb27106
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x71d97c7a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177314 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2756ms
+  Next TX Time: now +496ms
+  Last TX Time: now -464ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5559ee07
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3fc14c8a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177160 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2666ms
+  Next TX Time: now +94ms
+  Last TX Time: now -766ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa01dae09
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2c2abc53
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177286 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2685ms
+  Next TX Time: now +432ms
+  Last TX Time: now -358ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x93225d0a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x41a781e5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177379 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2919ms
+  Next TX Time: now +404ms
+  Last TX Time: now -416ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x5110a80b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xf0493453
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177170 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2495ms
+  Next TX Time: now +629ms
+  Last TX Time: now -281ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xed4a50c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3ac3009f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177320 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2465ms
+  Next TX Time: now +677ms
+  Last TX Time: now -213ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x911b7b0c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x677d0705
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177215 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2784ms
+  Next TX Time: now +747ms
+  Last TX Time: now -153ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x2f13d20c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1c98951c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177275 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2403ms
+  Next TX Time: now +446ms
+  Last TX Time: now -394ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x7831840e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6aa5cbdf
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177152 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2040ms
+  Next TX Time: now +83ms
+  Last TX Time: now -807ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x4b913c0e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3c1a0874
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177161 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2724ms
+  Next TX Time: now +427ms
+  Last TX Time: now -323ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x73cda00f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7959f111
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179036 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2844ms
+  Next TX Time: now +646ms
+  Last TX Time: now -194ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x25f5960f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xc3568b83
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177188 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2429ms
+  Next TX Time: now +124ms
+  Last TX Time: now -836ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x66d54610
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x70f6147c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177214 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2783ms
+  Next TX Time: now +782ms
+  Last TX Time: now -28ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x6ce7ef10
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5c811b13
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177227 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2090ms
+  Next TX Time: now +283ms
+  Last TX Time: now -667ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x3719c211
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2c19edb1
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177321 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2741ms
+  Next TX Time: now +358ms
+  Last TX Time: now -402ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xe5d3dd11
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x50ed5695
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177287 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2630ms
+  Next TX Time: now +685ms
+  Last TX Time: now -285ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x70f86313
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xb3aa1d5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177282 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2477ms
+  Next TX Time: now +656ms
+  Last TX Time: now -334ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xfa65a13
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x75bbb97e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177145 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2997ms
+  Next TX Time: now +725ms
+  Last TX Time: now -245ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa6370a13
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x83412dd
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177223 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2239ms
+  Next TX Time: now +443ms
+  Last TX Time: now -377ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5d2cc514
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x39e6315f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177217 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2412ms
+  Next TX Time: now +560ms
+  Last TX Time: now -250ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3dd7a515
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5a63e1ee
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177269 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2902ms
+  Next TX Time: now +241ms
+  Last TX Time: now -579ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x3b4cba15
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4115a116
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177239 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2967ms
+  Next TX Time: now +148ms
+  Last TX Time: now -702ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x51621c16
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2bd93316
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179058 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2284ms
+  Next TX Time: now +199ms
+  Last TX Time: now -721ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x89121217
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x13fd8e32
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177196 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2417ms
+  Next TX Time: now +220ms
+  Last TX Time: now -780ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xc38deb18
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x78832755
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177252 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2373ms
+  Next TX Time: now +126ms
+  Last TX Time: now -684ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4e4fc61a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x8db506a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179144 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2658ms
+  Next TX Time: now +60ms
+  Last TX Time: now -760ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4c833b1b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xc58557e8
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177243 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2666ms
+  Next TX Time: now +239ms
+  Last TX Time: now -591ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x791e991b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6c423f67
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177397 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2687ms
+  Next TX Time: now +51ms
+  Last TX Time: now -759ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x8efcad1c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0x21ddfbd1
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179047 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2773ms
+  Next TX Time: now +570ms
+  Last TX Time: now -380ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x98b8be1c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xf03ca75f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177162 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2725ms
+  Next TX Time: now +134ms
+  Last TX Time: now -676ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x9bea311d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3bcb0702
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177327 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2904ms
+  Next TX Time: now +466ms
+  Last TX Time: now -454ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xfce21a1e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xf1b2465
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177178 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2210ms
+  Next TX Time: now +564ms
+  Last TX Time: now -376ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xaae1191f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4d06635e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177163 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2229ms
+  Next TX Time: now +842ms
+  Last TX Time: now -38ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x27bd401f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7ac09d8f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177202 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2681ms
+  Next TX Time: now +168ms
+  Last TX Time: now -822ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x62c6ee20
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7326106b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177340 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2433ms
+  Next TX Time: now +66ms
+  Last TX Time: now -844ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x87bde421
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4a0ca43c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177177 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2983ms
+  Next TX Time: now +482ms
+  Last TX Time: now -268ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x41aeab21
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x31af39b7
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179081 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2975ms
+  Next TX Time: now +289ms
+  Last TX Time: now -631ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x564aa821
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xe2eb7d48
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177361 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2294ms
+  Next TX Time: now +309ms
+  Last TX Time: now -601ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x93205c22
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x32224b74
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177165 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2721ms
+  Next TX Time: now +247ms
+  Last TX Time: now -503ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xc547f526
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x8530ab4
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177328 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2099ms
+  Next TX Time: now +718ms
+  Last TX Time: now -232ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xc5202d29
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5eb54429
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179130 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2686ms
+  Next TX Time: now +820ms
+  Last TX Time: now -160ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xc4d8d429
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xad4b6d10
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177398 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2887ms
+  Next TX Time: now +767ms
+  Last TX Time: now -13ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xc8ed582b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x389a1bda
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177310 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2795ms
+  Next TX Time: now +621ms
+  Last TX Time: now -209ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x1214c2b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2e851ad8
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177387 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2829ms
+  Next TX Time: now +251ms
+  Last TX Time: now -579ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x7bbe732b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7c8f54bb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177389 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2734ms
+  Next TX Time: now +599ms
+  Last TX Time: now -151ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x59c6ac2d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6e11ca6b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179062 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2109ms
+  Next TX Time: now +890ms
+  Last TX Time: now -70ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xdd4f82d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xc7ab9c0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177220 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2821ms
+  Next TX Time: now +656ms
+  Last TX Time: now -344ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xd44e6e2f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x16867f19
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177267 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2647ms
+  Next TX Time: now +717ms
+  Last TX Time: now -123ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3e1d3630
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x56b48544
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177195 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2815ms
+  Next TX Time: now +46ms
+  Last TX Time: now -914ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xf535c030
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x398209ee
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177331 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2704ms
+  Next TX Time: now +274ms
+  Last TX Time: now -586ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3072b831
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xc21288e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177292 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2280ms
+  Next TX Time: now +492ms
+  Last TX Time: now -478ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x99676731
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3952ce5b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177255 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2554ms
+  Next TX Time: now +643ms
+  Last TX Time: now -317ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd1fb4532
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x33b3ac3f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177355 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2648ms
+  Next TX Time: now +400ms
+  Last TX Time: now -380ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xad86a332
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xb3943b81
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177225 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2018ms
+  Next TX Time: now +585ms
+  Last TX Time: now -245ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x15379233
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7916ccf0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179071 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2347ms
+  Next TX Time: now +144ms
+  Last TX Time: now -766ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xdd273333
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6b177a45
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177173 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2667ms
+  Next TX Time: now +460ms
+  Last TX Time: now -490ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x7afdd536
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xba80351
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177294 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2934ms
+  Next TX Time: now +349ms
+  Last TX Time: now -411ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5dcccf3b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x35bd032a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177259 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2386ms
+  Next TX Time: now +310ms
+  Last TX Time: now -550ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x4136063b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5453cfdb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177342 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2161ms
+  Next TX Time: now +774ms
+  Last TX Time: now -146ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x53a7b33c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x627a7b57
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177190 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2546ms
+  Next TX Time: now +861ms
+  Last TX Time: now -109ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd806943c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2c746af0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177158 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2865ms
+  Next TX Time: now +170ms
+  Last TX Time: now -740ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x310eb43c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6d9cabf
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177324 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2739ms
+  Next TX Time: now +899ms
+  Last TX Time: now -101ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x2b51c43d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x427c91aa
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179045 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2158ms
+  Next TX Time: now +347ms
+  Last TX Time: now -623ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe092873e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xbc9beb90
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177266 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2358ms
+  Next TX Time: now +78ms
+  Last TX Time: now -862ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa582873f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x21925d1d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177159 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2549ms
+  Next TX Time: now +603ms
+  Last TX Time: now -257ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3658bb40
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x995f226
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177174 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2247ms
+  Next TX Time: now +259ms
+  Last TX Time: now -521ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x7bc8fa40
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2eb74561
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177003 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2492ms
+  Next TX Time: now +133ms
+  Last TX Time: now -647ms
+
+  Local Flags: none
+  Local Session State: init
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x3d5f7341
+  Local Minimum TX Interval: 1000ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: down
+  Remote Diagnostic: Control Detection Time Expired
+  Remote Discriminator: 0x18a98de3
+  Remote Minimum TX Interval: 1000ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177184 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2322ms
+  Next TX Time: now +770ms
+  Last TX Time: now -220ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xddfe7b41
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x40964cc7
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177296 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2298ms
+  Next TX Time: now +183ms
+  Last TX Time: now -767ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x56360e42
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xe26d5fa
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177322 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2898ms
+  Next TX Time: now +745ms
+  Last TX Time: now -95ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x47cc0843
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3e158b77
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177329 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2301ms
+  Next TX Time: now +736ms
+  Last TX Time: now -34ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x71d4e943
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4803f176
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177216 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2251ms
+  Next TX Time: now +179ms
+  Last TX Time: now -731ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x6e56d945
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x56a1fc30
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177213 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2944ms
+  Next TX Time: now +367ms
+  Last TX Time: now -393ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xda164a45
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1bb23b80
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177289 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2282ms
+  Next TX Time: now +514ms
+  Last TX Time: now -396ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x9c2b9e46
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x75db108b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177339 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2241ms
+  Next TX Time: now +39ms
+  Last TX Time: now -841ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x4eab5e46
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x79d9ddfb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177186 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2290ms
+  Next TX Time: now +636ms
+  Last TX Time: now -134ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x6a9fb946
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6e6c5d36
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177197 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2239ms
+  Next TX Time: now +945ms
+  Last TX Time: now -35ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xc9d81b47
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2e87b7f0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177264 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2688ms
+  Next TX Time: now +842ms
+  Last TX Time: now -18ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x239f6847
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6fa0bbf9
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179116 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2306ms
+  Next TX Time: now +218ms
+  Last TX Time: now -732ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x7e8b8c48
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x885357e0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177353 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2348ms
+  Next TX Time: now +58ms
+  Last TX Time: now -822ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x405c134a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xb63c1ae0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177144 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2498ms
+  Next TX Time: now +390ms
+  Last TX Time: now -590ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x97fcfb4a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7b377e1f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179159 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2248ms
+  Next TX Time: now +759ms
+  Last TX Time: now -221ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x7eac774c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xbae19ada
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177148 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2510ms
+  Next TX Time: now +906ms
+  Last TX Time: now -44ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xf8d6884d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x43932d27
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177245 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2972ms
+  Next TX Time: now +780ms
+  Last TX Time: now -90ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x314034d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3da35ac6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177396 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2753ms
+  Next TX Time: now +29ms
+  Last TX Time: now -871ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x798dd74e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xea6ff425
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177260 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2580ms
+  Next TX Time: now +712ms
+  Last TX Time: now -218ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xefe4ba4f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x73487dd6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179066 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2981ms
+  Next TX Time: now +279ms
+  Last TX Time: now -551ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x95d76e4f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xedd3faa5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177172 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2334ms
+  Next TX Time: now +840ms
+  Last TX Time: now -120ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x9a2794f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6f6a5990
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177345 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2490ms
+  Next TX Time: now +843ms
+  Last TX Time: now -97ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x84937850
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x32fa277
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177330 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2642ms
+  Next TX Time: now +371ms
+  Last TX Time: now -589ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xcff20b52
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x78e09b7b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177210 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2617ms
+  Next TX Time: now +519ms
+  Last TX Time: now -261ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x52749352
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x62342b05
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177338 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2500ms
+  Next TX Time: now +304ms
+  Last TX Time: now -556ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x2dc7ce52
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xf121d32
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177308 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2371ms
+  Next TX Time: now +141ms
+  Last TX Time: now -739ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xae65c54
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5eb40143
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179139 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2543ms
+  Next TX Time: now +784ms
+  Last TX Time: now -16ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3497ea54
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xcfccf19d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177301 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2057ms
+  Next TX Time: now +645ms
+  Last TX Time: now -345ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x50709855
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x23937c17
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177175 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2812ms
+  Next TX Time: now +114ms
+  Last TX Time: now -776ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x251f5d56
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1e7305ac
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177230 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2993ms
+  Next TX Time: now +185ms
+  Last TX Time: now -735ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x87748e56
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4af5bfdc
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177261 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2847ms
+  Next TX Time: now +101ms
+  Last TX Time: now -649ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x80693f57
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5bf42242
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177364 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2696ms
+  Next TX Time: now +331ms
+  Last TX Time: now -449ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0xcb1c0657
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6f3f279e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179061 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2610ms
+  Next TX Time: now +781ms
+  Last TX Time: now -59ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4d809f57
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1e13da4f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179154 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2274ms
+  Next TX Time: now +382ms
+  Last TX Time: now -418ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x2440eb58
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x319d5abd
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177312 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2428ms
+  Next TX Time: now +485ms
+  Last TX Time: now -335ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x3c233759
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x308f1e71
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177384 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2943ms
+  Next TX Time: now +104ms
+  Last TX Time: now -726ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x1e23859
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x581b603f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177211 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2834ms
+  Next TX Time: now +472ms
+  Last TX Time: now -498ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x1dcc5a5c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x9237ccb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177265 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2642ms
+  Next TX Time: now +128ms
+  Last TX Time: now -702ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe27485c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x17a050ce
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179029 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2813ms
+  Next TX Time: now +810ms
+  Last TX Time: now -70ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x1dd2a05c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x51afcd12
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177305 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2111ms
+  Next TX Time: now +737ms
+  Last TX Time: now -133ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x39e8915d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1492f7c9
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177315 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2492ms
+  Next TX Time: now +93ms
+  Last TX Time: now -887ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa15ca65d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x614b52b1
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177375 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2294ms
+  Next TX Time: now +420ms
+  Last TX Time: now -570ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5df2705e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0x34c639ff
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177347 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2993ms
+  Next TX Time: now +740ms
+  Last TX Time: now -230ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x8245a95e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x39a2d6bf
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177362 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2989ms
+  Next TX Time: now +39ms
+  Last TX Time: now -911ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4694605e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xe3caf480
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177374 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2776ms
+  Next TX Time: now +729ms
+  Last TX Time: now -261ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xbee0eb61
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xd67c01fc
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177149 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2915ms
+  Next TX Time: now +281ms
+  Last TX Time: now -509ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xbc854961
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x744bc5c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177226 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2524ms
+  Next TX Time: now +299ms
+  Last TX Time: now -461ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x38199161
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2b24aa5c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177365 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2318ms
+  Next TX Time: now +800ms
+  Last TX Time: now -20ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x8fed1662
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1dd8b2a1
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177358 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2211ms
+  Next TX Time: now +158ms
+  Last TX Time: now -732ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xc62caa63
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7be73c59
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177299 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2842ms
+  Next TX Time: now +750ms
+  Last TX Time: now -230ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x9a2bf965
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2f7b19d9
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177274 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2165ms
+  Next TX Time: now +817ms
+  Last TX Time: now -3ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x2506b266
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5b2307c6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177284 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2692ms
+  Next TX Time: now +410ms
+  Last TX Time: now -550ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x20432667
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x40e8bf7e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177201 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2531ms
+  Next TX Time: now +406ms
+  Last TX Time: now -494ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x8a7d7b67
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2b449189
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177256 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2170ms
+  Next TX Time: now +545ms
+  Last TX Time: now -305ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x9a7cd267
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x43a48b29
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177240 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2458ms
+  Next TX Time: now +59ms
+  Last TX Time: now -831ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x71f15068
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4f7f03a5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177356 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2514ms
+  Next TX Time: now +764ms
+  Last TX Time: now -236ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x2d770368
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xad4ef5e8
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177208 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2736ms
+  Next TX Time: now +606ms
+  Last TX Time: now -364ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd065fc6a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4688f0ac
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177153 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2447ms
+  Next TX Time: now +682ms
+  Last TX Time: now -118ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x7eb0266f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x782c5b2c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177271 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2395ms
+  Next TX Time: now +394ms
+  Last TX Time: now -366ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xe3b98570
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x37ce2722
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177258 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2343ms
+  Next TX Time: now +767ms
+  Last TX Time: now -153ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x8c2e5e70
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4ce4c9ef
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177385 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2589ms
+  Next TX Time: now +755ms
+  Last TX Time: now -15ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x35c29171
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x348a31b3
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177257 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2835ms
+  Next TX Time: now +669ms
+  Last TX Time: now -81ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x64899071
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6cf8e7a6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177325 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2542ms
+  Next TX Time: now +8ms
+  Last TX Time: now -972ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd659b172
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x62dd6986
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177168 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2189ms
+  Next TX Time: now +16ms
+  Last TX Time: now -864ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x8674fd72
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x27ac3895
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177241 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2458ms
+  Next TX Time: now +162ms
+  Last TX Time: now -728ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xb544bb75
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1866437a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177351 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2362ms
+  Next TX Time: now +67ms
+  Last TX Time: now -683ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xbccb5375
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x69509d84
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179141 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2974ms
+  Next TX Time: now +593ms
+  Last TX Time: now -297ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x9bbfcb76
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x60676617
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177244 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2842ms
+  Next TX Time: now +869ms
+  Last TX Time: now -111ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe92b677
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7ee1cdab
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177367 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2716ms
+  Next TX Time: now +95ms
+  Last TX Time: now -785ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x53d33179
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Control Detection Time Expired
+  Remote Discriminator: 0x3576abef
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177205 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2149ms
+  Next TX Time: now +193ms
+  Last TX Time: now -637ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xb52ba27a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3a48eba5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179025 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2800ms
+  Next TX Time: now +183ms
+  Last TX Time: now -617ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xcb35d67b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x60cf0d56
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177276 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2289ms
+  Next TX Time: now +790ms
+  Last TX Time: now -40ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xcf3027b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x725586d8
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179074 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2871ms
+  Next TX Time: now +503ms
+  Last TX Time: now -477ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xafeaa97c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xcf9039d5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179137 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2791ms
+  Next TX Time: now +956ms
+  Last TX Time: now -34ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5ea86a7f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xce453a43
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177192 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2815ms
+  Next TX Time: now +424ms
+  Last TX Time: now -326ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xbbefcd80
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x73668d55
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179039 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2572ms
+  Next TX Time: now +795ms
+  Last TX Time: now -165ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd8997781
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5259619
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179041 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2726ms
+  Next TX Time: now +887ms
+  Last TX Time: now -3ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x45fb2782
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x32dcfe1e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177183 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2092ms
+  Next TX Time: now +428ms
+  Last TX Time: now -432ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xbed6ff84
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x46945d7c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177392 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2350ms
+  Next TX Time: now +266ms
+  Last TX Time: now -494ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x827ddf84
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xdedba034
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177395 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2592ms
+  Next TX Time: now +88ms
+  Last TX Time: now -892ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0xba40c485
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3a71af87
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177221 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2609ms
+  Next TX Time: now +52ms
+  Last TX Time: now -878ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xfb36d085
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x70dc610c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177250 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2934ms
+  Next TX Time: now +304ms
+  Last TX Time: now -546ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x41afe86
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1fc39eaa
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177155 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2668ms
+  Next TX Time: now +295ms
+  Last TX Time: now -575ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x68dd7687
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3ecb7d3b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177150 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2537ms
+  Next TX Time: now +19ms
+  Last TX Time: now -941ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x981e8987
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x623dd7ef
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177251 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2261ms
+  Next TX Time: now +76ms
+  Last TX Time: now -814ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x5e2d4d88
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xf815f5a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177311 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2915ms
+  Next TX Time: now +270ms
+  Last TX Time: now -670ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa449a889
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x59066033
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177377 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2943ms
+  Next TX Time: now +148ms
+  Last TX Time: now -842ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa9dc7c89
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x8ab3fac7
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177191 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2288ms
+  Next TX Time: now +245ms
+  Last TX Time: now -725ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa6713189
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x14ae4e4d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177341 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2489ms
+  Next TX Time: now +319ms
+  Last TX Time: now -641ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x884a6489
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x67dde70e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177373 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2213ms
+  Next TX Time: now +249ms
+  Last TX Time: now -621ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0xeb4f3389
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xe7a521c5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177386 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2197ms
+  Next TX Time: now +336ms
+  Last TX Time: now -614ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x3b0a248a
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xf68138dc
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177382 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2146ms
+  Next TX Time: now +708ms
+  Last TX Time: now -122ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x57e9938b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xf076cf34
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177189 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2859ms
+  Next TX Time: now +1ms
+  Last TX Time: now -849ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5687a8c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x603c8550
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179125 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2841ms
+  Next TX Time: now +437ms
+  Last TX Time: now -563ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x180abb8c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xa95be7e3
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177187 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2589ms
+  Next TX Time: now +537ms
+  Last TX Time: now -453ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x663ef28c
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5082c8c1
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177207 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2971ms
+  Next TX Time: now +218ms
+  Last TX Time: now -682ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa334598f
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xe01300
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177254 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2346ms
+  Next TX Time: now +609ms
+  Last TX Time: now -381ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x1c193991
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x123b6c28
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177268 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2676ms
+  Next TX Time: now +190ms
+  Last TX Time: now -760ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x27d9fd91
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x26a77760
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177235 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2454ms
+  Next TX Time: now +297ms
+  Last TX Time: now -683ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3d8c4c92
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x33f7369a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177290 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2275ms
+  Next TX Time: now +356ms
+  Last TX Time: now -534ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x55782e93
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x61c3abab
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177280 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2937ms
+  Next TX Time: now +666ms
+  Last TX Time: now -304ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x2c145795
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5fe5d226
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177285 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2695ms
+  Next TX Time: now +50ms
+  Last TX Time: now -880ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x7e99696
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5f84e328
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177394 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2771ms
+  Next TX Time: now +322ms
+  Last TX Time: now -498ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x333e7898
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x89abfa11
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177270 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2516ms
+  Next TX Time: now +723ms
+  Last TX Time: now -197ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xc2c5be99
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xbce6dd5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177281 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2083ms
+  Next TX Time: now +446ms
+  Last TX Time: now -324ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xb1ea739b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5977c700
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179103 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2398ms
+  Next TX Time: now +652ms
+  Last TX Time: now -98ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4477299b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xef6418ba
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177369 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2708ms
+  Next TX Time: now +599ms
+  Last TX Time: now -251ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x4a1b979b
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7685ff12
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177333 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2677ms
+  Next TX Time: now +889ms
+  Last TX Time: now -71ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa229c49d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5095b464
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179173 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2901ms
+  Next TX Time: now +798ms
+  Last TX Time: now -112ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3cf7d9d
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xa886bcf7
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177359 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2910ms
+  Next TX Time: now +346ms
+  Last TX Time: now -644ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe4a1369e
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0xdef69c76
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177146 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2572ms
+  Next TX Time: now +308ms
+  Last TX Time: now -532ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x5e289a0
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3143813e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177237 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2442ms
+  Next TX Time: now +321ms
+  Last TX Time: now -509ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x487a41a1
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3937a070
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177203 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2295ms
+  Next TX Time: now +415ms
+  Last TX Time: now -365ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xf48c88a2
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x70686d91
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179149 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2545ms
+  Next TX Time: now +33ms
+  Last TX Time: now -767ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xbfd5fea3
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xc5df79bc
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177185 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2945ms
+  Next TX Time: now +794ms
+  Last TX Time: now -146ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x58e3f8a5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x52e165b3
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179152 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2161ms
+  Next TX Time: now +480ms
+  Last TX Time: now -330ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xed882ca5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7611c161
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177182 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2468ms
+  Next TX Time: now +756ms
+  Last TX Time: now -4ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4efa79a6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2b207c6b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179107 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2585ms
+  Next TX Time: now +759ms
+  Last TX Time: now -141ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x2b5901a6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xa9b326d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177151 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2745ms
+  Next TX Time: now +516ms
+  Last TX Time: now -254ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xd680e9a7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1c8b60a0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177370 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2946ms
+  Next TX Time: now +79ms
+  Last TX Time: now -921ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x9b9cdba8
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Control Detection Time Expired
+  Remote Discriminator: 0x1615b309
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177298 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2470ms
+  Next TX Time: now +236ms
+  Last TX Time: now -534ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x49be2da9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x73658350
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177209 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2920ms
+  Next TX Time: now +680ms
+  Last TX Time: now -210ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x68aea9a9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4cfb5b8f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177219 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2319ms
+  Next TX Time: now +237ms
+  Last TX Time: now -623ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xf56f77aa
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4c838cc4
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177272 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2212ms
+  Next TX Time: now +573ms
+  Last TX Time: now -237ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x783aaaaa
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1b2ba324
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177371 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2512ms
+  Next TX Time: now +347ms
+  Last TX Time: now -553ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x6d7394aa
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x645f531
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177147 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2453ms
+  Next TX Time: now +93ms
+  Last TX Time: now -857ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x6cdac3aa
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x432fc14e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177249 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2796ms
+  Next TX Time: now +73ms
+  Last TX Time: now -887ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x361db0ab
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x67532a1a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177166 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2835ms
+  Next TX Time: now +357ms
+  Last TX Time: now -443ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x5a23eaab
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x39e77a83
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177238 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2101ms
+  Next TX Time: now +120ms
+  Last TX Time: now -870ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xce02daab
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x56fbc3a0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177222 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2002ms
+  Next TX Time: now +597ms
+  Last TX Time: now -313ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x2f703bae
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x46d24e50
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177372 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2980ms
+  Next TX Time: now +381ms
+  Last TX Time: now -609ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x357588ae
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x45b95973
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179053 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2551ms
+  Next TX Time: now +11ms
+  Last TX Time: now -749ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xcfc14aaf
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xaba0b467
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177295 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2805ms
+  Next TX Time: now +179ms
+  Last TX Time: now -661ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x52c0b8af
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x66cb3984
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177277 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2178ms
+  Next TX Time: now +4ms
+  Last TX Time: now -806ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x89095eb2
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x287da6bf
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177179 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2109ms
+  Next TX Time: now +673ms
+  Last TX Time: now -217ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x3f7c99b3
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6ef26d3d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177246 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2908ms
+  Next TX Time: now +420ms
+  Last TX Time: now -460ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x4967b9b5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xe2658b2
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177212 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2395ms
+  Next TX Time: now +693ms
+  Last TX Time: now -67ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd4b0b7b6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1235ad27
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179090 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2404ms
+  Next TX Time: now +390ms
+  Last TX Time: now -550ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x642bc0b6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6504e596
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179034 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2849ms
+  Next TX Time: now +473ms
+  Last TX Time: now -497ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x9dff00b6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xd50105a8
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177318 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2299ms
+  Next TX Time: now +206ms
+  Last TX Time: now -744ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xcb4e6b7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7c94facb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179050 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2563ms
+  Next TX Time: now +212ms
+  Last TX Time: now -548ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xfa6052b7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xcb80704a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177306 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2880ms
+  Next TX Time: now +705ms
+  Last TX Time: now -65ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x1aba5cba
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2e15d0d0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177352 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2418ms
+  Next TX Time: now +112ms
+  Last TX Time: now -768ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x15539cba
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Control Detection Time Expired
+  Remote Discriminator: 0x1fd06b82
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177307 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2692ms
+  Next TX Time: now +49ms
+  Last TX Time: now -911ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x711cb7bb
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6d36f1f6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177164 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2826ms
+  Next TX Time: now +697ms
+  Last TX Time: now -143ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x555aa9bb
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5cc57207
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179114 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2230ms
+  Next TX Time: now +53ms
+  Last TX Time: now -717ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xb881e6bc
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xb61e7339
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177198 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2989ms
+  Next TX Time: now +461ms
+  Last TX Time: now -529ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x1c7252c0
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x539106d3
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179085 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2821ms
+  Next TX Time: now +364ms
+  Last TX Time: now -496ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x698c8bc1
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x601a110c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177231 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2343ms
+  Next TX Time: now +159ms
+  Last TX Time: now -781ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x6cdf6dc1
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1a2f7ce9
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177383 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2572ms
+  Next TX Time: now +683ms
+  Last TX Time: now -177ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x53e506c2
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x9ea7ed25
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177229 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2696ms
+  Next TX Time: now +434ms
+  Last TX Time: now -536ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x63e9dfc3
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x747212a5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177381 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2230ms
+  Next TX Time: now +409ms
+  Last TX Time: now -551ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x324ac3
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7c4d4745
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177218 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2600ms
+  Next TX Time: now +813ms
+  Last TX Time: now -127ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa2a68bc4
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x168a074f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177194 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2668ms
+  Next TX Time: now +182ms
+  Last TX Time: now -778ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xd92e9c4
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x499a9993
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177391 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2536ms
+  Next TX Time: now +405ms
+  Last TX Time: now -495ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x507ef9c5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0x837503be
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177334 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2267ms
+  Next TX Time: now +729ms
+  Last TX Time: now -111ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x848291c5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x638fe9ef
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177143 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2918ms
+  Next TX Time: now +822ms
+  Last TX Time: now -108ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa1bea6c6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4611dc24
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177332 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2985ms
+  Next TX Time: now +176ms
+  Last TX Time: now -694ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xee098ac6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x742ac794
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177363 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2194ms
+  Next TX Time: now +83ms
+  Last TX Time: now -807ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x166bacc7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0x9c11806d
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177297 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2156ms
+  Next TX Time: now +508ms
+  Last TX Time: now -292ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xd7f729c9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1db67458
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177346 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2591ms
+  Next TX Time: now +677ms
+  Last TX Time: now -73ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x3e485ec9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x69d18bbd
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177288 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2207ms
+  Next TX Time: now +570ms
+  Last TX Time: now -200ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe1bcfbcb
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xae9efb7
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177157 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2640ms
+  Next TX Time: now +18ms
+  Last TX Time: now -902ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x7889cdcd
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x35d3f4f2
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177232 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2451ms
+  Next TX Time: now +224ms
+  Last TX Time: now -536ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x639499ce
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3cf8373e
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177323 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2866ms
+  Next TX Time: now +184ms
+  Last TX Time: now -806ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x7fa047ce
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6d881145
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177316 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2550ms
+  Next TX Time: now +648ms
+  Last TX Time: now -322ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x59a93cf
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2a092f10
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177273 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2237ms
+  Next TX Time: now +629ms
+  Last TX Time: now -351ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x10539fcf
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x13552eab
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177204 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2938ms
+  Next TX Time: now +276ms
+  Last TX Time: now -514ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa38a90d0
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x5460768f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177393 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2175ms
+  Next TX Time: now +561ms
+  Last TX Time: now -339ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xc5aec3d1
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xde2e5ad9
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177247 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2659ms
+  Next TX Time: now +182ms
+  Last TX Time: now -648ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x20231d2
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x677493b5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177171 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2334ms
+  Next TX Time: now +402ms
+  Last TX Time: now -368ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xb1b155d2
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x56132126
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177304 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2314ms
+  Next TX Time: now +568ms
+  Last TX Time: now -312ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x55b16ed4
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3697fc14
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177200 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2954ms
+  Next TX Time: now +753ms
+  Last TX Time: now -87ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xdc4303d6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7411566f
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179026 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2646ms
+  Next TX Time: now +376ms
+  Last TX Time: now -624ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xaafcb7d6
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x476a7f7b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177376 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2434ms
+  Next TX Time: now +288ms
+  Last TX Time: now -492ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x64f600d9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xb92ccbbb
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177248 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2119ms
+  Next TX Time: now +817ms
+  Last TX Time: now -63ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xe66e20db
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7958f0a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177337 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2553ms
+  Next TX Time: now +380ms
+  Last TX Time: now -460ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x949ad4dc
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1934ef65
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179084 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2173ms
+  Next TX Time: now +420ms
+  Last TX Time: now -330ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xbd39e3dd
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4209b138
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177378 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2427ms
+  Next TX Time: now +387ms
+  Last TX Time: now -433ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x38f679de
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Control Detection Time Expired
+  Remote Discriminator: 0xbdb4979b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177234 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2779ms
+  Next TX Time: now +638ms
+  Last TX Time: now -262ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xeaa458de
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4b3a4588
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177326 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2519ms
+  Next TX Time: now +184ms
+  Last TX Time: now -576ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xa26fd7de
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x76531477
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177354 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2694ms
+  Next TX Time: now +534ms
+  Last TX Time: now -406ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xf365e6e0
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x27633335
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177236 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2927ms
+  Next TX Time: now +490ms
+  Last TX Time: now -410ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x1238a8e2
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6eaf0bb2
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177228 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2330ms
+  Next TX Time: now +396ms
+  Last TX Time: now -424ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xbc8c7ce3
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x324ddd7c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177263 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2352ms
+  Next TX Time: now +607ms
+  Last TX Time: now -353ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xee13be4
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6ee0d834
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177360 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2148ms
+  Next TX Time: now +242ms
+  Last TX Time: now -538ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0xff7a32e5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xdd7bca04
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177336 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2759ms
+  Next TX Time: now +723ms
+  Last TX Time: now -137ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xc8f339e5
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x37e1946a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177278 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2419ms
+  Next TX Time: now +873ms
+  Last TX Time: now -7ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x15eefbe7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x113ca968
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177199 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2228ms
+  Next TX Time: now +859ms
+  Last TX Time: now -41ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x88fc44e8
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x14c5cbe0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177303 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2058ms
+  Next TX Time: now +696ms
+  Last TX Time: now -104ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xef53f2e9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x374d28b0
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177309 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2383ms
+  Next TX Time: now +626ms
+  Last TX Time: now -144ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4f252fea
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x56bfb495
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177176 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2905ms
+  Next TX Time: now +865ms
+  Last TX Time: now -25ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x9fd76fec
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x420f603a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177293 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2708ms
+  Next TX Time: now +28ms
+  Last TX Time: now -872ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x39187dec
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4573d5b6
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177193 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2444ms
+  Next TX Time: now +151ms
+  Last TX Time: now -809ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x295af8ef
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7f5d9a5c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177291 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2302ms
+  Next TX Time: now +325ms
+  Last TX Time: now -495ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x53689cf3
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x58d16b53
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177224 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2514ms
+  Next TX Time: now +124ms
+  Last TX Time: now -826ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x4b2d95f4
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x3410015c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177283 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2977ms
+  Next TX Time: now +668ms
+  Last TX Time: now -282ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x9deebaf7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x33580c8a
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177279 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2856ms
+  Next TX Time: now +9ms
+  Last TX Time: now -761ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x45efadf7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6846f0d3
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177388 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2897ms
+  Next TX Time: now +402ms
+  Last TX Time: now -408ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x1721fff7
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: Neighbor Signaled Session Down
+  Remote Discriminator: 0x2a3a9a71
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179150 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2273ms
+  Next TX Time: now +777ms
+  Last TX Time: now -143ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xbccb83f8
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x96b56ece
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177344 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2330ms
+  Next TX Time: now +582ms
+  Last TX Time: now -198ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x16a1b8f8
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x40ddb35b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177167 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2405ms
+  Next TX Time: now +567ms
+  Last TX Time: now -403ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x8852ecf9
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x743237e1
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177206 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2461ms
+  Next TX Time: now +106ms
+  Last TX Time: now -694ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0xf27cd9fa
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x6781ccc7
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177181 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2160ms
+  Next TX Time: now +375ms
+  Last TX Time: now -405ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Control Detection Time Expired
+  Local Discriminator: 0x1edb0efc
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x7848e06b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177242 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2344ms
+  Next TX Time: now +652ms
+  Last TX Time: now -298ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x5aa33efc
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x2ec3cbc5
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179124 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2264ms
+  Next TX Time: now +425ms
+  Last TX Time: now -455ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xa9026cfc
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x1bbbe10b
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177253 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2864ms
+  Next TX Time: now +279ms
+  Last TX Time: now -471ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0x1d9cdafe
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x4a943755
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091177380 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2442ms
+  Next TX Time: now +4ms
+  Last TX Time: now -916ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: Neighbor Signaled Session Down
+  Local Discriminator: 0x4675b2ff
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0xf8d0daa2
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
+---- geneve1091179057 ----
+  Forwarding: true
+  Detect Multiplier: 3
+  Concatenated Path Down: false
+  TX Interval: Approx 1000ms
+  RX Interval: Approx 1000ms
+  Detect Time: now +2232ms
+  Next TX Time: now +320ms
+  Last TX Time: now -480ms
+
+  Local Flags: none
+  Local Session State: up
+  Local Diagnostic: No Diagnostic
+  Local Discriminator: 0xaf0ccff
+  Local Minimum TX Interval: 100ms
+  Local Minimum RX Interval: 1000ms
+
+  Remote Flags: none
+  Remote Session State: up
+  Remote Diagnostic: No Diagnostic
+  Remote Discriminator: 0x10a6942c
+  Remote Minimum TX Interval: 100ms
+  Remote Minimum RX Interval: 1000ms
+  Remote Detect Multiplier: 3
