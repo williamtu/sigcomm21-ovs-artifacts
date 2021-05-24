@@ -2,7 +2,7 @@
 
 This is the artifacts page for the SIGCOMM2021 paper, Revisiting the Open vSwitch Dataplane Ten Years Later.
 We provide
-* VMware NSX OpenFlow and OVSDB dataset (Section 5.1 and Table 3).
+* VMware NSX OpenFlow and OVSDB dataset (Section 5.1, Table 3, and Figure 7).
 * Instructions for building OVS with AF_XDP and DPDK, and how to reproduce the performance
   number (Section 5.2 and Figure 8).
 
@@ -29,7 +29,7 @@ We can successfully load all the OpenFlow rules, but it's expected that some of 
 interfaces are down or not existed.
 
 Here is the script to reproduce Figure 7.
-* Figure 7(a): VM-to-VM Cross-Host
+* Figure 7(a): [VM-to-VM Cross-Host](fig7a.md)
 * Figure 7(b): [VM-to-VM within Host](fig7b.md)
 * Figure 7(c): [Container-to-Container within Host](fig7c.md)
 
