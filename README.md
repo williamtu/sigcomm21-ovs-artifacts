@@ -14,13 +14,6 @@ We provide
 * [dataset/nsx-openflow-pipeline.txt](dataset/nsx-openflow-pipeline.txt):
   The text explanation of the OpenFlow pipeline.
 
-## Introduction
-AF_XDP, Address Family of the eXpress Data Path, is a new Linux socket type
-built upon the eBPF and XDP technology.  It aims to have comparable
-performance to DPDK but cooperate better with existing kernel's networking
-stack. For more details about AF_XDP, please see linux kernel's
-[AF_XDP documentation](https://www.kernel.org/doc/html/latest/networking/af_xdp.html)
-
 ## Building Open vSwitch with AF_XDP
 All the source code used in the paper has been upstreamed to the public
 Open vSwitch [github repo](https://github.com/openvswitch/ovs).
