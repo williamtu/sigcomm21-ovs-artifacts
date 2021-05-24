@@ -28,6 +28,10 @@ reproducing one server and loading the configurations mentioned in Table 3.
 We can successfully load all the OpenFlow rules, but it's expected that some of the tunnel
 interfaces are down or not existed.
 
+Here is the script to reproduce Figure 7.
+* Figure 7(a): VM-to-VM Cross-Host
+* Figure 7(b): [VM-to-VM within Host](fig7b.md)
+* Figure 7(c): [Container-to-Container within Host](fig7c.md)
 
 ## Building Open vSwitch with AF_XDP
 All the source code used in the paper has been upstreamed to the public

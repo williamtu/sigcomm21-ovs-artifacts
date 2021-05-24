@@ -6,14 +6,12 @@ set -x
 ethtool -L enp2s0f0np0 combined 1
 ethtool -N enp2s0f0np0 flow-type udp4 action 1
 #ethtool -N enp2s0 flow-type udp4 src-port 1 dst-port 1 action 1
-ulimit -l unlimited
+
 rm -f /usr/local/etc/openvswitch/conf.db
 ovsdb-tool create /usr/local/etc/openvswitch/conf.db /root/ovs/vswitchd/vswitch.ovsschema
 ovsdb-server --remote=punix:/usr/local/var/run/openvswitch/db.sock \
     --remote=db:Open_vSwitch,Open_vSwitch,manager_options \
     --pidfile --detach
-
-> /root/ovs/ovs-vswitchd.log
 
 ovs-vsctl --no-wait init 
 ovs-vsctl --no-wait set Open_vSwitch . other_config:dpdk-init=true
@@ -25,11 +23,6 @@ fi
 ovs-vsctl -- add-br br0 -- set Bridge br0 protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14,OpenFlow15 fail-mode=secure datapath_type=netdev 
 
 ovs-vsctl set Open_vSwitch . other_config:pmd-cpu-mask=0xf
-#ovs-appctl vlog/set netdev_afxdp::dbg
-#ovs-vsctl -- add-br br0 -- set Bridge br0 datapath_type=netdev other_config:pmd-cpu-mask=0xfff
-#ovs-vsctl add-port br0 enp2s0 -- set interface enp2s0 type="afxdp" other_config:pmd-rxq-affinity="0:1,1:3"
-# queue 0, pmd 1, queue 1, pmd 2
-#ovs-appctl vlog/set netdev_afxdp::dbg
 ovs-vsctl add-port br0 enp2s0f0np0 -- set int enp2s0f0np0 type=afxdp \
    options:n_rxq=1 options:xdp-mode=native-with-zerocopy options:use-need-wakeup=false
 
