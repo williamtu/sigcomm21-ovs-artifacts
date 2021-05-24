@@ -14,6 +14,15 @@ We provide
 * [dataset/nsx-openflow-pipeline.txt](dataset/nsx-openflow-pipeline.txt):
   The text explanation of the OpenFlow pipeline.
 
+If you're familar with Docker, use the [dataset/Dockerfile](dataset/Dockerfile) to automatically
+run OVS and load the dataset of OpenFlow rules, by doing
+```console
+  docker build dataset/ 
+  docker run --privileged -it <image id> /bin/bash
+  root@<image id>:/src/ovs# cd ../; ./start-ovs-dataset.sh 
+  root@<image id>:/src# ovs-ofctl add-flows breth0 /src/ovs-ofctl-dump-flows-breth0.out 
+```
+
 ## Building Open vSwitch with AF_XDP
 All the source code used in the paper has been upstreamed to the public
 Open vSwitch [github repo](https://github.com/openvswitch/ovs).
