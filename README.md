@@ -20,7 +20,7 @@ OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/a
 In the paper, we use two machines connected back-to-back (see Section 5.2).
 With one Xeon E5 2620 v3 12-core 2.4GHz connected back-to-back through dual-port 25-Gbps Mellanox Connect-X 6Dx NICs. One server ran the TRex traffic generator, the other ran OVS with different datapaths and packet I/O configurations as well as a VM with 2 vCPUs and 4 GB memory. We tested three scenarios, all loopback configurations in which a server receives packets from TRex on one NIC port, forwards them internally across a scenario-specific path, and then sends them back to it on the other.
 We measured OVS performance with the in-kernel datapath, with AF_XDP, and with DPDK.
-![](testbed.pdf)
+![](testbed.png)
 
 ## Measuring Performance with AF_XDP (Section 5.2, Figure 8 in the paper)
 Once OVS with AF_XDP is successfully built, we provide several scripts to
