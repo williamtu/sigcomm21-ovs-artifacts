@@ -20,7 +20,13 @@ Open vSwitch [github repo](https://github.com/openvswitch/ovs).
 Please follow the official documentation to install
 OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/afxdp/)
 
-Or use the [Dockerfile](Dockerfile).
+If you're familar with Docker, use the [Dockerfile](Dockerfile) to automatically
+build and run OVS, by doing
+```console
+  docker build . 
+  docker run --privileged -it <image id> /bin/bash
+  root@<image id>:/src/ovs# /start-ovs.sh 
+```
 
 ## Testbed Configuration
 In the paper, we use two machines connected back-to-back (see Section 5.2).
