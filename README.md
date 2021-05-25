@@ -68,11 +68,6 @@ Linux kernel 5.4+ or simply using Ubuntu 21.04.
 We use one machine as traffic generator and install [TRex](https://trex-tgn.cisco.com/)
 , [TRex installation](https://trex-tgn.cisco.com/trex/doc/trex_manual.html#_first_time_running).
 
-#```shell
-#docker pull trexcisco/trex                                   
-#d cker run --rm -it --privileged --cap-add=ALL trexcisco/trex:latest  
-#root@]./t-rex-64 -i                                    
-#```
 Assume that your TRex server has physical interface name 'enp2s0f0' at PCI slot
 02:00.0 and 'enp2s0f1' at PCI slot 02:00.1, configure the TRex to send traffic
 to enp2s0f0 (port 0) and receive from enp2s0f1 (port 1. Example TRex
