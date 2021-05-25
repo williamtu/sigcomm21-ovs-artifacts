@@ -2,17 +2,8 @@
 
 set -ex
 
-# copy the OVSDB file
-cp /src/conf.db /usr/local/etc/openvswitch/
-
-ovsdb-server --remote=punix:/usr/local/var/run/openvswitch/db.sock \
-    --remote=db:Open_vSwitch,Open_vSwitch,manager_options --pidfile --detach
-
-ovs-vsctl --no-wai -- init
-sleep 1
-
-ovs-vswitchd --no-chdir --pidfile --log-file --detach
-ovs-vsctl show 
+# Start OVS, use the OVSDB file from dataset
+/usr/share/openvswitch/scripts/ovs-ctl --db-file=/src/conf.db start
 
 # NSX uses the following Geneve TLV fields
 # ovs-ofctl dump-tlv-map nsx-managed
@@ -37,7 +28,11 @@ ovs-ofctl add-tlv-map nsx-managed "{class=0x104,type=0x0,len=4}->tun_metadata5"
 
 ovs-ofctl add-flows breth0 /src/ovs-ofctl-dump-flows-breth0.out
 ovs-ofctl add-flows nsx-switch.0 /src/ovs-ofctl-dump-flows-nsx-switch.0.out
+
+echo "This will take longer time..."
 # loading around 50K rules, this takes longer time...
 ovs-ofctl add-flows nsx-managed /src/ovs-ofctl-dump-flows-nsx-managed.out
 
-
+# check
+ovs-vsctl show
+# ovs-ofctl dump-flows nsx-managed

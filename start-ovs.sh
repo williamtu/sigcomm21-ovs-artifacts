@@ -14,8 +14,10 @@ ovs-vswitchd --no-chdir --pidfile --log-file --disable-system --detach
 
 ovs-vsctl show 
 
+# start OVS userspace datapath, "datapath_type=netdev"
 ovs-vsctl add-br br0 -- set Bridge br0 protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14,OpenFlow15 fail-mode=secure datapath_type=netdev
 
+# try attach an AF_XDP port
 ovs-vsctl add-port br0 eth0 -- set interface eth0 type=afxdp options:xdp-mode=generic
 
 ovs-vsctl show

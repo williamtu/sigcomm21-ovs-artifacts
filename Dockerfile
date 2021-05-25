@@ -1,3 +1,6 @@
+# This Dockerfile tests building OVS with AF_XDP,starting OVS userspace
+# datapath, and attaching an af_xdp port
+#
 # HOWTO:
 # docker build . 
 # docker run --privileged -it 654d284db02b /bin/bash
