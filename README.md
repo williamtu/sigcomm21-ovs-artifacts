@@ -27,7 +27,8 @@ Note that Section 5.1 in the paper is a testbed with 100 hypervisors. Here we ar
 reproducing one server and loading the configurations mentioned in Table 3.
 We can successfully load all the OpenFlow rules, but it's expected that some of the tunnel
 interfaces are down or not existed.
-
+Even if we can manually create similar setup, the performance number might differ.
+Due to this reason, we don't provde instructions to reproduce figure 7.
 
 ## Packet Forwarding Rate (Section 5.2)
 This section explains how to setup and create results in section 5.2 and figure 8.
@@ -94,31 +95,6 @@ other machine, theOVS running server. Follow the information below:
 * Figure 8(b): [PVP](fig8b.md)
 * Figure 8(c): [PCP](fig8c.md)
 
-
-## Measuring Performance with AF_XDP
-Once OVS with AF_XDP is successfully built, we provide several scripts to
-reproduce the results in the paper. Specifically, for
-* Linux kernel datapath
-  * [scripts/kernel-p2p.sh](scripts/kernel-p2p.sh):
-    a setup for forwarding packets from a physical port to OVS and a physical port.
-  * [scripts/kernel-pvp.sh](scripts/kernel-pvp.sh):
-    a setup for forwarding packets from a physical port to OVS, to a virtual port for a VM,
-    and loopback to the same virtual port, to OVS, and finally a physical port.
-  * [scripts/kernel-pcp.sh](scripts/kernel-pcp.sh):
-    a setup for forwarding packets from a physical port to OVS, to a container virtual port,
-    and loopback to the same container virtual port, to OVS, and finally a physical port.
-
-* OVS Userspace Datapath with DPDK
-  * [scripts/dpdk-p2p.sh](scripts/dpdk-p2p.sh): Same as above, but using userspace datapath with DPDK port.
-  * [scripts/dpdk-pvp.sh](scripts/dpdk-pvp.sh): Same as above, but using userspace datapath with DPDK port.
-  * [scripts/dpdk-pcp.sh](scripts/dpdk-pcp.sh): Same as above, but using userspace datapath with DPDK port.
-
-* OVS Userspace Datapath with AF_XDP
-  * [scripts/afxdp-p2p.sh](scripts/afxdp-p2p.sh): Same as above, but using userspace datapath with OVS AF_XDP port.
-  * [scripts/afxdp-pvp.sh](scripts/afxdp-pvp.sh): Same as above, but using userspace datapath with OVS AF_XDP port.
-  * [scripts/afxdp-pcp.sh](scripts/afxdp-pcp.sh): Same as above, but using userspace datapath with OVS_AF_XDP port.
-
-See section 5.2 and Figure 8 in the paper for details.
 
 ## Building Open vSwitch with AF_XDP
 Most of the source code used in the paper has been upstreamed to the public
