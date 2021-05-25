@@ -1,4 +1,4 @@
-# Figure 7(c) PCP: Physical port to Container to Physical port
+# Figure 8(c) PCP: Physical port to Container to Physical port
 
 This page describes how to setup packet forwarding between
 physical port and container port. Similiarly, we have three

@@ -5,6 +5,24 @@ We provide
 * VMware NSX OpenFlow and OVSDB dataset (Section 5.1 and Table 3).
 * Instructions for building OVS with AF_XDP and DPDK, and how to reproduce the performance
   number (Section 5.2 and Figure 8).
+* Rough instructions for Section 5.3, Figure 9 and 10.
+* Section 5.4 is skipped, because it requires using another project, [p4c-xdp](https://github.com/vmware/p4c-xdp)
+
+## Building Open vSwitch with AF_XDP
+Most of the source code used in the paper has been upstreamed to the public
+Open vSwitch [github repo](https://github.com/openvswitch/ovs) at the commit
+[AF_XDP](https://github.com/openvswitch/ovs/commit/0de1b425962db073ebbaa3ddbde445580afda840)
+Please follow the official documentation to install
+OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/afxdp/)
+
+If you're familar with Docker, use the [Dockerfile](Dockerfile) to automatically
+build and run OVS with AF_XDP, by doing
+```shell
+  docker build . 
+  docker run --privileged -it <image id> /bin/bash
+  root@<image id>:/src/ovs# /start-ovs.sh 
+```
+
 
 ## NSX and OpenFlow dataset (Section 5.1)
 * [dataset/ovs-ofctl-dump-flows.out.decoded](dataset/ovs-ofctl-dump-flows.out.decoded):
@@ -96,17 +114,16 @@ other machine, theOVS running server. Follow the information below:
 * Figure 8(c): [PCP](fig8c.md)
 
 
-## Building Open vSwitch with AF_XDP
-Most of the source code used in the paper has been upstreamed to the public
-Open vSwitch [github repo](https://github.com/openvswitch/ovs) at the commit
-[AF_XDP](https://github.com/openvswitch/ovs/commit/0de1b425962db073ebbaa3ddbde445580afda840)
-Please follow the official documentation to install
-OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/afxdp/)
-
-If you're familar with Docker, use the [Dockerfile](Dockerfile) to automatically
-build and run OVS with AF_XDP, by doing
+## Section 5.3 Latency and Transaction Rate
+Section 5.3, figure 9(a) is pretty much the same as creating figure 8,
+using the three configurations: kernel, AF_XDP, and DPDK.
+However, instead of using TRex packet generator, we run netperf on
+the TRex server
 ```shell
-  docker build . 
-  docker run --privileged -it <image id> /bin/bash
-  root@<image id>:/src/ovs# /start-ovs.sh 
+netperf -H 192.168.12.189 -t TCP_RR --   -o
+min_latency,max_latency,mean_latency,stddev_latency,transaction_rate,P50_LATENCY,P90_LATENCY,P99_LATENCY
 ```
+and assign IP 192.168.12.189 inside the VM.
+Section 5.3, figure 9(b) requires only one physical server, with another VM in the same host.
+Follow the similar instructions to create another VM with tap/af_xdp/vhostuer interface
+attached to OVS bridge. And use netperf to measure the performance numbers.
