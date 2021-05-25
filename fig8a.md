@@ -122,7 +122,7 @@ ovs-vsctl add-port br0 enp2s0f1 -- set int enp2s0f1 type=dpdk \
 
 # Add P2P forwarding rule
 ovs-ofctl add-flow br0 \
-"in_port=enp2s0f0np0, actions=output:enp2s0f0np1"
+"in_port=enp2s0f0, actions=output:enp2s0f1"
 ``` 
 #Another way is to use Ubuntu 21.04 openvswitch-switch-dpdk packages,
 #by doing
