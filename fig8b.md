@@ -26,7 +26,7 @@ Then start OVS kernel datapath by doing:
 /usr/share/openvswitch/scripts/ovs-ctl start
 ovs-vsctl add-br br0
 # add physical NIC
-ovs-vsctl add-port br0 enp2s0f0
+ovs-vsctl add-port br0 enp2s0f0 # by default, it uses device's kernel driver
 ovs-vsctl add-port br0 enp2s0f1
 # add virtual device
 ovs-vsctl add-port br0 tap0
@@ -40,7 +40,8 @@ Start the TRex traffic generator and now, with the rule above, the packets
 coming from enp2s0f0 will be forwarded to tap0 and arrives at VM.
 You might want to check in the VM whether the packets arrived, by doing
 ```shell
-tcpdump -n -i ens4 # assume your interface name in VM is ens4
+# inside VM, assume interface name is ens4
+tcpdump -n -i ens4 
 ```
 Next, inside the VM, we need to forward/loopback the packets received from
 ens4 to ens4's tx. You can do it by installing DPDK l2fwd in the VM.
@@ -54,6 +55,17 @@ Since we've installed the OpenFlow rules "in_port=tap0, actions=output:enp2s0f1"
 the packet will be sent back to the TRex server.
 
 Finally, we can observe the packet forwardnig rate and CPU utilization.
+
+### Install xdp_rxq_info
+The xdp_rxq_info tool is part of the Linux kernel source.
+You can download and compile it by
+```shell
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git
+cd bpf-next/samples/bpf/
+# you might need to upgrade your clang and LLVM here...
+make
+```
+
 
 ## AF_XDP with tap
 The setup is pretty much the same as above, kernel with tap. But instead of
@@ -91,7 +103,7 @@ ovs-vsctl add-br br0 -- set Bridge br0 protocols=OpenFlow10,OpenFlow11,OpenFlow1
 ethtool -L enp2s0f0 combined 1
 ethtool -L enp2s0f1 combined 1
 
-# Attach an AF_XDP port
+# Attach the port using AF_XDP type
 ovs-vsctl add-port br0 enp2s0f0 -- set interface enp2s0f0 type=afxdp options:xdp-mode=best-effort
 ovs-vsctl add-port br0 enp2s0f1 -- set interface enp2s0f1 type=afxdp options:xdp-mode=best-effort
 
@@ -107,16 +119,16 @@ ovs-ofctl del-flows br0
 ovs-ofctl add-flow br0 "in_port=enp2s0f0, actions=output:tap0"
 ovs-ofctl add-flow br0 "in_port=tap0, actions=output:enp2s0f1"
 ```
-Then starts the TRex, and login to the VM to setup loopback forwarding.
-Finally measure the performance.
+Then starts the TRex, and login to the VM to setup loopback forwarding using
+xdp_rxq_info. Finally, measure the performance.
 
 
 ## AF_XDP with vhostuser
 This setup uses vhostuser interface for OVS, see OVS's official
-[vhostuser doc](https://docs.openvswitch.org/en/latest/topics/dpdk/vhost-user/)
+[vhostuser doc](https://docs.openvswitch.org/en/latest/topics/dpdk/vhost-user/).
 First, start VM using vhostuser interface
 ```shell
-# VM: vhostuserclient mode, set the socket path to /tmp/vhost
+# VM: vhostuserclient mode, set the type=vhost-user and socket path to /tmp/vhost
 qemu-system-x86_64 -hda ubuntu1810.qcow \
   -m 4096 \
   -cpu host,+x2apic -enable-kvm \
@@ -131,6 +143,11 @@ and using OVS-DPDK's implementation of vhostuser. As a result, we need to build 
 both AF_XDP support and DPDK support.
 * Follow the [OVS-DPDK](https://docs.openvswitch.org/en/latest/intro/install/dpdk/) build instruction
 * When doing "configure", add additional "--enable-afxdp" to it.
+example:
+```shell
+./configure --with-dpdk=static --enable-afxdp
+make && make install
+```
 
 Once OVS with AF_XDP and DPDK is ready, create bridge br0 and attach the vhostuser port.
 ```shell
