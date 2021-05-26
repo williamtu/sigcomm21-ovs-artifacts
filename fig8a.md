@@ -89,18 +89,28 @@ ovs-vsctl add-port br0 enp2s0f0 -- set interface enp2s0f0 type=afxdp options:xdp
 ovs-vsctl add-port br0 enp2s0f1 -- set interface enp2s0f1 type=afxdp options:xdp-mode=best-effort
 ovs-vsctl show
 ```
-Finally, install the OpenFlow rules and start the TRex traffic gen.
+* Finally, install the OpenFlow rules and start the TRex traffic gen.
 ```shell
 ovs-ofctl del-flows br0
 # add P2P forwarding rule
 ovs-ofctl add-flow br0 "in_port=enp2s0f0, actions=output:enp2s0f1"
 ```
 
+Note that Mellanox and Intel have different XDP/AF_XDP design, explained
+in Figure 5. When using Mellanox card, additional configurations are
+needed to program the hardware's flow classification rules.
+```shell
+# Use 1 HW queue (queue 0 for normal traffic, queue 1 for XDP traffic)
+ethtool -L enp2s0f0 combined 1
+# forware all ethernet traffic to queue 1
+ethtool -N enp2s0f0 flow-type ether proto 0x0800 proto-mask 0x0000 action 1
+# check device's stats, make sure packets arrived
+ethtool -S enp2s0f0 | grep xdp
+``` 
 
 ## Userspace Datapath with DPDK
 You can build your own OVS-DPDK by following the OVS official document
 [here](https://docs.openvswitch.org/en/latest/intro/install/dpdk/).
-
 Once OVS-DPDK is installed, follow the similar steps as above:
 ```shell
 ovsdb-tool create /usr/local/etc/openvswitch/conf.db /src/ovs/vswitchd/vswitch.ovsschema
@@ -115,6 +125,7 @@ ovs-vsctl show
 # start OVS userspace datapath, "datapath_type=netdev"
 ovs-vsctl add-br br0 -- set Bridge br0 protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14,OpenFlow15 fail-mode=secure datapath_type=netdev
 
+# attach port as DPDK type
 ovs-vsctl add-port br0 enp2s0f0 -- set int enp2s0f0 type=dpdk \
     options:dpdk-devargs=0000:02:00.0
 ovs-vsctl add-port br0 enp2s0f1 -- set int enp2s0f1 type=dpdk \
@@ -124,13 +135,5 @@ ovs-vsctl add-port br0 enp2s0f1 -- set int enp2s0f1 type=dpdk \
 ovs-ofctl add-flow br0 \
 "in_port=enp2s0f0, actions=output:enp2s0f1"
 ``` 
-#Another way is to use Ubuntu 21.04 openvswitch-switch-dpdk packages,
-#by doing
-#```
-#apt-get -y install openvswitch-switch-dpdk
-
-
-
-
-
+Finally, starts the TRex traffic and measure the performance!
 

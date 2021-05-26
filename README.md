@@ -1,6 +1,7 @@
 # Revisiting the Open vSwitch Dataplane Ten Years Later
 
-This is the artifacts page for the SIGCOMM2021 paper, Revisiting the Open vSwitch Dataplane Ten Years Later.
+This is the artifacts page for the SIGCOMM2021 paper,
+[Revisiting the Open vSwitch Dataplane Ten Years Later](sigcomm2021-paper300.pdf).
 We provide
 * VMware NSX OpenFlow and OVSDB dataset (Section 5.1 and Table 3).
 * Instructions for building OVS with AF_XDP and DPDK, and how to reproduce the performance
@@ -26,7 +27,8 @@ build and run OVS with AF_XDP, by doing
 
 ## NSX and OpenFlow dataset (Section 5.1)
 * [dataset/ovs-ofctl-dump-flows.out.decoded](dataset/ovs-ofctl-dump-flows.out.decoded):
-  OpenFlow tables and rules installed at Linux host.
+  OpenFlow tables and rules installed at Linux host. Around 100k OpenFlow rules using 40
+  OpenFlow tables.
 * [dataset/ovs-vsctl-show.out](dataset/ovs-vsctl-show.out):
   Configurations of OVS bridges, tunnels, and interfaces.
 * [dataset/nsx-openflow-pipeline.txt](dataset/nsx-openflow-pipeline.txt):
@@ -66,11 +68,10 @@ Linux kernel 5.4+ or simply using Ubuntu 21.04.
 
 ## The TRex Traffic generator
 We use one machine as traffic generator and install [TRex](https://trex-tgn.cisco.com/)
-, [TRex installation](https://trex-tgn.cisco.com/trex/doc/trex_manual.html#_first_time_running).
-
+. See [TRex installation guide](https://trex-tgn.cisco.com/trex/doc/trex_manual.html#_first_time_running).
 Assume that your TRex server has physical interface name 'enp2s0f0' at PCI slot
 02:00.0 and 'enp2s0f1' at PCI slot 02:00.1, configure the TRex to send traffic
-to enp2s0f0 (port 0) and receive from enp2s0f1 (port 1. Example TRex
+to enp2s0f0 (port 0) and receive from enp2s0f1 (port 1). Example TRex
 configurations is below:
 ```yaml
 # cat /etc/trex_cfg.yaml
@@ -104,9 +105,9 @@ To see the packets statistics on all network devices on OVS server.
 
 Once the TRex traffic-gen server is ready, we can move on to setup the
 other machine, theOVS running server. Follow the information below:
-* Figure 8(a): [P2P](fig8a.md)
-* Figure 8(b): [PVP](fig8b.md)
-* Figure 8(c): [PCP](fig8c.md)
+* Figure 8(a): [P2P: Physical-to-Physical](fig8a.md)
+* Figure 8(b): [PVP: Physical-to-Virtual-to-Physical](fig8b.md)
+* Figure 8(c): [PCP: Physical-to-Container-to-Physical](fig8c.md)
 
 
 ## Section 5.3 Latency and Transaction Rate
@@ -122,3 +123,6 @@ and assign IP 192.168.12.189 inside the VM.
 Section 5.3, figure 9(b) requires only one physical server, with another VM in the same host.
 Follow the similar instructions to create another VM with tap/af_xdp/vhostuer interface
 attached to OVS bridge. And use netperf to measure the performance numbers.
+
+## Questions?
+Feel free to create a ticket or PR in this github repo!
