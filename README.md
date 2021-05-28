@@ -66,6 +66,8 @@ In short, you need one server as traffic generator, called TRex server,
 the other server runs OVS. For the servier running OVS, we recommend having
 Linux kernel 5.4+ or simply using Ubuntu 21.04.
 
+The Mellanox card has different XDP design than Intel's cards.
+See how to setup Mellanox card for AF_XDP [here](afxdp_mlx.md)
 ## The TRex Traffic generator
 We use one machine as traffic generator and install [TRex](https://trex-tgn.cisco.com/)
 . See [TRex installation guide](https://trex-tgn.cisco.com/trex/doc/trex_manual.html#_first_time_running).
