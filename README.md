@@ -133,6 +133,14 @@ or
 ip link -s 
 ```
 To see the packets statistics on all network devices on OVS server.
+Another way is to use Docker to build and setup the environment.
+We created a docker image for building the Trex:
+```shell
+  docker build -t trex trex/ # or $docker pull u9012063/trex:latest
+  docker run --privileged -it e0cbfcc3b0da
+```
+but most likely you have to setup your physical machine manually
+by following the Trex tutorial.
 
 Once the TRex traffic-gen server is ready, we can move on to setup the
 other machine, theOVS running server. Follow the information below:
