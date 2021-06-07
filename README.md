@@ -17,7 +17,13 @@ Please follow the official documentation to install
 OVS with AF_XDP at [here](https://docs.openvswitch.org/en/latest/intro/install/afxdp/)
 
 If you're familar with Docker, use the [Dockerfile](Dockerfile) to automatically
-build and run OVS with AF_XDP, by doing
+build and run OVS with AF_XDP, by doing either:
+```shell
+  docker pull u9012063/ovs-afxdp:latest
+  docker run -it <image id> /bin/bash
+  root@<image id>:/src/ovs# /start-ovs.sh
+```
+Or, if you want to build the image by yourself:
 ```shell
   docker build . 
   docker run --privileged -it <image id> /bin/bash
