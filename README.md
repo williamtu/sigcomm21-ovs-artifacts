@@ -41,12 +41,19 @@ Or, if you want to build the image by yourself:
   The text explanation of the OpenFlow pipeline.
 
 If you're familar with Docker, use the [dataset/Dockerfile](dataset/Dockerfile) to automatically
-run OVS and load the dataset of OpenFlow rules, by doing
+run OVS and load the dataset of OpenFlow rules, by doing either:
 ```shell
-  docker build dataset/ 
-  docker run --privileged -it <image id> /bin/bash
-  root@<image id>:/src/ovs# cd ../;
+  docker pull u9012063/ovs-dataset:latest
+```
+Or, if you prefer building your own image:
+```shell
+  docker build dataset/
+```
+Then you can start using it by:
+```
+  docker run --privileged -it <image id> /bin/bash # don't forget --privileged
   root@<image id>:/src# ./start-ovs-dataset.sh 
+  # it takes around 60 sec to load around 51k OpenFlow rules
   root@<image id>:/src# ovs-ofctl dump-flows nsx-managed
 ```
 Note that Section 5.1 in the paper is a testbed with 100 hypervisors. Here we are simply
