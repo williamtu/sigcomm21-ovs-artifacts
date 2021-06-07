@@ -30,6 +30,22 @@ Or, if you want to build the image by yourself:
   root@<image id>:/src/ovs# /start-ovs.sh 
 ```
 
+## Building Open vSwitch with DPDK, OVS-DPDK
+The tutorial for build OVS-DPDK can be found
+[here](https://docs.openvswitch.org/en/latest/intro/install/dpdk/).
+If you're using Docker, you can directly pull the image
+```shell
+  docker pull u9012063/ovs-dpdk:latest
+```
+Or, if you want to build it by yourself:
+```
+  docker build -t ovs-dpdk ovs-dpdk/
+```
+Finally, 
+```shell
+  docker run --privileged -it <image id>
+```
+
 
 ## NSX and OpenFlow dataset (Section 5.1)
 * [dataset/ovs-ofctl-dump-flows.out.decoded](dataset/ovs-ofctl-dump-flows.out.decoded):
