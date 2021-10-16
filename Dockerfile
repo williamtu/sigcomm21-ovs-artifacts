@@ -9,7 +9,7 @@
 # Use Ubuntu 21.04 which has kernel support for AF_XDP
 FROM ubuntu:21.04
 
-ARG OVS_VERSION=v2.15.0
+ARG OVS_VERSION=v2.14.2
 ADD https://github.com/openvswitch/ovs/archive/${OVS_VERSION}.tar.gz /src/
 
 WORKDIR /src
@@ -24,6 +24,8 @@ RUN apt-get update && apt-get -y install autoconf automake libtool libcap-ng-dev
 
 # libbpf is required when using OVS with AF_XDP
 RUN apt-get -y install libbpf-dev
+RUN apt-get -y install vim build-essential
+RUN apt-get -y install man-db
 
 RUN ./boot.sh
 RUN ./configure --enable-afxdp
